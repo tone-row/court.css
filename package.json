@@ -1,12 +1,12 @@
 {
   "name": "court.css",
-  "version": "0.0.11",
+  "version": "0.0.12",
   "author": {
     "name": "Rob Gordon",
     "email": "rob.gordon@tone-row.com"
   },
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "exports": {
     "./stylesheet": "./dist/court.css",
     ".": "./dist/index.js"
