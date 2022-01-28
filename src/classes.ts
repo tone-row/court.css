@@ -20,6 +20,21 @@ export const classes = [
     fallback: "var(--pad, 0)",
   },
   {
+    className: "m",
+    properties: ["margin"],
+    fallback: "0",
+  },
+  {
+    className: "m-y",
+    properties: ["margin-top", "margin-bottom"],
+    fallback: "var(--m, 0)",
+  },
+  {
+    className: "m-x",
+    properties: ["margin-left", "margin-right"],
+    fallback: "var(--m, 0)",
+  },
+  {
     className: "bg",
     properties: ["background"],
   },

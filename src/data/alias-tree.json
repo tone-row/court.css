@@ -1,0 +1,1975 @@
+{
+  "align": {
+    "by": "a",
+    "children": {
+      "content": {
+        "by": "c",
+        "children": {}
+      },
+      "items": {
+        "by": "i",
+        "children": {}
+      },
+      "self": {
+        "by": "s",
+        "children": {}
+      }
+    }
+  },
+  "border": {
+    "by": "b",
+    "children": {
+      "bottom": {
+        "by": "b",
+        "children": {
+          "color": {
+            "by": "c",
+            "children": {}
+          },
+          "left": {
+            "by": "l",
+            "children": {
+              "radius": {
+                "by": "r",
+                "children": {}
+              },
+              "bottom": {
+                "by": "bottom",
+                "children": {}
+              }
+            }
+          },
+          "right": {
+            "by": "r",
+            "children": {
+              "radius": {
+                "by": "r",
+                "children": {}
+              },
+              "bottom": {
+                "by": "bottom",
+                "children": {}
+              }
+            }
+          },
+          "style": {
+            "by": "s",
+            "children": {}
+          },
+          "width": {
+            "by": "w",
+            "children": {}
+          },
+          "bottom": {
+            "by": "bottom",
+            "children": {}
+          }
+        }
+      },
+      "color": {
+        "by": "c",
+        "children": {}
+      },
+      "end": {
+        "by": "e",
+        "children": {
+          "end": {
+            "by": "e",
+            "children": {
+              "radius": {
+                "by": "r",
+                "children": {}
+              },
+              "end": {
+                "by": "end",
+                "children": {}
+              }
+            }
+          },
+          "start": {
+            "by": "s",
+            "children": {
+              "radius": {
+                "by": "r",
+                "children": {}
+              },
+              "end": {
+                "by": "end",
+                "children": {}
+              }
+            }
+          }
+        }
+      },
+      "image": {
+        "by": "i",
+        "children": {
+          "outset": {
+            "by": "o",
+            "children": {}
+          },
+          "repeat": {
+            "by": "r",
+            "children": {}
+          },
+          "source": {
+            "by": "s",
+            "children": {}
+          },
+          "width": {
+            "by": "w",
+            "children": {}
+          },
+          "image": {
+            "by": "image",
+            "children": {}
+          }
+        }
+      },
+      "left": {
+        "by": "l",
+        "children": {
+          "color": {
+            "by": "c",
+            "children": {}
+          },
+          "style": {
+            "by": "s",
+            "children": {}
+          },
+          "width": {
+            "by": "w",
+            "children": {}
+          },
+          "left": {
+            "by": "left",
+            "children": {}
+          }
+        }
+      },
+      "radius": {
+        "by": "r",
+        "children": {}
+      },
+      "style": {
+        "by": "s",
+        "children": {}
+      },
+      "top": {
+        "by": "t",
+        "children": {
+          "color": {
+            "by": "c",
+            "children": {}
+          },
+          "left": {
+            "by": "l",
+            "children": {
+              "radius": {
+                "by": "r",
+                "children": {}
+              },
+              "top": {
+                "by": "top",
+                "children": {}
+              }
+            }
+          },
+          "right": {
+            "by": "r",
+            "children": {
+              "radius": {
+                "by": "r",
+                "children": {}
+              },
+              "top": {
+                "by": "top",
+                "children": {}
+              }
+            }
+          },
+          "style": {
+            "by": "s",
+            "children": {}
+          },
+          "width": {
+            "by": "w",
+            "children": {}
+          },
+          "top": {
+            "by": "top",
+            "children": {}
+          }
+        }
+      },
+      "width": {
+        "by": "w",
+        "children": {}
+      },
+      "block": {
+        "by": "block",
+        "children": {
+          "color": {
+            "by": "c",
+            "children": {}
+          },
+          "end": {
+            "by": "e",
+            "children": {
+              "color": {
+                "by": "c",
+                "children": {}
+              },
+              "style": {
+                "by": "s",
+                "children": {}
+              },
+              "width": {
+                "by": "w",
+                "children": {}
+              },
+              "block": {
+                "by": "block",
+                "children": {}
+              }
+            }
+          },
+          "start": {
+            "by": "s",
+            "children": {
+              "color": {
+                "by": "c",
+                "children": {}
+              },
+              "style": {
+                "by": "s",
+                "children": {}
+              },
+              "width": {
+                "by": "w",
+                "children": {}
+              },
+              "block": {
+                "by": "block",
+                "children": {}
+              }
+            }
+          },
+          "width": {
+            "by": "w",
+            "children": {}
+          },
+          "block": {
+            "by": "block",
+            "children": {}
+          }
+        }
+      },
+      "boundary": {
+        "by": "boundary",
+        "children": {}
+      },
+      "collapse": {
+        "by": "collapse",
+        "children": {}
+      },
+      "inline": {
+        "by": "inline",
+        "children": {
+          "color": {
+            "by": "c",
+            "children": {}
+          },
+          "end": {
+            "by": "e",
+            "children": {
+              "color": {
+                "by": "c",
+                "children": {}
+              },
+              "style": {
+                "by": "s",
+                "children": {}
+              },
+              "width": {
+                "by": "w",
+                "children": {}
+              },
+              "inline": {
+                "by": "inline",
+                "children": {}
+              }
+            }
+          },
+          "start": {
+            "by": "s",
+            "children": {
+              "color": {
+                "by": "c",
+                "children": {}
+              },
+              "style": {
+                "by": "s",
+                "children": {}
+              },
+              "width": {
+                "by": "w",
+                "children": {}
+              },
+              "inline": {
+                "by": "inline",
+                "children": {}
+              }
+            }
+          },
+          "width": {
+            "by": "w",
+            "children": {}
+          },
+          "inline": {
+            "by": "inline",
+            "children": {}
+          }
+        }
+      },
+      "right": {
+        "by": "right",
+        "children": {
+          "color": {
+            "by": "c",
+            "children": {}
+          },
+          "style": {
+            "by": "s",
+            "children": {}
+          },
+          "width": {
+            "by": "w",
+            "children": {}
+          },
+          "right": {
+            "by": "right",
+            "children": {}
+          }
+        }
+      },
+      "spacing": {
+        "by": "spacing",
+        "children": {}
+      },
+      "start": {
+        "by": "start",
+        "children": {
+          "end": {
+            "by": "e",
+            "children": {
+              "radius": {
+                "by": "r",
+                "children": {}
+              },
+              "start": {
+                "by": "start",
+                "children": {}
+              }
+            }
+          },
+          "start": {
+            "by": "s",
+            "children": {
+              "radius": {
+                "by": "r",
+                "children": {}
+              },
+              "start": {
+                "by": "start",
+                "children": {}
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "content": {
+    "by": "c",
+    "children": {
+      "visibility": {
+        "by": "v",
+        "children": {}
+      }
+    }
+  },
+  "display": {
+    "by": "d",
+    "children": {}
+  },
+  "empty": {
+    "by": "e",
+    "children": {
+      "cells": {
+        "by": "c",
+        "children": {}
+      }
+    }
+  },
+  "font": {
+    "by": "f",
+    "children": {
+      "family": {
+        "by": "f",
+        "children": {}
+      },
+      "kerning": {
+        "by": "k",
+        "children": {}
+      },
+      "language": {
+        "by": "l",
+        "children": {
+          "override": {
+            "by": "o",
+            "children": {}
+          },
+          "language": {
+            "by": "language",
+            "children": {}
+          }
+        }
+      },
+      "optical": {
+        "by": "o",
+        "children": {
+          "sizing": {
+            "by": "s",
+            "children": {}
+          },
+          "optical": {
+            "by": "optical",
+            "children": {}
+          }
+        }
+      },
+      "palette": {
+        "by": "p",
+        "children": {}
+      },
+      "size": {
+        "by": "s",
+        "children": {
+          "adjust": {
+            "by": "a",
+            "children": {}
+          },
+          "size": {
+            "by": "size",
+            "children": {}
+          }
+        }
+      },
+      "variant": {
+        "by": "v",
+        "children": {
+          "alternates": {
+            "by": "a",
+            "children": {}
+          },
+          "caps": {
+            "by": "c",
+            "children": {}
+          },
+          "east": {
+            "by": "e",
+            "children": {
+              "asian": {
+                "by": "a",
+                "children": {}
+              },
+              "variant": {
+                "by": "variant",
+                "children": {}
+              }
+            }
+          },
+          "ligatures": {
+            "by": "l",
+            "children": {}
+          },
+          "numeric": {
+            "by": "n",
+            "children": {}
+          },
+          "position": {
+            "by": "p",
+            "children": {}
+          },
+          "variant": {
+            "by": "variant",
+            "children": {}
+          }
+        }
+      },
+      "weight": {
+        "by": "w",
+        "children": {}
+      },
+      "stretch": {
+        "by": "stretch",
+        "children": {}
+      },
+      "style": {
+        "by": "style",
+        "children": {}
+      },
+      "synthesis": {
+        "by": "synthesis",
+        "children": {
+          "small": {
+            "by": "s",
+            "children": {
+              "caps": {
+                "by": "c",
+                "children": {}
+              },
+              "synthesis": {
+                "by": "synthesis",
+                "children": {}
+              }
+            }
+          },
+          "weight": {
+            "by": "w",
+            "children": {}
+          },
+          "synthesis": {
+            "by": "synthesis",
+            "children": {}
+          }
+        }
+      },
+      "feature": {
+        "by": "feature",
+        "children": {
+          "settings": {
+            "by": "s",
+            "children": {}
+          },
+          "feature": {
+            "by": "feature",
+            "children": {}
+          }
+        }
+      },
+      "variation": {
+        "by": "variation",
+        "children": {
+          "settings": {
+            "by": "s",
+            "children": {}
+          },
+          "variation": {
+            "by": "variation",
+            "children": {}
+          }
+        }
+      }
+    }
+  },
+  "grid": {
+    "by": "g",
+    "children": {
+      "auto": {
+        "by": "a",
+        "children": {
+          "columns": {
+            "by": "c",
+            "children": {}
+          },
+          "flow": {
+            "by": "f",
+            "children": {}
+          },
+          "rows": {
+            "by": "r",
+            "children": {}
+          },
+          "auto": {
+            "by": "auto",
+            "children": {}
+          }
+        }
+      },
+      "column": {
+        "by": "c",
+        "children": {
+          "end": {
+            "by": "e",
+            "children": {}
+          },
+          "start": {
+            "by": "s",
+            "children": {}
+          },
+          "column": {
+            "by": "column",
+            "children": {}
+          }
+        }
+      },
+      "row": {
+        "by": "r",
+        "children": {
+          "end": {
+            "by": "e",
+            "children": {}
+          },
+          "start": {
+            "by": "s",
+            "children": {}
+          },
+          "row": {
+            "by": "row",
+            "children": {}
+          }
+        }
+      },
+      "template": {
+        "by": "t",
+        "children": {
+          "areas": {
+            "by": "a",
+            "children": {}
+          },
+          "columns": {
+            "by": "c",
+            "children": {}
+          },
+          "rows": {
+            "by": "r",
+            "children": {}
+          },
+          "template": {
+            "by": "template",
+            "children": {}
+          }
+        }
+      },
+      "area": {
+        "by": "area",
+        "children": {}
+      }
+    }
+  },
+  "height": {
+    "by": "h",
+    "children": {}
+  },
+  "image": {
+    "by": "i",
+    "children": {
+      "orientation": {
+        "by": "o",
+        "children": {}
+      },
+      "rendering": {
+        "by": "r",
+        "children": {}
+      },
+      "resolution": {
+        "by": "resolution",
+        "children": {}
+      }
+    }
+  },
+  "justify": {
+    "by": "j",
+    "children": {
+      "content": {
+        "by": "c",
+        "children": {}
+      },
+      "items": {
+        "by": "i",
+        "children": {}
+      },
+      "self": {
+        "by": "s",
+        "children": {}
+      }
+    }
+  },
+  "left": {
+    "by": "l",
+    "children": {}
+  },
+  "margin": {
+    "by": "m",
+    "children": {
+      "bottom": {
+        "by": "b",
+        "children": {}
+      },
+      "inline": {
+        "by": "i",
+        "children": {
+          "end": {
+            "by": "e",
+            "children": {}
+          },
+          "start": {
+            "by": "s",
+            "children": {}
+          },
+          "inline": {
+            "by": "inline",
+            "children": {}
+          }
+        }
+      },
+      "left": {
+        "by": "l",
+        "children": {}
+      },
+      "right": {
+        "by": "r",
+        "children": {}
+      },
+      "top": {
+        "by": "t",
+        "children": {}
+      },
+      "block": {
+        "by": "block",
+        "children": {
+          "end": {
+            "by": "e",
+            "children": {}
+          },
+          "start": {
+            "by": "s",
+            "children": {}
+          },
+          "block": {
+            "by": "block",
+            "children": {}
+          }
+        }
+      },
+      "break": {
+        "by": "break",
+        "children": {}
+      },
+      "trim": {
+        "by": "trim",
+        "children": {}
+      }
+    }
+  },
+  "nav": {
+    "by": "n",
+    "children": {
+      "down": {
+        "by": "d",
+        "children": {}
+      },
+      "left": {
+        "by": "l",
+        "children": {}
+      },
+      "right": {
+        "by": "r",
+        "children": {}
+      },
+      "up": {
+        "by": "u",
+        "children": {}
+      }
+    }
+  },
+  "opacity": {
+    "by": "o",
+    "children": {}
+  },
+  "padding": {
+    "by": "p",
+    "children": {
+      "bottom": {
+        "by": "b",
+        "children": {}
+      },
+      "inline": {
+        "by": "i",
+        "children": {
+          "end": {
+            "by": "e",
+            "children": {}
+          },
+          "start": {
+            "by": "s",
+            "children": {}
+          },
+          "inline": {
+            "by": "inline",
+            "children": {}
+          }
+        }
+      },
+      "left": {
+        "by": "l",
+        "children": {}
+      },
+      "right": {
+        "by": "r",
+        "children": {}
+      },
+      "top": {
+        "by": "t",
+        "children": {}
+      },
+      "block": {
+        "by": "block",
+        "children": {
+          "end": {
+            "by": "e",
+            "children": {}
+          },
+          "start": {
+            "by": "s",
+            "children": {}
+          },
+          "block": {
+            "by": "block",
+            "children": {}
+          }
+        }
+      }
+    }
+  },
+  "quotes": {
+    "by": "q",
+    "children": {}
+  },
+  "right": {
+    "by": "r",
+    "children": {}
+  },
+  "stroke": {
+    "by": "s",
+    "children": {
+      "align": {
+        "by": "a",
+        "children": {}
+      },
+      "break": {
+        "by": "b",
+        "children": {}
+      },
+      "color": {
+        "by": "c",
+        "children": {}
+      },
+      "dashoffset": {
+        "by": "d",
+        "children": {}
+      },
+      "image": {
+        "by": "i",
+        "children": {}
+      },
+      "linecap": {
+        "by": "l",
+        "children": {}
+      },
+      "miterlimit": {
+        "by": "m",
+        "children": {}
+      },
+      "opacity": {
+        "by": "o",
+        "children": {}
+      },
+      "position": {
+        "by": "p",
+        "children": {}
+      },
+      "repeat": {
+        "by": "r",
+        "children": {}
+      },
+      "size": {
+        "by": "s",
+        "children": {}
+      },
+      "width": {
+        "by": "w",
+        "children": {}
+      },
+      "alignment": {
+        "by": "alignment",
+        "children": {}
+      },
+      "dashadjust": {
+        "by": "dashadjust",
+        "children": {}
+      },
+      "dasharray": {
+        "by": "dasharray",
+        "children": {}
+      },
+      "dashcorner": {
+        "by": "dashcorner",
+        "children": {}
+      },
+      "linejoin": {
+        "by": "linejoin",
+        "children": {}
+      },
+      "origin": {
+        "by": "origin",
+        "children": {}
+      },
+      "dash": {
+        "by": "dash",
+        "children": {
+          "corner": {
+            "by": "c",
+            "children": {}
+          },
+          "justify": {
+            "by": "j",
+            "children": {}
+          },
+          "dash": {
+            "by": "dash",
+            "children": {}
+          }
+        }
+      }
+    }
+  },
+  "transform": {
+    "by": "t",
+    "children": {
+      "box": {
+        "by": "b",
+        "children": {}
+      },
+      "origin": {
+        "by": "o",
+        "children": {}
+      },
+      "style": {
+        "by": "s",
+        "children": {}
+      }
+    }
+  },
+  "user": {
+    "by": "u",
+    "children": {
+      "select": {
+        "by": "s",
+        "children": {}
+      }
+    }
+  },
+  "vertical": {
+    "by": "v",
+    "children": {
+      "align": {
+        "by": "a",
+        "children": {}
+      }
+    }
+  },
+  "width": {
+    "by": "w",
+    "children": {}
+  },
+  "z": {
+    "by": "z",
+    "children": {
+      "index": {
+        "by": "i",
+        "children": {}
+      }
+    }
+  },
+  "": {
+    "by": "",
+    "children": {}
+  },
+  "color": {
+    "by": "color",
+    "children": {
+      "adjust": {
+        "by": "a",
+        "children": {}
+      },
+      "interpolation": {
+        "by": "i",
+        "children": {
+          "filters": {
+            "by": "f",
+            "children": {}
+          },
+          "interpolation": {
+            "by": "interpolation",
+            "children": {}
+          }
+        }
+      },
+      "scheme": {
+        "by": "s",
+        "children": {}
+      }
+    }
+  },
+  "items": {
+    "by": "items",
+    "children": {}
+  },
+  "self": {
+    "by": "self",
+    "children": {}
+  },
+  "baseline": {
+    "by": "baseline",
+    "children": {
+      "shift": {
+        "by": "s",
+        "children": {}
+      },
+      "source": {
+        "by": "source",
+        "children": {}
+      }
+    }
+  },
+  "delay": {
+    "by": "delay",
+    "children": {}
+  },
+  "direction": {
+    "by": "direction",
+    "children": {}
+  },
+  "duration": {
+    "by": "duration",
+    "children": {}
+  },
+  "name": {
+    "by": "name",
+    "children": {}
+  },
+  "ratio": {
+    "by": "ratio",
+    "children": {}
+  },
+  "visibility": {
+    "by": "visibility",
+    "children": {}
+  },
+  "attachment": {
+    "by": "attachment",
+    "children": {}
+  },
+  "clip": {
+    "by": "clip",
+    "children": {
+      "path": {
+        "by": "p",
+        "children": {}
+      },
+      "rule": {
+        "by": "r",
+        "children": {}
+      }
+    }
+  },
+  "origin": {
+    "by": "origin",
+    "children": {}
+  },
+  "position": {
+    "by": "position",
+    "children": {}
+  },
+  "repeat": {
+    "by": "repeat",
+    "children": {}
+  },
+  "size": {
+    "by": "size",
+    "children": {}
+  },
+  "shift": {
+    "by": "shift",
+    "children": {}
+  },
+  "source": {
+    "by": "source",
+    "children": {}
+  },
+  "ellipsis": {
+    "by": "ellipsis",
+    "children": {}
+  },
+  "step": {
+    "by": "step",
+    "children": {}
+  },
+  "label": {
+    "by": "label",
+    "children": {}
+  },
+  "level": {
+    "by": "level",
+    "children": {}
+  },
+  "state": {
+    "by": "state",
+    "children": {}
+  },
+  "block": {
+    "by": "block",
+    "children": {
+      "ellipsis": {
+        "by": "e",
+        "children": {}
+      },
+      "size": {
+        "by": "s",
+        "children": {}
+      },
+      "step": {
+        "by": "step",
+        "children": {
+          "align": {
+            "by": "a",
+            "children": {}
+          },
+          "insert": {
+            "by": "i",
+            "children": {}
+          },
+          "round": {
+            "by": "r",
+            "children": {}
+          },
+          "size": {
+            "by": "s",
+            "children": {}
+          },
+          "step": {
+            "by": "step",
+            "children": {}
+          }
+        }
+      }
+    }
+  },
+  "bottom": {
+    "by": "bottom",
+    "children": {}
+  },
+  "boundary": {
+    "by": "boundary",
+    "children": {}
+  },
+  "collapse": {
+    "by": "collapse",
+    "children": {}
+  },
+  "inline": {
+    "by": "inline",
+    "children": {
+      "size": {
+        "by": "s",
+        "children": {}
+      },
+      "sizing": {
+        "by": "sizing",
+        "children": {}
+      }
+    }
+  },
+  "radius": {
+    "by": "radius",
+    "children": {}
+  },
+  "spacing": {
+    "by": "spacing",
+    "children": {}
+  },
+  "style": {
+    "by": "style",
+    "children": {}
+  },
+  "top": {
+    "by": "top",
+    "children": {}
+  },
+  "shadow": {
+    "by": "shadow",
+    "children": {}
+  },
+  "sizing": {
+    "by": "sizing",
+    "children": {}
+  },
+  "snap": {
+    "by": "snap",
+    "children": {}
+  },
+  "after": {
+    "by": "after",
+    "children": {}
+  },
+  "before": {
+    "by": "before",
+    "children": {}
+  },
+  "inside": {
+    "by": "inside",
+    "children": {}
+  },
+  "side": {
+    "by": "side",
+    "children": {}
+  },
+  "shape": {
+    "by": "shape",
+    "children": {
+      "image": {
+        "by": "i",
+        "children": {
+          "threshold": {
+            "by": "t",
+            "children": {}
+          },
+          "image": {
+            "by": "image",
+            "children": {}
+          }
+        }
+      },
+      "margin": {
+        "by": "m",
+        "children": {}
+      },
+      "outside": {
+        "by": "o",
+        "children": {}
+      },
+      "inside": {
+        "by": "inside",
+        "children": {}
+      }
+    }
+  },
+  "path": {
+    "by": "path",
+    "children": {}
+  },
+  "rule": {
+    "by": "rule",
+    "children": {}
+  },
+  "adjust": {
+    "by": "adjust",
+    "children": {}
+  },
+  "scheme": {
+    "by": "scheme",
+    "children": {}
+  },
+  "count": {
+    "by": "count",
+    "children": {}
+  },
+  "fill": {
+    "by": "fill",
+    "children": {
+      "break": {
+        "by": "b",
+        "children": {}
+      },
+      "color": {
+        "by": "c",
+        "children": {}
+      },
+      "image": {
+        "by": "i",
+        "children": {}
+      },
+      "opacity": {
+        "by": "o",
+        "children": {}
+      },
+      "position": {
+        "by": "p",
+        "children": {}
+      },
+      "rule": {
+        "by": "r",
+        "children": {}
+      },
+      "size": {
+        "by": "s",
+        "children": {}
+      },
+      "origin": {
+        "by": "origin",
+        "children": {}
+      },
+      "repeat": {
+        "by": "repeat",
+        "children": {}
+      }
+    }
+  },
+  "gap": {
+    "by": "gap",
+    "children": {}
+  },
+  "span": {
+    "by": "span",
+    "children": {}
+  },
+  "increment": {
+    "by": "increment",
+    "children": {}
+  },
+  "reset": {
+    "by": "reset",
+    "children": {}
+  },
+  "set": {
+    "by": "set",
+    "children": {}
+  },
+  "cells": {
+    "by": "cells",
+    "children": {}
+  },
+  "break": {
+    "by": "break",
+    "children": {
+      "after": {
+        "by": "a",
+        "children": {}
+      },
+      "before": {
+        "by": "b",
+        "children": {}
+      },
+      "inside": {
+        "by": "i",
+        "children": {}
+      }
+    }
+  },
+  "basis": {
+    "by": "basis",
+    "children": {}
+  },
+  "flow": {
+    "by": "flow",
+    "children": {
+      "from": {
+        "by": "f",
+        "children": {}
+      },
+      "into": {
+        "by": "i",
+        "children": {}
+      }
+    }
+  },
+  "grow": {
+    "by": "grow",
+    "children": {}
+  },
+  "shrink": {
+    "by": "shrink",
+    "children": {}
+  },
+  "wrap": {
+    "by": "wrap",
+    "children": {
+      "after": {
+        "by": "a",
+        "children": {}
+      },
+      "before": {
+        "by": "b",
+        "children": {}
+      },
+      "flow": {
+        "by": "f",
+        "children": {}
+      },
+      "inside": {
+        "by": "i",
+        "children": {}
+      },
+      "through": {
+        "by": "t",
+        "children": {}
+      }
+    }
+  },
+  "defer": {
+    "by": "defer",
+    "children": {}
+  },
+  "offset": {
+    "by": "offset",
+    "children": {
+      "anchor": {
+        "by": "a",
+        "children": {}
+      },
+      "distance": {
+        "by": "d",
+        "children": {}
+      },
+      "path": {
+        "by": "p",
+        "children": {}
+      },
+      "rotate": {
+        "by": "r",
+        "children": {}
+      },
+      "position": {
+        "by": "position",
+        "children": {}
+      }
+    }
+  },
+  "reference": {
+    "by": "reference",
+    "children": {}
+  },
+  "from": {
+    "by": "from",
+    "children": {}
+  },
+  "into": {
+    "by": "into",
+    "children": {}
+  },
+  "family": {
+    "by": "family",
+    "children": {}
+  },
+  "kerning": {
+    "by": "kerning",
+    "children": {}
+  },
+  "palette": {
+    "by": "palette",
+    "children": {}
+  },
+  "stretch": {
+    "by": "stretch",
+    "children": {}
+  },
+  "synthesis": {
+    "by": "synthesis",
+    "children": {}
+  },
+  "variant": {
+    "by": "variant",
+    "children": {}
+  },
+  "weight": {
+    "by": "weight",
+    "children": {}
+  },
+  "policy": {
+    "by": "policy",
+    "children": {}
+  },
+  "area": {
+    "by": "area",
+    "children": {}
+  },
+  "column": {
+    "by": "column",
+    "children": {
+      "count": {
+        "by": "c",
+        "children": {}
+      },
+      "fill": {
+        "by": "f",
+        "children": {}
+      },
+      "gap": {
+        "by": "g",
+        "children": {}
+      },
+      "rule": {
+        "by": "r",
+        "children": {
+          "color": {
+            "by": "c",
+            "children": {}
+          },
+          "style": {
+            "by": "s",
+            "children": {}
+          },
+          "width": {
+            "by": "w",
+            "children": {}
+          },
+          "rule": {
+            "by": "rule",
+            "children": {}
+          }
+        }
+      },
+      "span": {
+        "by": "s",
+        "children": {}
+      },
+      "width": {
+        "by": "w",
+        "children": {}
+      }
+    }
+  },
+  "row": {
+    "by": "row",
+    "children": {
+      "gap": {
+        "by": "g",
+        "children": {}
+      }
+    }
+  },
+  "template": {
+    "by": "template",
+    "children": {}
+  },
+  "punctuation": {
+    "by": "punctuation",
+    "children": {}
+  },
+  "character": {
+    "by": "character",
+    "children": {}
+  },
+  "orientation": {
+    "by": "orientation",
+    "children": {}
+  },
+  "rendering": {
+    "by": "rendering",
+    "children": {}
+  },
+  "resolution": {
+    "by": "resolution",
+    "children": {}
+  },
+  "letter": {
+    "by": "letter",
+    "children": {
+      "spacing": {
+        "by": "s",
+        "children": {}
+      }
+    }
+  },
+  "security": {
+    "by": "security",
+    "children": {}
+  },
+  "trim": {
+    "by": "trim",
+    "children": {}
+  },
+  "clamp": {
+    "by": "clamp",
+    "children": {}
+  },
+  "end": {
+    "by": "end",
+    "children": {}
+  },
+  "mid": {
+    "by": "mid",
+    "children": {}
+  },
+  "pattern": {
+    "by": "pattern",
+    "children": {}
+  },
+  "segment": {
+    "by": "segment",
+    "children": {}
+  },
+  "start": {
+    "by": "start",
+    "children": {}
+  },
+  "composite": {
+    "by": "composite",
+    "children": {}
+  },
+  "mode": {
+    "by": "mode",
+    "children": {}
+  },
+  "type": {
+    "by": "type",
+    "children": {}
+  },
+  "lines": {
+    "by": "lines",
+    "children": {}
+  },
+  "down": {
+    "by": "down",
+    "children": {}
+  },
+  "up": {
+    "by": "up",
+    "children": {}
+  },
+  "fit": {
+    "by": "fit",
+    "children": {}
+  },
+  "anchor": {
+    "by": "anchor",
+    "children": {}
+  },
+  "distance": {
+    "by": "distance",
+    "children": {}
+  },
+  "rotate": {
+    "by": "rotate",
+    "children": {}
+  },
+  "x": {
+    "by": "x",
+    "children": {}
+  },
+  "y": {
+    "by": "y",
+    "children": {}
+  },
+  "behavior": {
+    "by": "behavior",
+    "children": {}
+  },
+  "range": {
+    "by": "range",
+    "children": {}
+  },
+  "during": {
+    "by": "during",
+    "children": {}
+  },
+  "fragment": {
+    "by": "fragment",
+    "children": {}
+  },
+  "merge": {
+    "by": "merge",
+    "children": {}
+  },
+  "overhang": {
+    "by": "overhang",
+    "children": {}
+  },
+  "gutter": {
+    "by": "gutter",
+    "children": {}
+  },
+  "outside": {
+    "by": "outside",
+    "children": {}
+  },
+  "as": {
+    "by": "as",
+    "children": {}
+  },
+  "header": {
+    "by": "header",
+    "children": {}
+  },
+  "numeral": {
+    "by": "numeral",
+    "children": {}
+  },
+  "rate": {
+    "by": "rate",
+    "children": {}
+  },
+  "alignment": {
+    "by": "alignment",
+    "children": {
+      "baseline": {
+        "by": "b",
+        "children": {}
+      }
+    }
+  },
+  "dashadjust": {
+    "by": "dashadjust",
+    "children": {}
+  },
+  "dasharray": {
+    "by": "dasharray",
+    "children": {}
+  },
+  "dashcorner": {
+    "by": "dashcorner",
+    "children": {}
+  },
+  "dashoffset": {
+    "by": "dashoffset",
+    "children": {}
+  },
+  "linecap": {
+    "by": "linecap",
+    "children": {}
+  },
+  "linejoin": {
+    "by": "linejoin",
+    "children": {}
+  },
+  "miterlimit": {
+    "by": "miterlimit",
+    "children": {}
+  },
+  "layout": {
+    "by": "layout",
+    "children": {}
+  },
+  "decoration": {
+    "by": "decoration",
+    "children": {}
+  },
+  "edge": {
+    "by": "edge",
+    "children": {}
+  },
+  "emphasis": {
+    "by": "emphasis",
+    "children": {}
+  },
+  "indent": {
+    "by": "indent",
+    "children": {}
+  },
+  "overflow": {
+    "by": "overflow",
+    "children": {
+      "anchor": {
+        "by": "a",
+        "children": {}
+      },
+      "block": {
+        "by": "b",
+        "children": {}
+      },
+      "clip": {
+        "by": "c",
+        "children": {
+          "margin": {
+            "by": "m",
+            "children": {}
+          },
+          "clip": {
+            "by": "clip",
+            "children": {}
+          }
+        }
+      },
+      "inline": {
+        "by": "i",
+        "children": {}
+      },
+      "wrap": {
+        "by": "w",
+        "children": {}
+      },
+      "x": {
+        "by": "x",
+        "children": {}
+      },
+      "y": {
+        "by": "y",
+        "children": {}
+      }
+    }
+  },
+  "box": {
+    "by": "box",
+    "children": {
+      "decoration": {
+        "by": "d",
+        "children": {
+          "break": {
+            "by": "b",
+            "children": {}
+          },
+          "decoration": {
+            "by": "decoration",
+            "children": {}
+          }
+        }
+      },
+      "shadow": {
+        "by": "s",
+        "children": {}
+      },
+      "sizing": {
+        "by": "sizing",
+        "children": {}
+      },
+      "snap": {
+        "by": "snap",
+        "children": {}
+      }
+    }
+  },
+  "property": {
+    "by": "property",
+    "children": {
+      "name": {
+        "by": "n",
+        "children": {}
+      }
+    }
+  },
+  "bidi": {
+    "by": "bidi",
+    "children": {}
+  },
+  "select": {
+    "by": "select",
+    "children": {}
+  },
+  "balance": {
+    "by": "balance",
+    "children": {}
+  },
+  "pitch": {
+    "by": "pitch",
+    "children": {
+      "range": {
+        "by": "r",
+        "children": {}
+      }
+    }
+  },
+  "stress": {
+    "by": "stress",
+    "children": {}
+  },
+  "volume": {
+    "by": "volume",
+    "children": {}
+  },
+  "space": {
+    "by": "space",
+    "children": {}
+  },
+  "change": {
+    "by": "change",
+    "children": {}
+  },
+  "through": {
+    "by": "through",
+    "children": {}
+  },
+  "index": {
+    "by": "index",
+    "children": {}
+  },
+  "iteration": {
+    "by": "iteration",
+    "children": {}
+  },
+  "play": {
+    "by": "play",
+    "children": {
+      "during": {
+        "by": "d",
+        "children": {}
+      }
+    }
+  },
+  "timing": {
+    "by": "timing",
+    "children": {}
+  },
+  "blend": {
+    "by": "blend",
+    "children": {}
+  },
+  "interpolation": {
+    "by": "interpolation",
+    "children": {}
+  },
+  "intrinsic": {
+    "by": "intrinsic",
+    "children": {}
+  },
+  "feature": {
+    "by": "feature",
+    "children": {}
+  },
+  "language": {
+    "by": "language",
+    "children": {}
+  },
+  "optical": {
+    "by": "optical",
+    "children": {}
+  },
+  "variation": {
+    "by": "variation",
+    "children": {}
+  },
+  "auto": {
+    "by": "auto",
+    "children": {}
+  },
+  "limit": {
+    "by": "limit",
+    "children": {}
+  },
+  "knockout": {
+    "by": "knockout",
+    "children": {}
+  },
+  "navigation": {
+    "by": "navigation",
+    "children": {}
+  },
+  "dash": {
+    "by": "dash",
+    "children": {}
+  },
+  "combine": {
+    "by": "combine",
+    "children": {}
+  },
+  "group": {
+    "by": "group",
+    "children": {}
+  },
+  "underline": {
+    "by": "underline",
+    "children": {}
+  }
+}
