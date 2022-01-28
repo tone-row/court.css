@@ -20,6 +20,11 @@
     "fallback": "var(--b)"
   },
   {
+    "className": "bg",
+    "property": "background",
+    "fallback": "var(--bg)"
+  },
+  {
     "className": "b-b",
     "property": "border-bottom",
     "fallback": "var(--b-b, var(--b))"
@@ -308,11 +313,6 @@
     "className": "b-start-s-r",
     "property": "border-start-start-radius",
     "fallback": "var(--b-start-s-r, var(--b))"
-  },
-  {
-    "className": "c",
-    "property": "content",
-    "fallback": "var(--c)"
   },
   {
     "className": "c-v",
@@ -860,22 +860,22 @@
     "fallback": "var(--z-i)"
   },
   {
-    "className": "color",
+    "className": "c",
     "property": "color",
     "fallback": "var(--color)"
   },
   {
-    "className": "color-a",
+    "className": "c-a",
     "property": "color-adjust",
     "fallback": "var(--color-a, var(--color))"
   },
   {
-    "className": "color-i-f",
+    "className": "c-i-f",
     "property": "color-interpolation-filters",
     "fallback": "var(--color-i-f, var(--color))"
   },
   {
-    "className": "color-s",
+    "className": "c-s",
     "property": "color-scheme",
     "fallback": "var(--color-s, var(--color))"
   },
