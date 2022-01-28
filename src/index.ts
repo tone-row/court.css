@@ -1,1 +1,1 @@
-export { CourtReact } from "./react";
+export { CourtReact } from "./CourtReact";

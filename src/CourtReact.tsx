@@ -1,5 +1,5 @@
 import React from "react";
-import { CourtCssProps } from "../CourtCssProps.generated";
+import { CourtCssProps } from "./CourtCssProps.generated";
 
 // Source: https://github.com/emotion-js/emotion/blob/master/packages/styled-base/types/helper.d.ts
 // A more precise version of just React.ComponentPropsWithoutRef on its own
@@ -44,8 +44,17 @@ export type PolymorphicComponentProps<
   Props = {}
 > = InheritableElementProps<C, Props & AsProp<C>>;
 
+type WithModifierSuffixes<s extends string> =
+  | `${s}_hover`
+  | `${s}_active`
+  | `${s}_focus`;
+
+type AddModifiers<T> = T & {
+  [s in keyof T & string as WithModifierSuffixes<s>]: T[s];
+};
+
 type CourtComponentProps<C extends React.ElementType> =
-  PolymorphicComponentProps<C, CourtCssProps>;
+  PolymorphicComponentProps<C, AddModifiers<CourtCssProps>>;
 
 const classNameRegex2 = /^\$(?<classname>[a-z-]+(_(?<modifier>\w+))?)$/g;
 
