@@ -1,6 +1,6 @@
 {
   "name": "court.css",
-  "version": "0.0.13",
+  "version": "0.0.14",
   "author": {
     "name": "Rob Gordon",
     "email": "rob.gordon@tone-row.com"
@@ -14,7 +14,7 @@
     ".": "./dist/index.js"
   },
   "files": [
-    "./dist/**/*"
+    "dist"
   ],
   "license": "MIT",
   "scripts": {
