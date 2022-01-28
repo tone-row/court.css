@@ -1,6 +1,6 @@
 {
   "name": "court.css",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "author": {
     "name": "Rob Gordon",
     "email": "rob.gordon@tone-row.com"
@@ -9,6 +9,7 @@
   "exports": {
     "default": "./dist/court.css",
     "react": {
+      "types": "./dist/react/court.d.ts",
       "import": "./dist/react/index.jsx"
     }
   },
