@@ -42,3 +42,5 @@ export function C({ as = "div", style = {}, className = "", ...props }) {
     />
   );
 }
+
+export default C;
