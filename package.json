@@ -1,6 +1,6 @@
 {
   "name": "court.css",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "author": {
     "name": "Rob Gordon",
     "email": "rob.gordon@tone-row.com"
@@ -18,13 +18,19 @@
   "license": "MIT",
   "scripts": {
     "build:css": "ts-node src/scripts/css.ts",
-    "build:components": "tsc"
+    "build:components": "tsc",
+    "generate:types": "ts-node src/scripts/types.ts",
+    "build": "yarn generate:types && yarn build:components && yarn build:css"
   },
   "devDependencies": {
     "@types/csso": "^5.0.0",
     "@types/node": "^17.0.12",
+    "@types/react": "^17.0.38",
     "csso": "^5.0.2",
     "ts-node": "^10.4.0",
     "typescript": "^4.5.5"
+  },
+  "peerDependencies": {
+    "react": "^17.0.2"
   }
 }

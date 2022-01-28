@@ -12,8 +12,4 @@ JSX based css utility framework.
 - add types, polymorphism
 - add ability to intercept processing
 - add ability to intercept CSS generation... _maybe_
-
-### Missing Classes
-
-- transition
-- text-align
+- remove unused classes
