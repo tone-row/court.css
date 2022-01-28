@@ -50,7 +50,7 @@ type WithModifierSuffixes<s extends string> =
   | `${s}_focus`;
 
 type AddModifiers<T> = T & {
-  [s in keyof T & string as WithModifierSuffixes<s>]: T[s];
+  [s in keyof T & string as WithModifierSuffixes<s>]?: T[s];
 };
 
 type CourtComponentProps<C extends React.ElementType> =
