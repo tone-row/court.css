@@ -3,7 +3,7 @@ import * as fs from "fs";
 
 let t = `/* DO NOT EDIT. Generate with yarn generate:types */\n\nexport type CourtCssProps = {\n  ${classes
   .map(({ className, property, fallback }) => {
-    return `/** \n   * ${property}\n   *\n   * \`${fallback}\` */\n  "${className}": string;`;
+    return `/** \n   * ${property}\n   *\n   * \`${fallback}\` */\n  "$${className}"?: string;`;
   })
   .join("\n  ")}\n}`;
 

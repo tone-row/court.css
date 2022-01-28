@@ -1,21 +1,18 @@
 {
   "name": "court.css",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "author": {
     "name": "Rob Gordon",
     "email": "rob.gordon@tone-row.com"
   },
-  "main": "dist/court.css",
+  "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "exports": {
-    "default": "./dist/court.css",
-    "react": {
-      "types": "./dist/react/index.d.ts",
-      "import": "./dist/react/index.jsx"
-    }
+    "./stylesheet": "./dist/court.css",
+    ".": "./dist/index.js"
   },
   "files": [
-    "dist"
+    "./dist/**/*"
   ],
   "license": "MIT",
   "scripts": {

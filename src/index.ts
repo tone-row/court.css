@@ -1,3 +1,1 @@
-import * as react from "./react";
-
-export { react };
+export { CourtReact } from "./react";

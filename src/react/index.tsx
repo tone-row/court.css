@@ -49,7 +49,7 @@ type CourtComponentProps<C extends React.ElementType> =
 
 const classNameRegex2 = /^\$(?<classname>[a-z-]+(_(?<modifier>\w+))?)$/g;
 
-export function CourtComponent<C extends React.ElementType = "div">({
+export function CourtReact<C extends React.ElementType = "div">({
   as,
   ...props
 }: CourtComponentProps<C>) {
@@ -97,4 +97,4 @@ export function CourtComponent<C extends React.ElementType = "div">({
   );
 }
 
-export default CourtComponent;
+export default CourtReact;
