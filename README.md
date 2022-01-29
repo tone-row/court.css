@@ -1,8 +1,12 @@
+<div align="center">
+  
 # court.css 🏰
 
-A (**work in progress**) <u>JSX-based</u>, <u>CSS utility framework</u> with a predictable API, good typing, and a small footprint.
-
+A <u>JSX-based</u>, <u>CSS utility framework</u> with a predictable API, good typing, and a small footprint.
+  
 ![npm](https://img.shields.io/npm/v/court.css)
+  
+</div>
 
 ## Getting Started
 
@@ -17,26 +21,21 @@ yarn add court.css
 ## Usage
 
 ```tsx
-// import the stylesheet
-import "court.css/stylesheet";
+import "court.css/stylesheet"; // import the stylesheet
+import { CourtReact as Box } from "court.css"; // import polymorphic component
 
-// import the component
-import { CourtReact as C } from "court.css";
-
-// use the component
-export function App() {
+export default function App() {
   return (
-    // color blue & font-size: 1.5em
-    <C $c="blue" $f-s="1.5em">
-      Hello, world!
-    </C>
+    <Box as="h1" $f-f="Comic Sans MS" $co="blue" className="App">
+      Hello Court.css
+    </Box>
   );
 }
 ```
 
 ## Motivation
 
-There are 9 ZILLION approaches to styling in modern frontend tooling. This is another one. It's better and worse than others depending on your needs. It's similar to tailwind but doesn't need to be compiled. It requires more runtime memory than tailwind because it converts component props to classes css custom properties, but less memory than CSS-in-JS options like styled-components, because it doesn't need to write styles to the `<head>`. It's generally smaller than other styling solutions because of how heavily it leverages css custom properties.
+There are 9 ZILLION approaches to styling in modern frontend tooling. This is another one. Depending on your needs, it's better **and** worse than others. It's similar to tailwind but doesn't need to be compiled. It requires more runtime memory than tailwind because it converts component props to classes css custom properties, but less memory than CSS-in-JS options like styled-components, because it doesn't need to write styles to the `<head>`. It's generally smaller than other styling solutions because of how heavily it leverages css custom properties.
 
 Ultimately – I felt this was an interesting idea that represents an interesting middle ground in frontend styling techniques. Try it out! Use it if it works for you.
 
@@ -157,15 +156,10 @@ function App() {
 }
 ```
 
-### TO DO
+### Roadmap
 
-- ~~come up with property names algorithmically following a process something like...~~
-- ~~add types, polymorphism~~
-- ~~missing modifier props in types~~
-- ~~add active modifier~~
-- ~~add ability to intercept runtime processing~~
-- ~~add ability to intercept CSS generation... _maybe_~~
 - make sure Court component props are exported and easy to compose
-- remove unused classes
+- remove unlikely classes (e.g., `content`)
 - add autoprefixer to final css
 - Move the entire class generation process and data it's derived from into this repository
+- make it work for as many as possible: vue, svelte, preact, lit
