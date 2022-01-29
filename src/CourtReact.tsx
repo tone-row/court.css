@@ -58,6 +58,19 @@ type CourtComponentProps<C extends React.ElementType> =
 
 const classNameRegex2 = /^\$(?<classname>[a-z-]+(_(?<modifier>\w+))?)$/g;
 
+const interceptor: {
+  [K in keyof CourtCssProps]: (
+    pre: CourtCssProps[K]
+  ) => string | number | undefined;
+} = {};
+
+export function intercept<K extends keyof CourtCssProps>(
+  key: K,
+  fn: (pre: CourtCssProps[K]) => string | number | undefined
+) {
+  interceptor[key] = fn;
+}
+
 export function CourtReact<C extends React.ElementType = "div">({
   as,
   ...props
@@ -79,14 +92,20 @@ export function CourtReact<C extends React.ElementType = "div">({
           // always add class
           c = c.concat([classname]);
 
-          // only add css property if string
-          if (typeof props[key] === "string") {
-            s["--" + classname] = props[key];
+          if (props[key] != null) {
+            let baseKey: keyof CourtCssProps = key.split("_")[0];
+            let intercept = interceptor[baseKey];
+            let value = props[key];
+            if (intercept) value = intercept(value) as any;
+
+            // only add css property if string
+            if (value != null) {
+              s["--" + classname] = value;
+            }
           }
         } catch {
           console.log(`Error on ${key}`);
         }
-
         return [s, p, c];
       }
 
@@ -107,3 +126,55 @@ export function CourtReact<C extends React.ElementType = "div">({
 }
 
 export default CourtReact;
+
+// export function create(process: <T extends keyof M>(key: T, processProps: M[T]) => any) {
+//   return function CourtReact<C extends React.ElementType = "div">({
+//     as,
+//     ...props
+//   }: CourtComponentProps<C>) {
+//     let X = as || "div";
+
+//     let [_style, _props, _classes] = Object.keys(props).reduce<
+//       [Record<string, any>, Record<string, any>, string[]]
+//     >(
+//       ([s, p, c], key: any) => {
+//         if (key[0] === "$") {
+//           try {
+//             classNameRegex2.lastIndex = 0;
+//             let { groups } = classNameRegex2.exec(key) as unknown as {
+//               groups: { classname: string; modifier: string };
+//             };
+//             let { classname } = groups; // modifier not used
+
+//             // always add class
+//             c = c.concat([classname]);
+
+//             // only add css property if string
+//             if (props[key] != null) {
+//               let value = process(key, props[key]);
+//               if (["string", "number"].includes(typeof props[key])) {
+//                 s["--" + classname] = value;
+//               }
+//             }
+//           } catch {
+//             console.log(`Error on ${key}`);
+//           }
+//           return [s, p, c];
+//         }
+
+//         // Add normal props
+//         p[key] = props[key];
+//         return [s, p, c];
+//       },
+//       [{}, {}, []]
+//     );
+
+//     return (
+//       <X
+//         {..._props}
+//         className={[props.className, ..._classes].join(" ")}
+//         style={{ ..._style, ...props.style }}
+//       />
+//     );
+//   };
+// }

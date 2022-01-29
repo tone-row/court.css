@@ -1,1 +1,1 @@
-export { CourtReact } from "./CourtReact";
+export { CourtReact, intercept } from "./CourtReact";
