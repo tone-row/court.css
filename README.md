@@ -21,22 +21,29 @@ npm i court.css
 import "court.css/stylesheet"; // import stylesheet
 import { CourtReact as Box } from "court.css"; // import polymorphic component
 
-function Title() {
+function Gist() {
   return (
-    <Box as="h1" $f-f="Comic Sans MS" $co="blue">
-      Hello Court.css
+    <Box
+      as="h1"
+      $f-f="Comic Sans MS"
+      $co="blue"
+      $t-s="3px 3px lime"
+      $b="dashed red"
+      $p="5px"
+    >
+      What's the gist?
     </Box>
   );
 }
 ```
 
-## Gist
+![Gist](https://i.ibb.co/dMbyLV2/Screen-Shot-2022-01-30-at-12-53-23-PM.png)
 
-- #### 1 stylesheet & 1 component API
+- #### 1 stylesheet & 1 component
   Add the stylesheet, import the polymorphic component and you're off to the races
 - #### 1 prop per css property
   No helpers to learn, just CSS with the property names shorterned
-- #### prop names simplified from usage (with autocomplete in TS)
+- #### prop names simplified from usage
   The name for the css property _border_ is `$b`. _border-top_ is `$b-t` and _border-right_ `$b-r`. _border-radius_ is `$b-ra` – we add one letter from the word _radius_ because the `r` was already used for _border-right_. Another example is background, it's `$ba` because `$b` is used for border.
 - #### psuedo-selectors use underscore 
   `$ou_focus` = _outline_ when focused. `$bo-s_hover` = _box-shadow_ when hovered.
@@ -58,9 +65,7 @@ Most importantly, I thought this was a funny idea so I built it. Try it out. Use
 [Open in CodeSandbox](https://codesandbox.io/s/court-css-example-uudxu?file=/src/App.tsx)
 
 ```tsx
-// import polymorphic component
 import { CourtReact as Box } from "court.css";
-// import stylesheet
 import "court.css/stylesheet";
 import { ReactNode } from "react";
 
@@ -164,8 +169,9 @@ function App() {
 
 ## Roadmap
 
-- make sure Court component props are exported and easy to compose
-- remove unlikely classes (e.g., `content`)
-- add autoprefixer to final css
+- Make sure Court component props are exported and easy to compose
 - Move the entire class generation process and data it's derived from into this repository
-- make it work for as many as possible: vue, svelte, preact, lit
+  - Remove unlikely classes (e.g., `content`)
+- Add autoprefixer to final css
+- Add polymorphic component for friends: vue, svelte, preact, lit
+- Allow users to generate CSS themselves (or add it at runtime) and alter class generation and modifiers
