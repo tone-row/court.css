@@ -30,21 +30,6 @@
     "fallback": "var(--m-br, var(--m))"
   },
   {
-    "className": "m-bl",
-    "property": "margin-block",
-    "fallback": "var(--m-bl, var(--m))"
-  },
-  {
-    "className": "m-bl-e",
-    "property": "margin-block-end",
-    "fallback": "var(--m-bl-e, var(--m-bl, var(--m)))"
-  },
-  {
-    "className": "m-bl-s",
-    "property": "margin-block-start",
-    "fallback": "var(--m-bl-s, var(--m-bl, var(--m)))"
-  },
-  {
     "className": "m-i",
     "property": "margin-inline",
     "fallback": "var(--m-i, var(--m))"
@@ -60,19 +45,24 @@
     "fallback": "var(--m-i-s, var(--m-i, var(--m)))"
   },
   {
+    "className": "m-bl",
+    "property": "margin-block",
+    "fallback": "var(--m-bl, var(--m))"
+  },
+  {
+    "className": "m-bl-e",
+    "property": "margin-block-end",
+    "fallback": "var(--m-bl-e, var(--m-bl, var(--m)))"
+  },
+  {
+    "className": "m-bl-s",
+    "property": "margin-block-start",
+    "fallback": "var(--m-bl-s, var(--m-bl, var(--m)))"
+  },
+  {
     "className": "m-tr",
     "property": "margin-trim",
     "fallback": "var(--m-tr, var(--m))"
-  },
-  {
-    "className": "c",
-    "property": "content",
-    "fallback": "var(--c)"
-  },
-  {
-    "className": "c-v",
-    "property": "content-visibility",
-    "fallback": "var(--c-v, var(--c))"
   },
   {
     "className": "b",
@@ -220,66 +210,6 @@
     "fallback": "var(--b-i-so, var(--b-i, var(--b)))"
   },
   {
-    "className": "b-bl",
-    "property": "border-block",
-    "fallback": "var(--b-bl, var(--b))"
-  },
-  {
-    "className": "b-bl-c",
-    "property": "border-block-color",
-    "fallback": "var(--b-bl-c, var(--b-bl, var(--b)))"
-  },
-  {
-    "className": "b-bl-w",
-    "property": "border-block-width",
-    "fallback": "var(--b-bl-w, var(--b-bl, var(--b)))"
-  },
-  {
-    "className": "b-bl-e",
-    "property": "border-block-end",
-    "fallback": "var(--b-bl-e, var(--b-bl, var(--b)))"
-  },
-  {
-    "className": "b-bl-e-c",
-    "property": "border-block-end-color",
-    "fallback": "var(--b-bl-e-c, var(--b-bl-e, var(--b-bl, var(--b))))"
-  },
-  {
-    "className": "b-bl-e-w",
-    "property": "border-block-end-width",
-    "fallback": "var(--b-bl-e-w, var(--b-bl-e, var(--b-bl, var(--b))))"
-  },
-  {
-    "className": "b-bl-e-s",
-    "property": "border-block-end-style",
-    "fallback": "var(--b-bl-e-s, var(--b-bl-e, var(--b-bl, var(--b))))"
-  },
-  {
-    "className": "b-bl-s",
-    "property": "border-block-start",
-    "fallback": "var(--b-bl-s, var(--b-bl, var(--b)))"
-  },
-  {
-    "className": "b-bl-s-c",
-    "property": "border-block-start-color",
-    "fallback": "var(--b-bl-s-c, var(--b-bl-s, var(--b-bl, var(--b))))"
-  },
-  {
-    "className": "b-bl-s-w",
-    "property": "border-block-start-width",
-    "fallback": "var(--b-bl-s-w, var(--b-bl-s, var(--b-bl, var(--b))))"
-  },
-  {
-    "className": "b-bl-s-s",
-    "property": "border-block-start-style",
-    "fallback": "var(--b-bl-s-s, var(--b-bl-s, var(--b-bl, var(--b))))"
-  },
-  {
-    "className": "b-bl-st",
-    "property": "border-block-style",
-    "fallback": "var(--b-bl-st, var(--b-bl, var(--b)))"
-  },
-  {
     "className": "b-in",
     "property": "border-inline",
     "fallback": "var(--b-in, var(--b))"
@@ -338,6 +268,66 @@
     "className": "b-in-st",
     "property": "border-inline-style",
     "fallback": "var(--b-in-st, var(--b-in, var(--b)))"
+  },
+  {
+    "className": "b-bl",
+    "property": "border-block",
+    "fallback": "var(--b-bl, var(--b))"
+  },
+  {
+    "className": "b-bl-c",
+    "property": "border-block-color",
+    "fallback": "var(--b-bl-c, var(--b-bl, var(--b)))"
+  },
+  {
+    "className": "b-bl-w",
+    "property": "border-block-width",
+    "fallback": "var(--b-bl-w, var(--b-bl, var(--b)))"
+  },
+  {
+    "className": "b-bl-e",
+    "property": "border-block-end",
+    "fallback": "var(--b-bl-e, var(--b-bl, var(--b)))"
+  },
+  {
+    "className": "b-bl-e-c",
+    "property": "border-block-end-color",
+    "fallback": "var(--b-bl-e-c, var(--b-bl-e, var(--b-bl, var(--b))))"
+  },
+  {
+    "className": "b-bl-e-w",
+    "property": "border-block-end-width",
+    "fallback": "var(--b-bl-e-w, var(--b-bl-e, var(--b-bl, var(--b))))"
+  },
+  {
+    "className": "b-bl-e-s",
+    "property": "border-block-end-style",
+    "fallback": "var(--b-bl-e-s, var(--b-bl-e, var(--b-bl, var(--b))))"
+  },
+  {
+    "className": "b-bl-s",
+    "property": "border-block-start",
+    "fallback": "var(--b-bl-s, var(--b-bl, var(--b)))"
+  },
+  {
+    "className": "b-bl-s-c",
+    "property": "border-block-start-color",
+    "fallback": "var(--b-bl-s-c, var(--b-bl-s, var(--b-bl, var(--b))))"
+  },
+  {
+    "className": "b-bl-s-w",
+    "property": "border-block-start-width",
+    "fallback": "var(--b-bl-s-w, var(--b-bl-s, var(--b-bl, var(--b))))"
+  },
+  {
+    "className": "b-bl-s-s",
+    "property": "border-block-start-style",
+    "fallback": "var(--b-bl-s-s, var(--b-bl-s, var(--b-bl, var(--b))))"
+  },
+  {
+    "className": "b-bl-st",
+    "property": "border-block-style",
+    "fallback": "var(--b-bl-st, var(--b-bl, var(--b)))"
   },
   {
     "className": "b-bo",
@@ -490,26 +480,6 @@
     "fallback": "var(--f-sty, var(--f))"
   },
   {
-    "className": "f-sy",
-    "property": "font-synthesis",
-    "fallback": "var(--f-sy, var(--f))"
-  },
-  {
-    "className": "f-sy-s-c",
-    "property": "font-synthesis-small-caps",
-    "fallback": "var(--f-sy-s-c, var(--f-sy, var(--f)))"
-  },
-  {
-    "className": "f-sy-st",
-    "property": "font-synthesis-style",
-    "fallback": "var(--f-sy-st, var(--f-sy, var(--f)))"
-  },
-  {
-    "className": "f-sy-w",
-    "property": "font-synthesis-weight",
-    "fallback": "var(--f-sy-w, var(--f-sy, var(--f)))"
-  },
-  {
     "className": "f-v",
     "property": "font-variant",
     "fallback": "var(--f-v, var(--f))"
@@ -585,21 +555,6 @@
     "fallback": "var(--p-b, var(--p))"
   },
   {
-    "className": "p-bl",
-    "property": "padding-block",
-    "fallback": "var(--p-bl, var(--p))"
-  },
-  {
-    "className": "p-bl-e",
-    "property": "padding-block-end",
-    "fallback": "var(--p-bl-e, var(--p-bl, var(--p)))"
-  },
-  {
-    "className": "p-bl-s",
-    "property": "padding-block-start",
-    "fallback": "var(--p-bl-s, var(--p-bl, var(--p)))"
-  },
-  {
     "className": "p-i",
     "property": "padding-inline",
     "fallback": "var(--p-i, var(--p))"
@@ -615,24 +570,39 @@
     "fallback": "var(--p-i-s, var(--p-i, var(--p)))"
   },
   {
-    "className": "co",
+    "className": "p-bl",
+    "property": "padding-block",
+    "fallback": "var(--p-bl, var(--p))"
+  },
+  {
+    "className": "p-bl-e",
+    "property": "padding-block-end",
+    "fallback": "var(--p-bl-e, var(--p-bl, var(--p)))"
+  },
+  {
+    "className": "p-bl-s",
+    "property": "padding-block-start",
+    "fallback": "var(--p-bl-s, var(--p-bl, var(--p)))"
+  },
+  {
+    "className": "c",
     "property": "color",
-    "fallback": "var(--co)"
+    "fallback": "var(--c)"
   },
   {
-    "className": "co-a",
+    "className": "c-a",
     "property": "color-adjust",
-    "fallback": "var(--co-a, var(--co))"
+    "fallback": "var(--c-a, var(--c))"
   },
   {
-    "className": "co-i-f",
+    "className": "c-i-f",
     "property": "color-interpolation-filters",
-    "fallback": "var(--co-i-f, var(--co))"
+    "fallback": "var(--c-i-f, var(--c))"
   },
   {
-    "className": "co-s",
+    "className": "c-s",
     "property": "color-scheme",
-    "fallback": "var(--co-s, var(--co))"
+    "fallback": "var(--c-s, var(--c))"
   },
   {
     "className": "d",
@@ -675,14 +645,14 @@
     "fallback": "var(--t-a-l, var(--t-a))"
   },
   {
-    "className": "t-j",
-    "property": "text-justify",
-    "fallback": "var(--t-j)"
-  },
-  {
     "className": "t-o",
     "property": "text-overflow",
     "fallback": "var(--t-o)"
+  },
+  {
+    "className": "t-j",
+    "property": "text-justify",
+    "fallback": "var(--t-j)"
   },
   {
     "className": "t-c-u",
@@ -746,33 +716,28 @@
   },
   {
     "className": "t-e",
-    "property": "text-edge",
+    "property": "text-emphasis",
     "fallback": "var(--t-e)"
   },
   {
-    "className": "t-em",
-    "property": "text-emphasis",
-    "fallback": "var(--t-em)"
-  },
-  {
-    "className": "t-em-c",
+    "className": "t-e-c",
     "property": "text-emphasis-color",
-    "fallback": "var(--t-em-c, var(--t-em))"
+    "fallback": "var(--t-e-c, var(--t-e))"
   },
   {
-    "className": "t-em-p",
+    "className": "t-e-p",
     "property": "text-emphasis-position",
-    "fallback": "var(--t-em-p, var(--t-em))"
+    "fallback": "var(--t-e-p, var(--t-e))"
   },
   {
-    "className": "t-em-s",
+    "className": "t-e-s",
     "property": "text-emphasis-skip",
-    "fallback": "var(--t-em-s, var(--t-em))"
+    "fallback": "var(--t-e-s, var(--t-e))"
   },
   {
-    "className": "t-em-st",
+    "className": "t-e-st",
     "property": "text-emphasis-style",
-    "fallback": "var(--t-em-st, var(--t-em))"
+    "fallback": "var(--t-e-st, var(--t-e))"
   },
   {
     "className": "t-g-a",
@@ -843,6 +808,91 @@
     "className": "tr-s",
     "property": "transform-style",
     "fallback": "var(--tr-s, var(--tr))"
+  },
+  {
+    "className": "l",
+    "property": "left",
+    "fallback": "var(--l)"
+  },
+  {
+    "className": "li-p",
+    "property": "line-padding",
+    "fallback": "var(--li-p)"
+  },
+  {
+    "className": "li-h",
+    "property": "line-height",
+    "fallback": "var(--li-h)"
+  },
+  {
+    "className": "li-h-s",
+    "property": "line-height-step",
+    "fallback": "var(--li-h-s, var(--li-h))"
+  },
+  {
+    "className": "li-g",
+    "property": "line-grid",
+    "fallback": "var(--li-g)"
+  },
+  {
+    "className": "li-b",
+    "property": "line-break",
+    "fallback": "var(--li-b)"
+  },
+  {
+    "className": "li-c",
+    "property": "line-clamp",
+    "fallback": "var(--li-c)"
+  },
+  {
+    "className": "li-s",
+    "property": "line-snap",
+    "fallback": "var(--li-s)"
+  },
+  {
+    "className": "fl",
+    "property": "flex",
+    "fallback": "var(--fl)"
+  },
+  {
+    "className": "fl-d",
+    "property": "flex-direction",
+    "fallback": "var(--fl-d, var(--fl))"
+  },
+  {
+    "className": "fl-b",
+    "property": "flex-basis",
+    "fallback": "var(--fl-b, var(--fl))"
+  },
+  {
+    "className": "fl-f",
+    "property": "flex-flow",
+    "fallback": "var(--fl-f, var(--fl))"
+  },
+  {
+    "className": "fl-g",
+    "property": "flex-grow",
+    "fallback": "var(--fl-g, var(--fl))"
+  },
+  {
+    "className": "fl-s",
+    "property": "flex-shrink",
+    "fallback": "var(--fl-s, var(--fl))"
+  },
+  {
+    "className": "fl-w",
+    "property": "flex-wrap",
+    "fallback": "var(--fl-w, var(--fl))"
+  },
+  {
+    "className": "o",
+    "property": "opacity",
+    "fallback": "var(--o)"
+  },
+  {
+    "className": "to",
+    "property": "top",
+    "fallback": "var(--to)"
   },
   {
     "className": "g",
@@ -920,91 +970,6 @@
     "fallback": "var(--g-t-r, var(--g-t, var(--g)))"
   },
   {
-    "className": "fl",
-    "property": "flex",
-    "fallback": "var(--fl)"
-  },
-  {
-    "className": "fl-d",
-    "property": "flex-direction",
-    "fallback": "var(--fl-d, var(--fl))"
-  },
-  {
-    "className": "fl-b",
-    "property": "flex-basis",
-    "fallback": "var(--fl-b, var(--fl))"
-  },
-  {
-    "className": "fl-f",
-    "property": "flex-flow",
-    "fallback": "var(--fl-f, var(--fl))"
-  },
-  {
-    "className": "fl-g",
-    "property": "flex-grow",
-    "fallback": "var(--fl-g, var(--fl))"
-  },
-  {
-    "className": "fl-s",
-    "property": "flex-shrink",
-    "fallback": "var(--fl-s, var(--fl))"
-  },
-  {
-    "className": "fl-w",
-    "property": "flex-wrap",
-    "fallback": "var(--fl-w, var(--fl))"
-  },
-  {
-    "className": "l",
-    "property": "left",
-    "fallback": "var(--l)"
-  },
-  {
-    "className": "o",
-    "property": "opacity",
-    "fallback": "var(--o)"
-  },
-  {
-    "className": "li-p",
-    "property": "line-padding",
-    "fallback": "var(--li-p)"
-  },
-  {
-    "className": "li-h",
-    "property": "line-height",
-    "fallback": "var(--li-h)"
-  },
-  {
-    "className": "li-h-s",
-    "property": "line-height-step",
-    "fallback": "var(--li-h-s, var(--li-h))"
-  },
-  {
-    "className": "li-g",
-    "property": "line-grid",
-    "fallback": "var(--li-g)"
-  },
-  {
-    "className": "li-b",
-    "property": "line-break",
-    "fallback": "var(--li-b)"
-  },
-  {
-    "className": "li-c",
-    "property": "line-clamp",
-    "fallback": "var(--li-c)"
-  },
-  {
-    "className": "li-s",
-    "property": "line-snap",
-    "fallback": "var(--li-s)"
-  },
-  {
-    "className": "to",
-    "property": "top",
-    "fallback": "var(--to)"
-  },
-  {
     "className": "ma-w",
     "property": "max-width",
     "fallback": "var(--ma-w)"
@@ -1015,14 +980,14 @@
     "fallback": "var(--ma-h)"
   },
   {
-    "className": "ma-b-s",
-    "property": "max-block-size",
-    "fallback": "var(--ma-b-s)"
-  },
-  {
     "className": "ma-i-s",
     "property": "max-inline-size",
     "fallback": "var(--ma-i-s)"
+  },
+  {
+    "className": "ma-b-s",
+    "property": "max-block-size",
+    "fallback": "var(--ma-b-s)"
   },
   {
     "className": "ma-l",
@@ -1033,21 +998,6 @@
     "className": "r",
     "property": "right",
     "fallback": "var(--r)"
-  },
-  {
-    "className": "a-c",
-    "property": "align-content",
-    "fallback": "var(--a-c)"
-  },
-  {
-    "className": "a-i",
-    "property": "align-items",
-    "fallback": "var(--a-i)"
-  },
-  {
-    "className": "a-s",
-    "property": "align-self",
-    "fallback": "var(--a-s)"
   },
   {
     "className": "bo-d-b",
@@ -1095,29 +1045,19 @@
     "fallback": "var(--tra-t-f, var(--tra))"
   },
   {
-    "className": "j-c",
-    "property": "justify-content",
-    "fallback": "var(--j-c)"
+    "className": "a-i",
+    "property": "align-items",
+    "fallback": "var(--a-i)"
   },
   {
-    "className": "j-i",
-    "property": "justify-items",
-    "fallback": "var(--j-i)"
-  },
-  {
-    "className": "j-s",
-    "property": "justify-self",
-    "fallback": "var(--j-s)"
+    "className": "a-s",
+    "property": "align-self",
+    "fallback": "var(--a-s)"
   },
   {
     "className": "bot",
     "property": "bottom",
     "fallback": "var(--bot)"
-  },
-  {
-    "className": "z-i",
-    "property": "z-index",
-    "fallback": "var(--z-i)"
   },
   {
     "className": "ov",
@@ -1130,14 +1070,14 @@
     "fallback": "var(--ov-c-m, var(--ov))"
   },
   {
-    "className": "ov-b",
-    "property": "overflow-block",
-    "fallback": "var(--ov-b, var(--ov))"
-  },
-  {
     "className": "ov-i",
     "property": "overflow-inline",
     "fallback": "var(--ov-i, var(--ov))"
+  },
+  {
+    "className": "ov-b",
+    "property": "overflow-block",
+    "fallback": "var(--ov-b, var(--ov))"
   },
   {
     "className": "ov-a",
@@ -1158,6 +1098,11 @@
     "className": "ov-y",
     "property": "overflow-y",
     "fallback": "var(--ov-y, var(--ov))"
+  },
+  {
+    "className": "z-i",
+    "property": "z-index",
+    "fallback": "var(--z-i)"
   },
   {
     "className": "an",
@@ -1220,14 +1165,14 @@
     "fallback": "var(--mi-h)"
   },
   {
-    "className": "mi-b-s",
-    "property": "min-block-size",
-    "fallback": "var(--mi-b-s)"
-  },
-  {
     "className": "mi-i-s",
     "property": "min-inline-size",
     "fallback": "var(--mi-i-s)"
+  },
+  {
+    "className": "mi-b-s",
+    "property": "min-block-size",
+    "fallback": "var(--mi-b-s)"
   },
   {
     "className": "mi-in-s",
@@ -1240,29 +1185,14 @@
     "fallback": "var(--flo)"
   },
   {
-    "className": "flo-o",
-    "property": "float-offset",
-    "fallback": "var(--flo-o, var(--flo))"
-  },
-  {
-    "className": "flo-d",
-    "property": "float-defer",
-    "fallback": "var(--flo-d, var(--flo))"
-  },
-  {
-    "className": "flo-r",
-    "property": "float-reference",
-    "fallback": "var(--flo-r, var(--flo))"
+    "className": "v-a",
+    "property": "vertical-align",
+    "fallback": "var(--v-a)"
   },
   {
     "className": "or",
     "property": "order",
     "fallback": "var(--or)"
-  },
-  {
-    "className": "v-a",
-    "property": "vertical-align",
-    "fallback": "var(--v-a)"
   },
   {
     "className": "le-s",
@@ -1325,6 +1255,11 @@
     "fallback": "var(--vi)"
   },
   {
+    "className": "cl",
+    "property": "clear",
+    "fallback": "var(--cl)"
+  },
+  {
     "className": "fi",
     "property": "fill",
     "fallback": "var(--fi)"
@@ -1375,11 +1310,6 @@
     "fallback": "var(--fi-s, var(--fi))"
   },
   {
-    "className": "cl",
-    "property": "clear",
-    "fallback": "var(--cl)"
-  },
-  {
     "className": "wo-b",
     "property": "word-break",
     "fallback": "var(--wo-b)"
@@ -1405,9 +1335,9 @@
     "fallback": "var(--wo-w)"
   },
   {
-    "className": "ga",
-    "property": "gap",
-    "fallback": "var(--ga)"
+    "className": "fil",
+    "property": "filter",
+    "fallback": "var(--fil)"
   },
   {
     "className": "ob-p",
@@ -1420,164 +1350,89 @@
     "fallback": "var(--ob-f)"
   },
   {
-    "className": "col-w",
+    "className": "co-w",
     "property": "column-width",
-    "fallback": "var(--col-w)"
+    "fallback": "var(--co-w)"
   },
   {
-    "className": "col-f",
+    "className": "co-f",
     "property": "column-fill",
-    "fallback": "var(--col-f)"
+    "fallback": "var(--co-f)"
   },
   {
-    "className": "col-g",
+    "className": "co-g",
     "property": "column-gap",
-    "fallback": "var(--col-g)"
+    "fallback": "var(--co-g)"
   },
   {
-    "className": "col-c",
+    "className": "co-c",
     "property": "column-count",
-    "fallback": "var(--col-c)"
+    "fallback": "var(--co-c)"
   },
   {
-    "className": "col-r",
+    "className": "co-r",
     "property": "column-rule",
-    "fallback": "var(--col-r)"
+    "fallback": "var(--co-r)"
   },
   {
-    "className": "col-r-c",
+    "className": "co-r-c",
     "property": "column-rule-color",
-    "fallback": "var(--col-r-c, var(--col-r))"
+    "fallback": "var(--co-r-c, var(--co-r))"
   },
   {
-    "className": "col-r-w",
+    "className": "co-r-w",
     "property": "column-rule-width",
-    "fallback": "var(--col-r-w, var(--col-r))"
+    "fallback": "var(--co-r-w, var(--co-r))"
   },
   {
-    "className": "col-r-s",
+    "className": "co-r-s",
     "property": "column-rule-style",
-    "fallback": "var(--col-r-s, var(--col-r))"
+    "fallback": "var(--co-r-s, var(--co-r))"
   },
   {
-    "className": "col-s",
+    "className": "co-s",
     "property": "column-span",
-    "fallback": "var(--col-s)"
+    "fallback": "var(--co-s)"
   },
   {
-    "className": "s",
-    "property": "stroke",
-    "fallback": "var(--s)"
+    "className": "ga",
+    "property": "gap",
+    "fallback": "var(--ga)"
   },
   {
-    "className": "s-c",
-    "property": "stroke-color",
-    "fallback": "var(--s-c, var(--s))"
+    "className": "j-i",
+    "property": "justify-items",
+    "fallback": "var(--j-i)"
   },
   {
-    "className": "s-w",
-    "property": "stroke-width",
-    "fallback": "var(--s-w, var(--s))"
-  },
-  {
-    "className": "s-p",
-    "property": "stroke-position",
-    "fallback": "var(--s-p, var(--s))"
-  },
-  {
-    "className": "s-o",
-    "property": "stroke-opacity",
-    "fallback": "var(--s-o, var(--s))"
-  },
-  {
-    "className": "s-a",
-    "property": "stroke-align",
-    "fallback": "var(--s-a, var(--s))"
-  },
-  {
-    "className": "s-i",
-    "property": "stroke-image",
-    "fallback": "var(--s-i, var(--s))"
-  },
-  {
-    "className": "s-b",
-    "property": "stroke-break",
-    "fallback": "var(--s-b, var(--s))"
-  },
-  {
-    "className": "s-al",
-    "property": "stroke-alignment",
-    "fallback": "var(--s-al, var(--s))"
-  },
-  {
-    "className": "s-d-j",
-    "property": "stroke-dash-justify",
-    "fallback": "var(--s-d-j, var(--s))"
-  },
-  {
-    "className": "s-d-c",
-    "property": "stroke-dash-corner",
-    "fallback": "var(--s-d-c, var(--s))"
-  },
-  {
-    "className": "s-da",
-    "property": "stroke-dashadjust",
-    "fallback": "var(--s-da, var(--s))"
-  },
-  {
-    "className": "s-das",
-    "property": "stroke-dasharray",
-    "fallback": "var(--s-das, var(--s))"
-  },
-  {
-    "className": "s-dash",
-    "property": "stroke-dashcorner",
-    "fallback": "var(--s-dash, var(--s))"
-  },
-  {
-    "className": "s-dasho",
-    "property": "stroke-dashoffset",
-    "fallback": "var(--s-dasho, var(--s))"
-  },
-  {
-    "className": "s-l",
-    "property": "stroke-linecap",
-    "fallback": "var(--s-l, var(--s))"
-  },
-  {
-    "className": "s-li",
-    "property": "stroke-linejoin",
-    "fallback": "var(--s-li, var(--s))"
-  },
-  {
-    "className": "s-m",
-    "property": "stroke-miterlimit",
-    "fallback": "var(--s-m, var(--s))"
-  },
-  {
-    "className": "s-or",
-    "property": "stroke-origin",
-    "fallback": "var(--s-or, var(--s))"
-  },
-  {
-    "className": "s-r",
-    "property": "stroke-repeat",
-    "fallback": "var(--s-r, var(--s))"
-  },
-  {
-    "className": "s-s",
-    "property": "stroke-size",
-    "fallback": "var(--s-s, var(--s))"
-  },
-  {
-    "className": "fil",
-    "property": "filter",
-    "fallback": "var(--fil)"
+    "className": "j-s",
+    "property": "justify-self",
+    "fallback": "var(--j-s)"
   },
   {
     "className": "u-s",
     "property": "user-select",
     "fallback": "var(--u-s)"
+  },
+  {
+    "className": "cli",
+    "property": "clip",
+    "fallback": "var(--cli)"
+  },
+  {
+    "className": "cli-p",
+    "property": "clip-path",
+    "fallback": "var(--cli-p, var(--cli))"
+  },
+  {
+    "className": "cli-r",
+    "property": "clip-rule",
+    "fallback": "var(--cli-r, var(--cli))"
+  },
+  {
+    "className": "ro-g",
+    "property": "row-gap",
+    "fallback": "var(--ro-g)"
   },
   {
     "className": "mas",
@@ -1665,26 +1520,6 @@
     "fallback": "var(--mas-t, var(--mas))"
   },
   {
-    "className": "cli",
-    "property": "clip",
-    "fallback": "var(--cli)"
-  },
-  {
-    "className": "cli-p",
-    "property": "clip-path",
-    "fallback": "var(--cli-p, var(--cli))"
-  },
-  {
-    "className": "cli-r",
-    "property": "clip-rule",
-    "fallback": "var(--cli-r, var(--cli))"
-  },
-  {
-    "className": "ro-g",
-    "property": "row-gap",
-    "fallback": "var(--ro-g)"
-  },
-  {
     "className": "ap",
     "property": "appearance",
     "fallback": "var(--ap)"
@@ -1693,6 +1528,11 @@
     "className": "di",
     "property": "direction",
     "fallback": "var(--di)"
+  },
+  {
+    "className": "bac-v",
+    "property": "backface-visibility",
+    "fallback": "var(--bac-v)"
   },
   {
     "className": "ca",
@@ -1710,29 +1550,14 @@
     "fallback": "var(--ca-s, var(--ca))"
   },
   {
-    "className": "bac-v",
-    "property": "backface-visibility",
-    "fallback": "var(--bac-v)"
-  },
-  {
-    "className": "pl-c",
-    "property": "place-content",
-    "fallback": "var(--pl-c)"
-  },
-  {
-    "className": "pl-i",
-    "property": "place-items",
-    "fallback": "var(--pl-i)"
-  },
-  {
-    "className": "pl-s",
-    "property": "place-self",
-    "fallback": "var(--pl-s)"
-  },
-  {
     "className": "wi-c",
     "property": "will-change",
     "fallback": "var(--wi-c)"
+  },
+  {
+    "className": "re",
+    "property": "resize",
+    "fallback": "var(--re)"
   },
   {
     "className": "ove-b",
@@ -1740,14 +1565,14 @@
     "fallback": "var(--ove-b)"
   },
   {
-    "className": "ove-b-b",
-    "property": "overscroll-behavior-block",
-    "fallback": "var(--ove-b-b, var(--ove-b))"
-  },
-  {
     "className": "ove-b-i",
     "property": "overscroll-behavior-inline",
     "fallback": "var(--ove-b-i, var(--ove-b))"
+  },
+  {
+    "className": "ove-b-b",
+    "property": "overscroll-behavior-block",
+    "fallback": "var(--ove-b-b, var(--ove-b))"
   },
   {
     "className": "ove-b-x",
@@ -1760,14 +1585,14 @@
     "fallback": "var(--ove-b-y, var(--ove-b))"
   },
   {
-    "className": "re",
-    "property": "resize",
-    "fallback": "var(--re)"
-  },
-  {
     "className": "ta-s",
     "property": "tab-size",
     "fallback": "var(--ta-s)"
+  },
+  {
+    "className": "mix-b-m",
+    "property": "mix-blend-mode",
+    "fallback": "var(--mix-b-m)"
   },
   {
     "className": "cou-i",
@@ -1783,151 +1608,6 @@
     "className": "cou-s",
     "property": "counter-set",
     "fallback": "var(--cou-s)"
-  },
-  {
-    "className": "pe",
-    "property": "perspective",
-    "fallback": "var(--pe)"
-  },
-  {
-    "className": "pe-o",
-    "property": "perspective-origin",
-    "fallback": "var(--pe-o, var(--pe))"
-  },
-  {
-    "className": "mix-b-m",
-    "property": "mix-blend-mode",
-    "fallback": "var(--mix-b-m)"
-  },
-  {
-    "className": "sc-m",
-    "property": "scroll-margin",
-    "fallback": "var(--sc-m)"
-  },
-  {
-    "className": "sc-m-l",
-    "property": "scroll-margin-left",
-    "fallback": "var(--sc-m-l, var(--sc-m))"
-  },
-  {
-    "className": "sc-m-t",
-    "property": "scroll-margin-top",
-    "fallback": "var(--sc-m-t, var(--sc-m))"
-  },
-  {
-    "className": "sc-m-r",
-    "property": "scroll-margin-right",
-    "fallback": "var(--sc-m-r, var(--sc-m))"
-  },
-  {
-    "className": "sc-m-b",
-    "property": "scroll-margin-bottom",
-    "fallback": "var(--sc-m-b, var(--sc-m))"
-  },
-  {
-    "className": "sc-m-bl",
-    "property": "scroll-margin-block",
-    "fallback": "var(--sc-m-bl, var(--sc-m))"
-  },
-  {
-    "className": "sc-m-bl-e",
-    "property": "scroll-margin-block-end",
-    "fallback": "var(--sc-m-bl-e, var(--sc-m-bl, var(--sc-m)))"
-  },
-  {
-    "className": "sc-m-bl-s",
-    "property": "scroll-margin-block-start",
-    "fallback": "var(--sc-m-bl-s, var(--sc-m-bl, var(--sc-m)))"
-  },
-  {
-    "className": "sc-m-i",
-    "property": "scroll-margin-inline",
-    "fallback": "var(--sc-m-i, var(--sc-m))"
-  },
-  {
-    "className": "sc-m-i-e",
-    "property": "scroll-margin-inline-end",
-    "fallback": "var(--sc-m-i-e, var(--sc-m-i, var(--sc-m)))"
-  },
-  {
-    "className": "sc-m-i-s",
-    "property": "scroll-margin-inline-start",
-    "fallback": "var(--sc-m-i-s, var(--sc-m-i, var(--sc-m)))"
-  },
-  {
-    "className": "sc-p",
-    "property": "scroll-padding",
-    "fallback": "var(--sc-p)"
-  },
-  {
-    "className": "sc-p-l",
-    "property": "scroll-padding-left",
-    "fallback": "var(--sc-p-l, var(--sc-p))"
-  },
-  {
-    "className": "sc-p-t",
-    "property": "scroll-padding-top",
-    "fallback": "var(--sc-p-t, var(--sc-p))"
-  },
-  {
-    "className": "sc-p-r",
-    "property": "scroll-padding-right",
-    "fallback": "var(--sc-p-r, var(--sc-p))"
-  },
-  {
-    "className": "sc-p-b",
-    "property": "scroll-padding-bottom",
-    "fallback": "var(--sc-p-b, var(--sc-p))"
-  },
-  {
-    "className": "sc-p-bl",
-    "property": "scroll-padding-block",
-    "fallback": "var(--sc-p-bl, var(--sc-p))"
-  },
-  {
-    "className": "sc-p-bl-e",
-    "property": "scroll-padding-block-end",
-    "fallback": "var(--sc-p-bl-e, var(--sc-p-bl, var(--sc-p)))"
-  },
-  {
-    "className": "sc-p-bl-s",
-    "property": "scroll-padding-block-start",
-    "fallback": "var(--sc-p-bl-s, var(--sc-p-bl, var(--sc-p)))"
-  },
-  {
-    "className": "sc-p-i",
-    "property": "scroll-padding-inline",
-    "fallback": "var(--sc-p-i, var(--sc-p))"
-  },
-  {
-    "className": "sc-p-i-e",
-    "property": "scroll-padding-inline-end",
-    "fallback": "var(--sc-p-i-e, var(--sc-p-i, var(--sc-p)))"
-  },
-  {
-    "className": "sc-p-i-s",
-    "property": "scroll-padding-inline-start",
-    "fallback": "var(--sc-p-i-s, var(--sc-p-i, var(--sc-p)))"
-  },
-  {
-    "className": "sc-b",
-    "property": "scroll-behavior",
-    "fallback": "var(--sc-b)"
-  },
-  {
-    "className": "sc-s-a",
-    "property": "scroll-snap-align",
-    "fallback": "var(--sc-s-a)"
-  },
-  {
-    "className": "sc-s-s",
-    "property": "scroll-snap-stop",
-    "fallback": "var(--sc-s-s)"
-  },
-  {
-    "className": "sc-s-t",
-    "property": "scroll-snap-type",
-    "fallback": "var(--sc-s-t)"
   },
   {
     "className": "tab-l",
@@ -1955,29 +1635,154 @@
     "fallback": "var(--pa-b-i, var(--pa))"
   },
   {
-    "className": "sp",
-    "property": "speak",
-    "fallback": "var(--sp)"
+    "className": "pe",
+    "property": "perspective",
+    "fallback": "var(--pe)"
   },
   {
-    "className": "sp-a",
-    "property": "speak-as",
-    "fallback": "var(--sp-a, var(--sp))"
+    "className": "pe-o",
+    "property": "perspective-origin",
+    "fallback": "var(--pe-o, var(--pe))"
   },
   {
-    "className": "sp-h",
-    "property": "speak-header",
-    "fallback": "var(--sp-h, var(--sp))"
+    "className": "s-m",
+    "property": "scroll-margin",
+    "fallback": "var(--s-m)"
   },
   {
-    "className": "sp-n",
-    "property": "speak-numeral",
-    "fallback": "var(--sp-n, var(--sp))"
+    "className": "s-m-l",
+    "property": "scroll-margin-left",
+    "fallback": "var(--s-m-l, var(--s-m))"
   },
   {
-    "className": "sp-p",
-    "property": "speak-punctuation",
-    "fallback": "var(--sp-p, var(--sp))"
+    "className": "s-m-t",
+    "property": "scroll-margin-top",
+    "fallback": "var(--s-m-t, var(--s-m))"
+  },
+  {
+    "className": "s-m-r",
+    "property": "scroll-margin-right",
+    "fallback": "var(--s-m-r, var(--s-m))"
+  },
+  {
+    "className": "s-m-b",
+    "property": "scroll-margin-bottom",
+    "fallback": "var(--s-m-b, var(--s-m))"
+  },
+  {
+    "className": "s-m-i",
+    "property": "scroll-margin-inline",
+    "fallback": "var(--s-m-i, var(--s-m))"
+  },
+  {
+    "className": "s-m-i-e",
+    "property": "scroll-margin-inline-end",
+    "fallback": "var(--s-m-i-e, var(--s-m-i, var(--s-m)))"
+  },
+  {
+    "className": "s-m-i-s",
+    "property": "scroll-margin-inline-start",
+    "fallback": "var(--s-m-i-s, var(--s-m-i, var(--s-m)))"
+  },
+  {
+    "className": "s-m-bl",
+    "property": "scroll-margin-block",
+    "fallback": "var(--s-m-bl, var(--s-m))"
+  },
+  {
+    "className": "s-m-bl-e",
+    "property": "scroll-margin-block-end",
+    "fallback": "var(--s-m-bl-e, var(--s-m-bl, var(--s-m)))"
+  },
+  {
+    "className": "s-m-bl-s",
+    "property": "scroll-margin-block-start",
+    "fallback": "var(--s-m-bl-s, var(--s-m-bl, var(--s-m)))"
+  },
+  {
+    "className": "s-p",
+    "property": "scroll-padding",
+    "fallback": "var(--s-p)"
+  },
+  {
+    "className": "s-p-l",
+    "property": "scroll-padding-left",
+    "fallback": "var(--s-p-l, var(--s-p))"
+  },
+  {
+    "className": "s-p-t",
+    "property": "scroll-padding-top",
+    "fallback": "var(--s-p-t, var(--s-p))"
+  },
+  {
+    "className": "s-p-r",
+    "property": "scroll-padding-right",
+    "fallback": "var(--s-p-r, var(--s-p))"
+  },
+  {
+    "className": "s-p-b",
+    "property": "scroll-padding-bottom",
+    "fallback": "var(--s-p-b, var(--s-p))"
+  },
+  {
+    "className": "s-p-i",
+    "property": "scroll-padding-inline",
+    "fallback": "var(--s-p-i, var(--s-p))"
+  },
+  {
+    "className": "s-p-i-e",
+    "property": "scroll-padding-inline-end",
+    "fallback": "var(--s-p-i-e, var(--s-p-i, var(--s-p)))"
+  },
+  {
+    "className": "s-p-i-s",
+    "property": "scroll-padding-inline-start",
+    "fallback": "var(--s-p-i-s, var(--s-p-i, var(--s-p)))"
+  },
+  {
+    "className": "s-p-bl",
+    "property": "scroll-padding-block",
+    "fallback": "var(--s-p-bl, var(--s-p))"
+  },
+  {
+    "className": "s-p-bl-e",
+    "property": "scroll-padding-block-end",
+    "fallback": "var(--s-p-bl-e, var(--s-p-bl, var(--s-p)))"
+  },
+  {
+    "className": "s-p-bl-s",
+    "property": "scroll-padding-block-start",
+    "fallback": "var(--s-p-bl-s, var(--s-p-bl, var(--s-p)))"
+  },
+  {
+    "className": "s-b",
+    "property": "scroll-behavior",
+    "fallback": "var(--s-b)"
+  },
+  {
+    "className": "s-s-a",
+    "property": "scroll-snap-align",
+    "fallback": "var(--s-s-a)"
+  },
+  {
+    "className": "s-s-s",
+    "property": "scroll-snap-stop",
+    "fallback": "var(--s-s-s)"
+  },
+  {
+    "className": "s-s-t",
+    "property": "scroll-snap-type",
+    "fallback": "var(--s-s-t)"
+  },
+  {
+    "className": "pl-i",
+    "property": "place-items",
+    "fallback": "var(--pl-i)"
+  },
+  {
+    "className": "pl-s",
+    "property": "place-self",
+    "fallback": "var(--pl-s)"
   },
   {
     "className": "cap-s",
@@ -1985,14 +1790,19 @@
     "fallback": "var(--cap-s)"
   },
   {
-    "className": "wid",
-    "property": "widows",
-    "fallback": "var(--wid)"
+    "className": "sc-c",
+    "property": "scrollbar-color",
+    "fallback": "var(--sc-c)"
   },
   {
-    "className": "orp",
-    "property": "orphans",
-    "fallback": "var(--orp)"
+    "className": "sc-w",
+    "property": "scrollbar-width",
+    "fallback": "var(--sc-w)"
+  },
+  {
+    "className": "sc-g",
+    "property": "scrollbar-gutter",
+    "fallback": "var(--sc-g)"
   },
   {
     "className": "hy",
@@ -2000,19 +1810,14 @@
     "fallback": "var(--hy)"
   },
   {
-    "className": "scr-c",
-    "property": "scrollbar-color",
-    "fallback": "var(--scr-c)"
+    "className": "orp",
+    "property": "orphans",
+    "fallback": "var(--orp)"
   },
   {
-    "className": "scr-w",
-    "property": "scrollbar-width",
-    "fallback": "var(--scr-w)"
-  },
-  {
-    "className": "scr-g",
-    "property": "scrollbar-gutter",
-    "fallback": "var(--scr-g)"
+    "className": "wid",
+    "property": "widows",
+    "fallback": "var(--wid)"
   },
   {
     "className": "q",
@@ -2055,24 +1860,19 @@
     "fallback": "var(--br-i)"
   },
   {
+    "className": "col",
+    "property": "columns",
+    "fallback": "var(--col)"
+  },
+  {
+    "className": "is",
+    "property": "isolation",
+    "fallback": "var(--is)"
+  },
+  {
     "className": "in",
     "property": "inset",
     "fallback": "var(--in)"
-  },
-  {
-    "className": "in-b",
-    "property": "inset-block",
-    "fallback": "var(--in-b, var(--in))"
-  },
-  {
-    "className": "in-b-e",
-    "property": "inset-block-end",
-    "fallback": "var(--in-b-e, var(--in-b, var(--in)))"
-  },
-  {
-    "className": "in-b-s",
-    "property": "inset-block-start",
-    "fallback": "var(--in-b-s, var(--in-b, var(--in)))"
   },
   {
     "className": "in-i",
@@ -2090,9 +1890,19 @@
     "fallback": "var(--in-i-s, var(--in-i, var(--in)))"
   },
   {
-    "className": "is",
-    "property": "isolation",
-    "fallback": "var(--is)"
+    "className": "in-b",
+    "property": "inset-block",
+    "fallback": "var(--in-b, var(--in))"
+  },
+  {
+    "className": "in-b-e",
+    "property": "inset-block-end",
+    "fallback": "var(--in-b-e, var(--in-b, var(--in)))"
+  },
+  {
+    "className": "in-b-s",
+    "property": "inset-block-start",
+    "fallback": "var(--in-b-s, var(--in-b, var(--in)))"
   },
   {
     "className": "al",
@@ -2100,39 +1910,14 @@
     "fallback": "var(--al)"
   },
   {
-    "className": "con",
-    "property": "contain",
-    "fallback": "var(--con)"
+    "className": "as-r",
+    "property": "aspect-ratio",
+    "fallback": "var(--as-r)"
   },
   {
-    "className": "con-i-w",
-    "property": "contain-intrinsic-width",
-    "fallback": "var(--con-i-w, var(--con))"
-  },
-  {
-    "className": "con-i-h",
-    "property": "contain-intrinsic-height",
-    "fallback": "var(--con-i-h, var(--con))"
-  },
-  {
-    "className": "con-i-b-s",
-    "property": "contain-intrinsic-block-size",
-    "fallback": "var(--con-i-b-s, var(--con))"
-  },
-  {
-    "className": "con-i-i-s",
-    "property": "contain-intrinsic-inline-size",
-    "fallback": "var(--con-i-i-s, var(--con))"
-  },
-  {
-    "className": "con-i-s",
-    "property": "contain-intrinsic-size",
-    "fallback": "var(--con-i-s, var(--con))"
-  },
-  {
-    "className": "colu",
-    "property": "columns",
-    "fallback": "var(--colu)"
+    "className": "wr-m",
+    "property": "writing-mode",
+    "fallback": "var(--wr-m)"
   },
   {
     "className": "e-c",
@@ -2160,79 +1945,9 @@
     "fallback": "var(--ru-o)"
   },
   {
-    "className": "n-l",
-    "property": "nav-left",
-    "fallback": "var(--n-l)"
-  },
-  {
-    "className": "n-r",
-    "property": "nav-right",
-    "fallback": "var(--n-r)"
-  },
-  {
-    "className": "n-d",
-    "property": "nav-down",
-    "fallback": "var(--n-d)"
-  },
-  {
-    "className": "n-u",
-    "property": "nav-up",
-    "fallback": "var(--n-u)"
-  },
-  {
-    "className": "hyp-c",
-    "property": "hyphenate-character",
-    "fallback": "var(--hyp-c)"
-  },
-  {
-    "className": "hyp-l-c",
-    "property": "hyphenate-limit-chars",
-    "fallback": "var(--hyp-l-c)"
-  },
-  {
-    "className": "hyp-l-l",
-    "property": "hyphenate-limit-last",
-    "fallback": "var(--hyp-l-l)"
-  },
-  {
-    "className": "hyp-l-li",
-    "property": "hyphenate-limit-lines",
-    "fallback": "var(--hyp-l-li)"
-  },
-  {
-    "className": "hyp-l-z",
-    "property": "hyphenate-limit-zone",
-    "fallback": "var(--hyp-l-z)"
-  },
-  {
-    "className": "boo-l",
-    "property": "bookmark-label",
-    "fallback": "var(--boo-l)"
-  },
-  {
-    "className": "boo-le",
-    "property": "bookmark-level",
-    "fallback": "var(--boo-le)"
-  },
-  {
-    "className": "boo-s",
-    "property": "bookmark-state",
-    "fallback": "var(--boo-s)"
-  },
-  {
     "className": "do-b",
     "property": "dominant-baseline",
     "fallback": "var(--do-b)"
-  },
-  {
-    "className": "as-r",
-    "property": "aspect-ratio",
-    "fallback": "var(--as-r)"
-  },
-  {
-    "className": "wr-m",
-    "property": "writing-mode",
-    "fallback": "var(--wr-m)"
   },
   {
     "className": "ali-b",
@@ -2260,6 +1975,16 @@
     "fallback": "var(--az)"
   },
   {
+    "className": "st-s",
+    "property": "string-set",
+    "fallback": "var(--st-s)"
+  },
+  {
+    "className": "el",
+    "property": "elevation",
+    "fallback": "var(--el)"
+  },
+  {
     "className": "sh-m",
     "property": "shape-margin",
     "fallback": "var(--sh-m)"
@@ -2280,59 +2005,14 @@
     "fallback": "var(--sh-o)"
   },
   {
-    "className": "st-s",
-    "property": "string-set",
-    "fallback": "var(--st-s)"
+    "className": "inl-s",
+    "property": "inline-size",
+    "fallback": "var(--inl-s)"
   },
   {
-    "className": "el",
-    "property": "elevation",
-    "fallback": "var(--el)"
-  },
-  {
-    "className": "mar",
-    "property": "marker",
-    "fallback": "var(--mar)"
-  },
-  {
-    "className": "mar-e",
-    "property": "marker-end",
-    "fallback": "var(--mar-e, var(--mar))"
-  },
-  {
-    "className": "mar-k-l",
-    "property": "marker-knockout-left",
-    "fallback": "var(--mar-k-l, var(--mar))"
-  },
-  {
-    "className": "mar-k-r",
-    "property": "marker-knockout-right",
-    "fallback": "var(--mar-k-r, var(--mar))"
-  },
-  {
-    "className": "mar-m",
-    "property": "marker-mid",
-    "fallback": "var(--mar-m, var(--mar))"
-  },
-  {
-    "className": "mar-p",
-    "property": "marker-pattern",
-    "fallback": "var(--mar-p, var(--mar))"
-  },
-  {
-    "className": "mar-s",
-    "property": "marker-segment",
-    "fallback": "var(--mar-s, var(--mar))"
-  },
-  {
-    "className": "mar-si",
-    "property": "marker-side",
-    "fallback": "var(--mar-si, var(--mar))"
-  },
-  {
-    "className": "mar-st",
-    "property": "marker-start",
-    "fallback": "var(--mar-st, var(--mar))"
+    "className": "inl-si",
+    "property": "inline-sizing",
+    "fallback": "var(--inl-si)"
   },
   {
     "className": "bl-e",
@@ -2345,31 +2025,6 @@
     "fallback": "var(--bl-s)"
   },
   {
-    "className": "bl-st",
-    "property": "block-step",
-    "fallback": "var(--bl-st)"
-  },
-  {
-    "className": "bl-st-a",
-    "property": "block-step-align",
-    "fallback": "var(--bl-st-a, var(--bl-st))"
-  },
-  {
-    "className": "bl-st-i",
-    "property": "block-step-insert",
-    "fallback": "var(--bl-st-i, var(--bl-st))"
-  },
-  {
-    "className": "bl-st-r",
-    "property": "block-step-round",
-    "fallback": "var(--bl-st-r, var(--bl-st))"
-  },
-  {
-    "className": "bl-st-s",
-    "property": "block-step-size",
-    "fallback": "var(--bl-st-s, var(--bl-st))"
-  },
-  {
     "className": "floo-c",
     "property": "flood-color",
     "fallback": "var(--floo-c)"
@@ -2378,16 +2033,6 @@
     "className": "floo-o",
     "property": "flood-opacity",
     "fallback": "var(--floo-o)"
-  },
-  {
-    "className": "inl-s",
-    "property": "inline-size",
-    "fallback": "var(--inl-s)"
-  },
-  {
-    "className": "inl-si",
-    "property": "inline-sizing",
-    "fallback": "var(--inl-si)"
   },
   {
     "className": "lig-c",
@@ -2430,14 +2075,19 @@
     "fallback": "var(--pr-c-a)"
   },
   {
+    "className": "tran",
+    "property": "translate",
+    "fallback": "var(--tran)"
+  },
+  {
     "className": "sca",
     "property": "scale",
     "fallback": "var(--sca)"
   },
   {
-    "className": "tran",
-    "property": "translate",
-    "fallback": "var(--tran)"
+    "className": "ac-c",
+    "property": "accent-color",
+    "fallback": "var(--ac-c)"
   },
   {
     "className": "ini-l",
@@ -2455,34 +2105,14 @@
     "fallback": "var(--ini-l-w, var(--ini-l))"
   },
   {
-    "className": "ac-c",
-    "property": "accent-color",
-    "fallback": "var(--ac-c)"
-  },
-  {
     "className": "ch",
     "property": "chains",
     "fallback": "var(--ch)"
   },
   {
-    "className": "cont",
+    "className": "con",
     "property": "continue",
-    "fallback": "var(--cont)"
-  },
-  {
-    "className": "cue",
-    "property": "cue",
-    "fallback": "var(--cue)"
-  },
-  {
-    "className": "cue-a",
-    "property": "cue-after",
-    "fallback": "var(--cue-a, var(--cue))"
-  },
-  {
-    "className": "cue-b",
-    "property": "cue-before",
-    "fallback": "var(--cue-b, var(--cue))"
+    "fallback": "var(--con)"
   },
   {
     "className": "flow",
@@ -2530,31 +2160,6 @@
     "fallback": "var(--lea-t)"
   },
   {
-    "className": "pau",
-    "property": "pause",
-    "fallback": "var(--pau)"
-  },
-  {
-    "className": "pau-a",
-    "property": "pause-after",
-    "fallback": "var(--pau-a, var(--pau))"
-  },
-  {
-    "className": "pau-b",
-    "property": "pause-before",
-    "fallback": "var(--pau-b, var(--pau))"
-  },
-  {
-    "className": "pi",
-    "property": "pitch",
-    "fallback": "var(--pi)"
-  },
-  {
-    "className": "pi-r",
-    "property": "pitch-range",
-    "fallback": "var(--pi-r, var(--pi))"
-  },
-  {
     "className": "pla-d",
     "property": "play-during",
     "fallback": "var(--pla-d)"
@@ -2568,21 +2173,6 @@
     "className": "reg-f",
     "property": "region-fragment",
     "fallback": "var(--reg-f)"
-  },
-  {
-    "className": "res",
-    "property": "rest",
-    "fallback": "var(--res)"
-  },
-  {
-    "className": "res-a",
-    "property": "rest-after",
-    "fallback": "var(--res-a, var(--res))"
-  },
-  {
-    "className": "res-b",
-    "property": "rest-before",
-    "fallback": "var(--res-b, var(--res))"
   },
   {
     "className": "ri",
@@ -2600,74 +2190,14 @@
     "fallback": "var(--run)"
   },
   {
-    "className": "spa-n-c",
-    "property": "spatial-navigation-contain",
-    "fallback": "var(--spa-n-c)"
-  },
-  {
-    "className": "spa-n-a",
-    "property": "spatial-navigation-action",
-    "fallback": "var(--spa-n-a)"
-  },
-  {
-    "className": "spa-n-f",
-    "property": "spatial-navigation-function",
-    "fallback": "var(--spa-n-f)"
-  },
-  {
-    "className": "spe-r",
+    "className": "sp-r",
     "property": "speech-rate",
-    "fallback": "var(--spe-r)"
+    "fallback": "var(--sp-r)"
   },
   {
-    "className": "str",
-    "property": "stress",
-    "fallback": "var(--str)"
-  },
-  {
-    "className": "vo-b",
-    "property": "voice-balance",
-    "fallback": "var(--vo-b)"
-  },
-  {
-    "className": "vo-d",
-    "property": "voice-duration",
-    "fallback": "var(--vo-d)"
-  },
-  {
-    "className": "vo-f",
-    "property": "voice-family",
-    "fallback": "var(--vo-f)"
-  },
-  {
-    "className": "vo-p",
-    "property": "voice-pitch",
-    "fallback": "var(--vo-p)"
-  },
-  {
-    "className": "vo-r",
-    "property": "voice-range",
-    "fallback": "var(--vo-r)"
-  },
-  {
-    "className": "vo-ra",
-    "property": "voice-rate",
-    "fallback": "var(--vo-ra)"
-  },
-  {
-    "className": "vo-s",
-    "property": "voice-stress",
-    "fallback": "var(--vo-s)"
-  },
-  {
-    "className": "vo-v",
-    "property": "voice-volume",
-    "fallback": "var(--vo-v)"
-  },
-  {
-    "className": "vol",
+    "className": "vo",
     "property": "volume",
-    "fallback": "var(--vol)"
+    "fallback": "var(--vo)"
   },
   {
     "className": "wra-a",

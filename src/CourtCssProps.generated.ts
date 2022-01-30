@@ -32,21 +32,6 @@ export type CourtCssProps = {
    * `var(--m-br, var(--m))` */
   "$m-br"?: string | number;
   /** 
-   * margin-block
-   *
-   * `var(--m-bl, var(--m))` */
-  "$m-bl"?: string | number;
-  /** 
-   * margin-block-end
-   *
-   * `var(--m-bl-e, var(--m-bl, var(--m)))` */
-  "$m-bl-e"?: string | number;
-  /** 
-   * margin-block-start
-   *
-   * `var(--m-bl-s, var(--m-bl, var(--m)))` */
-  "$m-bl-s"?: string | number;
-  /** 
    * margin-inline
    *
    * `var(--m-i, var(--m))` */
@@ -62,20 +47,25 @@ export type CourtCssProps = {
    * `var(--m-i-s, var(--m-i, var(--m)))` */
   "$m-i-s"?: string | number;
   /** 
+   * margin-block
+   *
+   * `var(--m-bl, var(--m))` */
+  "$m-bl"?: string | number;
+  /** 
+   * margin-block-end
+   *
+   * `var(--m-bl-e, var(--m-bl, var(--m)))` */
+  "$m-bl-e"?: string | number;
+  /** 
+   * margin-block-start
+   *
+   * `var(--m-bl-s, var(--m-bl, var(--m)))` */
+  "$m-bl-s"?: string | number;
+  /** 
    * margin-trim
    *
    * `var(--m-tr, var(--m))` */
   "$m-tr"?: string | number;
-  /** 
-   * content
-   *
-   * `var(--c)` */
-  "$c"?: string | number;
-  /** 
-   * content-visibility
-   *
-   * `var(--c-v, var(--c))` */
-  "$c-v"?: string | number;
   /** 
    * border
    *
@@ -222,66 +212,6 @@ export type CourtCssProps = {
    * `var(--b-i-so, var(--b-i, var(--b)))` */
   "$b-i-so"?: string | number;
   /** 
-   * border-block
-   *
-   * `var(--b-bl, var(--b))` */
-  "$b-bl"?: string | number;
-  /** 
-   * border-block-color
-   *
-   * `var(--b-bl-c, var(--b-bl, var(--b)))` */
-  "$b-bl-c"?: string | number;
-  /** 
-   * border-block-width
-   *
-   * `var(--b-bl-w, var(--b-bl, var(--b)))` */
-  "$b-bl-w"?: string | number;
-  /** 
-   * border-block-end
-   *
-   * `var(--b-bl-e, var(--b-bl, var(--b)))` */
-  "$b-bl-e"?: string | number;
-  /** 
-   * border-block-end-color
-   *
-   * `var(--b-bl-e-c, var(--b-bl-e, var(--b-bl, var(--b))))` */
-  "$b-bl-e-c"?: string | number;
-  /** 
-   * border-block-end-width
-   *
-   * `var(--b-bl-e-w, var(--b-bl-e, var(--b-bl, var(--b))))` */
-  "$b-bl-e-w"?: string | number;
-  /** 
-   * border-block-end-style
-   *
-   * `var(--b-bl-e-s, var(--b-bl-e, var(--b-bl, var(--b))))` */
-  "$b-bl-e-s"?: string | number;
-  /** 
-   * border-block-start
-   *
-   * `var(--b-bl-s, var(--b-bl, var(--b)))` */
-  "$b-bl-s"?: string | number;
-  /** 
-   * border-block-start-color
-   *
-   * `var(--b-bl-s-c, var(--b-bl-s, var(--b-bl, var(--b))))` */
-  "$b-bl-s-c"?: string | number;
-  /** 
-   * border-block-start-width
-   *
-   * `var(--b-bl-s-w, var(--b-bl-s, var(--b-bl, var(--b))))` */
-  "$b-bl-s-w"?: string | number;
-  /** 
-   * border-block-start-style
-   *
-   * `var(--b-bl-s-s, var(--b-bl-s, var(--b-bl, var(--b))))` */
-  "$b-bl-s-s"?: string | number;
-  /** 
-   * border-block-style
-   *
-   * `var(--b-bl-st, var(--b-bl, var(--b)))` */
-  "$b-bl-st"?: string | number;
-  /** 
    * border-inline
    *
    * `var(--b-in, var(--b))` */
@@ -341,6 +271,66 @@ export type CourtCssProps = {
    *
    * `var(--b-in-st, var(--b-in, var(--b)))` */
   "$b-in-st"?: string | number;
+  /** 
+   * border-block
+   *
+   * `var(--b-bl, var(--b))` */
+  "$b-bl"?: string | number;
+  /** 
+   * border-block-color
+   *
+   * `var(--b-bl-c, var(--b-bl, var(--b)))` */
+  "$b-bl-c"?: string | number;
+  /** 
+   * border-block-width
+   *
+   * `var(--b-bl-w, var(--b-bl, var(--b)))` */
+  "$b-bl-w"?: string | number;
+  /** 
+   * border-block-end
+   *
+   * `var(--b-bl-e, var(--b-bl, var(--b)))` */
+  "$b-bl-e"?: string | number;
+  /** 
+   * border-block-end-color
+   *
+   * `var(--b-bl-e-c, var(--b-bl-e, var(--b-bl, var(--b))))` */
+  "$b-bl-e-c"?: string | number;
+  /** 
+   * border-block-end-width
+   *
+   * `var(--b-bl-e-w, var(--b-bl-e, var(--b-bl, var(--b))))` */
+  "$b-bl-e-w"?: string | number;
+  /** 
+   * border-block-end-style
+   *
+   * `var(--b-bl-e-s, var(--b-bl-e, var(--b-bl, var(--b))))` */
+  "$b-bl-e-s"?: string | number;
+  /** 
+   * border-block-start
+   *
+   * `var(--b-bl-s, var(--b-bl, var(--b)))` */
+  "$b-bl-s"?: string | number;
+  /** 
+   * border-block-start-color
+   *
+   * `var(--b-bl-s-c, var(--b-bl-s, var(--b-bl, var(--b))))` */
+  "$b-bl-s-c"?: string | number;
+  /** 
+   * border-block-start-width
+   *
+   * `var(--b-bl-s-w, var(--b-bl-s, var(--b-bl, var(--b))))` */
+  "$b-bl-s-w"?: string | number;
+  /** 
+   * border-block-start-style
+   *
+   * `var(--b-bl-s-s, var(--b-bl-s, var(--b-bl, var(--b))))` */
+  "$b-bl-s-s"?: string | number;
+  /** 
+   * border-block-style
+   *
+   * `var(--b-bl-st, var(--b-bl, var(--b)))` */
+  "$b-bl-st"?: string | number;
   /** 
    * border-boundary
    *
@@ -492,26 +482,6 @@ export type CourtCssProps = {
    * `var(--f-sty, var(--f))` */
   "$f-sty"?: string | number;
   /** 
-   * font-synthesis
-   *
-   * `var(--f-sy, var(--f))` */
-  "$f-sy"?: string | number;
-  /** 
-   * font-synthesis-small-caps
-   *
-   * `var(--f-sy-s-c, var(--f-sy, var(--f)))` */
-  "$f-sy-s-c"?: string | number;
-  /** 
-   * font-synthesis-style
-   *
-   * `var(--f-sy-st, var(--f-sy, var(--f)))` */
-  "$f-sy-st"?: string | number;
-  /** 
-   * font-synthesis-weight
-   *
-   * `var(--f-sy-w, var(--f-sy, var(--f)))` */
-  "$f-sy-w"?: string | number;
-  /** 
    * font-variant
    *
    * `var(--f-v, var(--f))` */
@@ -587,21 +557,6 @@ export type CourtCssProps = {
    * `var(--p-b, var(--p))` */
   "$p-b"?: string | number;
   /** 
-   * padding-block
-   *
-   * `var(--p-bl, var(--p))` */
-  "$p-bl"?: string | number;
-  /** 
-   * padding-block-end
-   *
-   * `var(--p-bl-e, var(--p-bl, var(--p)))` */
-  "$p-bl-e"?: string | number;
-  /** 
-   * padding-block-start
-   *
-   * `var(--p-bl-s, var(--p-bl, var(--p)))` */
-  "$p-bl-s"?: string | number;
-  /** 
    * padding-inline
    *
    * `var(--p-i, var(--p))` */
@@ -617,25 +572,40 @@ export type CourtCssProps = {
    * `var(--p-i-s, var(--p-i, var(--p)))` */
   "$p-i-s"?: string | number;
   /** 
+   * padding-block
+   *
+   * `var(--p-bl, var(--p))` */
+  "$p-bl"?: string | number;
+  /** 
+   * padding-block-end
+   *
+   * `var(--p-bl-e, var(--p-bl, var(--p)))` */
+  "$p-bl-e"?: string | number;
+  /** 
+   * padding-block-start
+   *
+   * `var(--p-bl-s, var(--p-bl, var(--p)))` */
+  "$p-bl-s"?: string | number;
+  /** 
    * color
    *
-   * `var(--co)` */
-  "$co"?: string | number;
+   * `var(--c)` */
+  "$c"?: string | number;
   /** 
    * color-adjust
    *
-   * `var(--co-a, var(--co))` */
-  "$co-a"?: string | number;
+   * `var(--c-a, var(--c))` */
+  "$c-a"?: string | number;
   /** 
    * color-interpolation-filters
    *
-   * `var(--co-i-f, var(--co))` */
-  "$co-i-f"?: string | number;
+   * `var(--c-i-f, var(--c))` */
+  "$c-i-f"?: string | number;
   /** 
    * color-scheme
    *
-   * `var(--co-s, var(--co))` */
-  "$co-s"?: string | number;
+   * `var(--c-s, var(--c))` */
+  "$c-s"?: string | number;
   /** 
    * display
    *
@@ -677,15 +647,15 @@ export type CourtCssProps = {
    * `var(--t-a-l, var(--t-a))` */
   "$t-a-l"?: string | number;
   /** 
-   * text-justify
-   *
-   * `var(--t-j)` */
-  "$t-j"?: string | number;
-  /** 
    * text-overflow
    *
    * `var(--t-o)` */
   "$t-o"?: string | number;
+  /** 
+   * text-justify
+   *
+   * `var(--t-j)` */
+  "$t-j"?: string | number;
   /** 
    * text-combine-upright
    *
@@ -747,35 +717,30 @@ export type CourtCssProps = {
    * `var(--t-d-t, var(--t-d))` */
   "$t-d-t"?: string | number;
   /** 
-   * text-edge
+   * text-emphasis
    *
    * `var(--t-e)` */
   "$t-e"?: string | number;
   /** 
-   * text-emphasis
-   *
-   * `var(--t-em)` */
-  "$t-em"?: string | number;
-  /** 
    * text-emphasis-color
    *
-   * `var(--t-em-c, var(--t-em))` */
-  "$t-em-c"?: string | number;
+   * `var(--t-e-c, var(--t-e))` */
+  "$t-e-c"?: string | number;
   /** 
    * text-emphasis-position
    *
-   * `var(--t-em-p, var(--t-em))` */
-  "$t-em-p"?: string | number;
+   * `var(--t-e-p, var(--t-e))` */
+  "$t-e-p"?: string | number;
   /** 
    * text-emphasis-skip
    *
-   * `var(--t-em-s, var(--t-em))` */
-  "$t-em-s"?: string | number;
+   * `var(--t-e-s, var(--t-e))` */
+  "$t-e-s"?: string | number;
   /** 
    * text-emphasis-style
    *
-   * `var(--t-em-st, var(--t-em))` */
-  "$t-em-st"?: string | number;
+   * `var(--t-e-st, var(--t-e))` */
+  "$t-e-st"?: string | number;
   /** 
    * text-group-align
    *
@@ -846,6 +811,91 @@ export type CourtCssProps = {
    *
    * `var(--tr-s, var(--tr))` */
   "$tr-s"?: string | number;
+  /** 
+   * left
+   *
+   * `var(--l)` */
+  "$l"?: string | number;
+  /** 
+   * line-padding
+   *
+   * `var(--li-p)` */
+  "$li-p"?: string | number;
+  /** 
+   * line-height
+   *
+   * `var(--li-h)` */
+  "$li-h"?: string | number;
+  /** 
+   * line-height-step
+   *
+   * `var(--li-h-s, var(--li-h))` */
+  "$li-h-s"?: string | number;
+  /** 
+   * line-grid
+   *
+   * `var(--li-g)` */
+  "$li-g"?: string | number;
+  /** 
+   * line-break
+   *
+   * `var(--li-b)` */
+  "$li-b"?: string | number;
+  /** 
+   * line-clamp
+   *
+   * `var(--li-c)` */
+  "$li-c"?: string | number;
+  /** 
+   * line-snap
+   *
+   * `var(--li-s)` */
+  "$li-s"?: string | number;
+  /** 
+   * flex
+   *
+   * `var(--fl)` */
+  "$fl"?: string | number;
+  /** 
+   * flex-direction
+   *
+   * `var(--fl-d, var(--fl))` */
+  "$fl-d"?: string | number;
+  /** 
+   * flex-basis
+   *
+   * `var(--fl-b, var(--fl))` */
+  "$fl-b"?: string | number;
+  /** 
+   * flex-flow
+   *
+   * `var(--fl-f, var(--fl))` */
+  "$fl-f"?: string | number;
+  /** 
+   * flex-grow
+   *
+   * `var(--fl-g, var(--fl))` */
+  "$fl-g"?: string | number;
+  /** 
+   * flex-shrink
+   *
+   * `var(--fl-s, var(--fl))` */
+  "$fl-s"?: string | number;
+  /** 
+   * flex-wrap
+   *
+   * `var(--fl-w, var(--fl))` */
+  "$fl-w"?: string | number;
+  /** 
+   * opacity
+   *
+   * `var(--o)` */
+  "$o"?: string | number;
+  /** 
+   * top
+   *
+   * `var(--to)` */
+  "$to"?: string | number;
   /** 
    * grid
    *
@@ -922,91 +972,6 @@ export type CourtCssProps = {
    * `var(--g-t-r, var(--g-t, var(--g)))` */
   "$g-t-r"?: string | number;
   /** 
-   * flex
-   *
-   * `var(--fl)` */
-  "$fl"?: string | number;
-  /** 
-   * flex-direction
-   *
-   * `var(--fl-d, var(--fl))` */
-  "$fl-d"?: string | number;
-  /** 
-   * flex-basis
-   *
-   * `var(--fl-b, var(--fl))` */
-  "$fl-b"?: string | number;
-  /** 
-   * flex-flow
-   *
-   * `var(--fl-f, var(--fl))` */
-  "$fl-f"?: string | number;
-  /** 
-   * flex-grow
-   *
-   * `var(--fl-g, var(--fl))` */
-  "$fl-g"?: string | number;
-  /** 
-   * flex-shrink
-   *
-   * `var(--fl-s, var(--fl))` */
-  "$fl-s"?: string | number;
-  /** 
-   * flex-wrap
-   *
-   * `var(--fl-w, var(--fl))` */
-  "$fl-w"?: string | number;
-  /** 
-   * left
-   *
-   * `var(--l)` */
-  "$l"?: string | number;
-  /** 
-   * opacity
-   *
-   * `var(--o)` */
-  "$o"?: string | number;
-  /** 
-   * line-padding
-   *
-   * `var(--li-p)` */
-  "$li-p"?: string | number;
-  /** 
-   * line-height
-   *
-   * `var(--li-h)` */
-  "$li-h"?: string | number;
-  /** 
-   * line-height-step
-   *
-   * `var(--li-h-s, var(--li-h))` */
-  "$li-h-s"?: string | number;
-  /** 
-   * line-grid
-   *
-   * `var(--li-g)` */
-  "$li-g"?: string | number;
-  /** 
-   * line-break
-   *
-   * `var(--li-b)` */
-  "$li-b"?: string | number;
-  /** 
-   * line-clamp
-   *
-   * `var(--li-c)` */
-  "$li-c"?: string | number;
-  /** 
-   * line-snap
-   *
-   * `var(--li-s)` */
-  "$li-s"?: string | number;
-  /** 
-   * top
-   *
-   * `var(--to)` */
-  "$to"?: string | number;
-  /** 
    * max-width
    *
    * `var(--ma-w)` */
@@ -1017,15 +982,15 @@ export type CourtCssProps = {
    * `var(--ma-h)` */
   "$ma-h"?: string | number;
   /** 
-   * max-block-size
-   *
-   * `var(--ma-b-s)` */
-  "$ma-b-s"?: string | number;
-  /** 
    * max-inline-size
    *
    * `var(--ma-i-s)` */
   "$ma-i-s"?: string | number;
+  /** 
+   * max-block-size
+   *
+   * `var(--ma-b-s)` */
+  "$ma-b-s"?: string | number;
   /** 
    * max-lines
    *
@@ -1036,21 +1001,6 @@ export type CourtCssProps = {
    *
    * `var(--r)` */
   "$r"?: string | number;
-  /** 
-   * align-content
-   *
-   * `var(--a-c)` */
-  "$a-c"?: string | number;
-  /** 
-   * align-items
-   *
-   * `var(--a-i)` */
-  "$a-i"?: string | number;
-  /** 
-   * align-self
-   *
-   * `var(--a-s)` */
-  "$a-s"?: string | number;
   /** 
    * box-decoration-break
    *
@@ -1097,30 +1047,20 @@ export type CourtCssProps = {
    * `var(--tra-t-f, var(--tra))` */
   "$tra-t-f"?: string | number;
   /** 
-   * justify-content
+   * align-items
    *
-   * `var(--j-c)` */
-  "$j-c"?: string | number;
+   * `var(--a-i)` */
+  "$a-i"?: string | number;
   /** 
-   * justify-items
+   * align-self
    *
-   * `var(--j-i)` */
-  "$j-i"?: string | number;
-  /** 
-   * justify-self
-   *
-   * `var(--j-s)` */
-  "$j-s"?: string | number;
+   * `var(--a-s)` */
+  "$a-s"?: string | number;
   /** 
    * bottom
    *
    * `var(--bot)` */
   "$bot"?: string | number;
-  /** 
-   * z-index
-   *
-   * `var(--z-i)` */
-  "$z-i"?: string | number;
   /** 
    * overflow
    *
@@ -1132,15 +1072,15 @@ export type CourtCssProps = {
    * `var(--ov-c-m, var(--ov))` */
   "$ov-c-m"?: string | number;
   /** 
-   * overflow-block
-   *
-   * `var(--ov-b, var(--ov))` */
-  "$ov-b"?: string | number;
-  /** 
    * overflow-inline
    *
    * `var(--ov-i, var(--ov))` */
   "$ov-i"?: string | number;
+  /** 
+   * overflow-block
+   *
+   * `var(--ov-b, var(--ov))` */
+  "$ov-b"?: string | number;
   /** 
    * overflow-anchor
    *
@@ -1161,6 +1101,11 @@ export type CourtCssProps = {
    *
    * `var(--ov-y, var(--ov))` */
   "$ov-y"?: string | number;
+  /** 
+   * z-index
+   *
+   * `var(--z-i)` */
+  "$z-i"?: string | number;
   /** 
    * animation
    *
@@ -1222,15 +1167,15 @@ export type CourtCssProps = {
    * `var(--mi-h)` */
   "$mi-h"?: string | number;
   /** 
-   * min-block-size
-   *
-   * `var(--mi-b-s)` */
-  "$mi-b-s"?: string | number;
-  /** 
    * min-inline-size
    *
    * `var(--mi-i-s)` */
   "$mi-i-s"?: string | number;
+  /** 
+   * min-block-size
+   *
+   * `var(--mi-b-s)` */
+  "$mi-b-s"?: string | number;
   /** 
    * min-intrinsic-sizing
    *
@@ -1242,30 +1187,15 @@ export type CourtCssProps = {
    * `var(--flo)` */
   "$flo"?: string | number;
   /** 
-   * float-offset
+   * vertical-align
    *
-   * `var(--flo-o, var(--flo))` */
-  "$flo-o"?: string | number;
-  /** 
-   * float-defer
-   *
-   * `var(--flo-d, var(--flo))` */
-  "$flo-d"?: string | number;
-  /** 
-   * float-reference
-   *
-   * `var(--flo-r, var(--flo))` */
-  "$flo-r"?: string | number;
+   * `var(--v-a)` */
+  "$v-a"?: string | number;
   /** 
    * order
    *
    * `var(--or)` */
   "$or"?: string | number;
-  /** 
-   * vertical-align
-   *
-   * `var(--v-a)` */
-  "$v-a"?: string | number;
   /** 
    * letter-spacing
    *
@@ -1327,6 +1257,11 @@ export type CourtCssProps = {
    * `var(--vi)` */
   "$vi"?: string | number;
   /** 
+   * clear
+   *
+   * `var(--cl)` */
+  "$cl"?: string | number;
+  /** 
    * fill
    *
    * `var(--fi)` */
@@ -1377,11 +1312,6 @@ export type CourtCssProps = {
    * `var(--fi-s, var(--fi))` */
   "$fi-s"?: string | number;
   /** 
-   * clear
-   *
-   * `var(--cl)` */
-  "$cl"?: string | number;
-  /** 
    * word-break
    *
    * `var(--wo-b)` */
@@ -1407,10 +1337,10 @@ export type CourtCssProps = {
    * `var(--wo-w)` */
   "$wo-w"?: string | number;
   /** 
-   * gap
+   * filter
    *
-   * `var(--ga)` */
-  "$ga"?: string | number;
+   * `var(--fil)` */
+  "$fil"?: string | number;
   /** 
    * object-position
    *
@@ -1424,163 +1354,88 @@ export type CourtCssProps = {
   /** 
    * column-width
    *
-   * `var(--col-w)` */
-  "$col-w"?: string | number;
+   * `var(--co-w)` */
+  "$co-w"?: string | number;
   /** 
    * column-fill
    *
-   * `var(--col-f)` */
-  "$col-f"?: string | number;
+   * `var(--co-f)` */
+  "$co-f"?: string | number;
   /** 
    * column-gap
    *
-   * `var(--col-g)` */
-  "$col-g"?: string | number;
+   * `var(--co-g)` */
+  "$co-g"?: string | number;
   /** 
    * column-count
    *
-   * `var(--col-c)` */
-  "$col-c"?: string | number;
+   * `var(--co-c)` */
+  "$co-c"?: string | number;
   /** 
    * column-rule
    *
-   * `var(--col-r)` */
-  "$col-r"?: string | number;
+   * `var(--co-r)` */
+  "$co-r"?: string | number;
   /** 
    * column-rule-color
    *
-   * `var(--col-r-c, var(--col-r))` */
-  "$col-r-c"?: string | number;
+   * `var(--co-r-c, var(--co-r))` */
+  "$co-r-c"?: string | number;
   /** 
    * column-rule-width
    *
-   * `var(--col-r-w, var(--col-r))` */
-  "$col-r-w"?: string | number;
+   * `var(--co-r-w, var(--co-r))` */
+  "$co-r-w"?: string | number;
   /** 
    * column-rule-style
    *
-   * `var(--col-r-s, var(--col-r))` */
-  "$col-r-s"?: string | number;
+   * `var(--co-r-s, var(--co-r))` */
+  "$co-r-s"?: string | number;
   /** 
    * column-span
    *
-   * `var(--col-s)` */
-  "$col-s"?: string | number;
+   * `var(--co-s)` */
+  "$co-s"?: string | number;
   /** 
-   * stroke
+   * gap
    *
-   * `var(--s)` */
-  "$s"?: string | number;
+   * `var(--ga)` */
+  "$ga"?: string | number;
   /** 
-   * stroke-color
+   * justify-items
    *
-   * `var(--s-c, var(--s))` */
-  "$s-c"?: string | number;
+   * `var(--j-i)` */
+  "$j-i"?: string | number;
   /** 
-   * stroke-width
+   * justify-self
    *
-   * `var(--s-w, var(--s))` */
-  "$s-w"?: string | number;
-  /** 
-   * stroke-position
-   *
-   * `var(--s-p, var(--s))` */
-  "$s-p"?: string | number;
-  /** 
-   * stroke-opacity
-   *
-   * `var(--s-o, var(--s))` */
-  "$s-o"?: string | number;
-  /** 
-   * stroke-align
-   *
-   * `var(--s-a, var(--s))` */
-  "$s-a"?: string | number;
-  /** 
-   * stroke-image
-   *
-   * `var(--s-i, var(--s))` */
-  "$s-i"?: string | number;
-  /** 
-   * stroke-break
-   *
-   * `var(--s-b, var(--s))` */
-  "$s-b"?: string | number;
-  /** 
-   * stroke-alignment
-   *
-   * `var(--s-al, var(--s))` */
-  "$s-al"?: string | number;
-  /** 
-   * stroke-dash-justify
-   *
-   * `var(--s-d-j, var(--s))` */
-  "$s-d-j"?: string | number;
-  /** 
-   * stroke-dash-corner
-   *
-   * `var(--s-d-c, var(--s))` */
-  "$s-d-c"?: string | number;
-  /** 
-   * stroke-dashadjust
-   *
-   * `var(--s-da, var(--s))` */
-  "$s-da"?: string | number;
-  /** 
-   * stroke-dasharray
-   *
-   * `var(--s-das, var(--s))` */
-  "$s-das"?: string | number;
-  /** 
-   * stroke-dashcorner
-   *
-   * `var(--s-dash, var(--s))` */
-  "$s-dash"?: string | number;
-  /** 
-   * stroke-dashoffset
-   *
-   * `var(--s-dasho, var(--s))` */
-  "$s-dasho"?: string | number;
-  /** 
-   * stroke-linecap
-   *
-   * `var(--s-l, var(--s))` */
-  "$s-l"?: string | number;
-  /** 
-   * stroke-linejoin
-   *
-   * `var(--s-li, var(--s))` */
-  "$s-li"?: string | number;
-  /** 
-   * stroke-miterlimit
-   *
-   * `var(--s-m, var(--s))` */
-  "$s-m"?: string | number;
-  /** 
-   * stroke-origin
-   *
-   * `var(--s-or, var(--s))` */
-  "$s-or"?: string | number;
-  /** 
-   * stroke-repeat
-   *
-   * `var(--s-r, var(--s))` */
-  "$s-r"?: string | number;
-  /** 
-   * stroke-size
-   *
-   * `var(--s-s, var(--s))` */
-  "$s-s"?: string | number;
-  /** 
-   * filter
-   *
-   * `var(--fil)` */
-  "$fil"?: string | number;
+   * `var(--j-s)` */
+  "$j-s"?: string | number;
   /** 
    * user-select
    *
    * `var(--u-s)` */
   "$u-s"?: string | number;
+  /** 
+   * clip
+   *
+   * `var(--cli)` */
+  "$cli"?: string | number;
+  /** 
+   * clip-path
+   *
+   * `var(--cli-p, var(--cli))` */
+  "$cli-p"?: string | number;
+  /** 
+   * clip-rule
+   *
+   * `var(--cli-r, var(--cli))` */
+  "$cli-r"?: string | number;
+  /** 
+   * row-gap
+   *
+   * `var(--ro-g)` */
+  "$ro-g"?: string | number;
   /** 
    * mask
    *
@@ -1667,26 +1522,6 @@ export type CourtCssProps = {
    * `var(--mas-t, var(--mas))` */
   "$mas-t"?: string | number;
   /** 
-   * clip
-   *
-   * `var(--cli)` */
-  "$cli"?: string | number;
-  /** 
-   * clip-path
-   *
-   * `var(--cli-p, var(--cli))` */
-  "$cli-p"?: string | number;
-  /** 
-   * clip-rule
-   *
-   * `var(--cli-r, var(--cli))` */
-  "$cli-r"?: string | number;
-  /** 
-   * row-gap
-   *
-   * `var(--ro-g)` */
-  "$ro-g"?: string | number;
-  /** 
    * appearance
    *
    * `var(--ap)` */
@@ -1696,6 +1531,11 @@ export type CourtCssProps = {
    *
    * `var(--di)` */
   "$di"?: string | number;
+  /** 
+   * backface-visibility
+   *
+   * `var(--bac-v)` */
+  "$bac-v"?: string | number;
   /** 
    * caret
    *
@@ -1712,45 +1552,30 @@ export type CourtCssProps = {
    * `var(--ca-s, var(--ca))` */
   "$ca-s"?: string | number;
   /** 
-   * backface-visibility
-   *
-   * `var(--bac-v)` */
-  "$bac-v"?: string | number;
-  /** 
-   * place-content
-   *
-   * `var(--pl-c)` */
-  "$pl-c"?: string | number;
-  /** 
-   * place-items
-   *
-   * `var(--pl-i)` */
-  "$pl-i"?: string | number;
-  /** 
-   * place-self
-   *
-   * `var(--pl-s)` */
-  "$pl-s"?: string | number;
-  /** 
    * will-change
    *
    * `var(--wi-c)` */
   "$wi-c"?: string | number;
+  /** 
+   * resize
+   *
+   * `var(--re)` */
+  "$re"?: string | number;
   /** 
    * overscroll-behavior
    *
    * `var(--ove-b)` */
   "$ove-b"?: string | number;
   /** 
-   * overscroll-behavior-block
-   *
-   * `var(--ove-b-b, var(--ove-b))` */
-  "$ove-b-b"?: string | number;
-  /** 
    * overscroll-behavior-inline
    *
    * `var(--ove-b-i, var(--ove-b))` */
   "$ove-b-i"?: string | number;
+  /** 
+   * overscroll-behavior-block
+   *
+   * `var(--ove-b-b, var(--ove-b))` */
+  "$ove-b-b"?: string | number;
   /** 
    * overscroll-behavior-x
    *
@@ -1762,15 +1587,15 @@ export type CourtCssProps = {
    * `var(--ove-b-y, var(--ove-b))` */
   "$ove-b-y"?: string | number;
   /** 
-   * resize
-   *
-   * `var(--re)` */
-  "$re"?: string | number;
-  /** 
    * tab-size
    *
    * `var(--ta-s)` */
   "$ta-s"?: string | number;
+  /** 
+   * mix-blend-mode
+   *
+   * `var(--mix-b-m)` */
+  "$mix-b-m"?: string | number;
   /** 
    * counter-increment
    *
@@ -1786,151 +1611,6 @@ export type CourtCssProps = {
    *
    * `var(--cou-s)` */
   "$cou-s"?: string | number;
-  /** 
-   * perspective
-   *
-   * `var(--pe)` */
-  "$pe"?: string | number;
-  /** 
-   * perspective-origin
-   *
-   * `var(--pe-o, var(--pe))` */
-  "$pe-o"?: string | number;
-  /** 
-   * mix-blend-mode
-   *
-   * `var(--mix-b-m)` */
-  "$mix-b-m"?: string | number;
-  /** 
-   * scroll-margin
-   *
-   * `var(--sc-m)` */
-  "$sc-m"?: string | number;
-  /** 
-   * scroll-margin-left
-   *
-   * `var(--sc-m-l, var(--sc-m))` */
-  "$sc-m-l"?: string | number;
-  /** 
-   * scroll-margin-top
-   *
-   * `var(--sc-m-t, var(--sc-m))` */
-  "$sc-m-t"?: string | number;
-  /** 
-   * scroll-margin-right
-   *
-   * `var(--sc-m-r, var(--sc-m))` */
-  "$sc-m-r"?: string | number;
-  /** 
-   * scroll-margin-bottom
-   *
-   * `var(--sc-m-b, var(--sc-m))` */
-  "$sc-m-b"?: string | number;
-  /** 
-   * scroll-margin-block
-   *
-   * `var(--sc-m-bl, var(--sc-m))` */
-  "$sc-m-bl"?: string | number;
-  /** 
-   * scroll-margin-block-end
-   *
-   * `var(--sc-m-bl-e, var(--sc-m-bl, var(--sc-m)))` */
-  "$sc-m-bl-e"?: string | number;
-  /** 
-   * scroll-margin-block-start
-   *
-   * `var(--sc-m-bl-s, var(--sc-m-bl, var(--sc-m)))` */
-  "$sc-m-bl-s"?: string | number;
-  /** 
-   * scroll-margin-inline
-   *
-   * `var(--sc-m-i, var(--sc-m))` */
-  "$sc-m-i"?: string | number;
-  /** 
-   * scroll-margin-inline-end
-   *
-   * `var(--sc-m-i-e, var(--sc-m-i, var(--sc-m)))` */
-  "$sc-m-i-e"?: string | number;
-  /** 
-   * scroll-margin-inline-start
-   *
-   * `var(--sc-m-i-s, var(--sc-m-i, var(--sc-m)))` */
-  "$sc-m-i-s"?: string | number;
-  /** 
-   * scroll-padding
-   *
-   * `var(--sc-p)` */
-  "$sc-p"?: string | number;
-  /** 
-   * scroll-padding-left
-   *
-   * `var(--sc-p-l, var(--sc-p))` */
-  "$sc-p-l"?: string | number;
-  /** 
-   * scroll-padding-top
-   *
-   * `var(--sc-p-t, var(--sc-p))` */
-  "$sc-p-t"?: string | number;
-  /** 
-   * scroll-padding-right
-   *
-   * `var(--sc-p-r, var(--sc-p))` */
-  "$sc-p-r"?: string | number;
-  /** 
-   * scroll-padding-bottom
-   *
-   * `var(--sc-p-b, var(--sc-p))` */
-  "$sc-p-b"?: string | number;
-  /** 
-   * scroll-padding-block
-   *
-   * `var(--sc-p-bl, var(--sc-p))` */
-  "$sc-p-bl"?: string | number;
-  /** 
-   * scroll-padding-block-end
-   *
-   * `var(--sc-p-bl-e, var(--sc-p-bl, var(--sc-p)))` */
-  "$sc-p-bl-e"?: string | number;
-  /** 
-   * scroll-padding-block-start
-   *
-   * `var(--sc-p-bl-s, var(--sc-p-bl, var(--sc-p)))` */
-  "$sc-p-bl-s"?: string | number;
-  /** 
-   * scroll-padding-inline
-   *
-   * `var(--sc-p-i, var(--sc-p))` */
-  "$sc-p-i"?: string | number;
-  /** 
-   * scroll-padding-inline-end
-   *
-   * `var(--sc-p-i-e, var(--sc-p-i, var(--sc-p)))` */
-  "$sc-p-i-e"?: string | number;
-  /** 
-   * scroll-padding-inline-start
-   *
-   * `var(--sc-p-i-s, var(--sc-p-i, var(--sc-p)))` */
-  "$sc-p-i-s"?: string | number;
-  /** 
-   * scroll-behavior
-   *
-   * `var(--sc-b)` */
-  "$sc-b"?: string | number;
-  /** 
-   * scroll-snap-align
-   *
-   * `var(--sc-s-a)` */
-  "$sc-s-a"?: string | number;
-  /** 
-   * scroll-snap-stop
-   *
-   * `var(--sc-s-s)` */
-  "$sc-s-s"?: string | number;
-  /** 
-   * scroll-snap-type
-   *
-   * `var(--sc-s-t)` */
-  "$sc-s-t"?: string | number;
   /** 
    * table-layout
    *
@@ -1957,65 +1637,190 @@ export type CourtCssProps = {
    * `var(--pa-b-i, var(--pa))` */
   "$pa-b-i"?: string | number;
   /** 
-   * speak
+   * perspective
    *
-   * `var(--sp)` */
-  "$sp"?: string | number;
+   * `var(--pe)` */
+  "$pe"?: string | number;
   /** 
-   * speak-as
+   * perspective-origin
    *
-   * `var(--sp-a, var(--sp))` */
-  "$sp-a"?: string | number;
+   * `var(--pe-o, var(--pe))` */
+  "$pe-o"?: string | number;
   /** 
-   * speak-header
+   * scroll-margin
    *
-   * `var(--sp-h, var(--sp))` */
-  "$sp-h"?: string | number;
+   * `var(--s-m)` */
+  "$s-m"?: string | number;
   /** 
-   * speak-numeral
+   * scroll-margin-left
    *
-   * `var(--sp-n, var(--sp))` */
-  "$sp-n"?: string | number;
+   * `var(--s-m-l, var(--s-m))` */
+  "$s-m-l"?: string | number;
   /** 
-   * speak-punctuation
+   * scroll-margin-top
    *
-   * `var(--sp-p, var(--sp))` */
-  "$sp-p"?: string | number;
+   * `var(--s-m-t, var(--s-m))` */
+  "$s-m-t"?: string | number;
+  /** 
+   * scroll-margin-right
+   *
+   * `var(--s-m-r, var(--s-m))` */
+  "$s-m-r"?: string | number;
+  /** 
+   * scroll-margin-bottom
+   *
+   * `var(--s-m-b, var(--s-m))` */
+  "$s-m-b"?: string | number;
+  /** 
+   * scroll-margin-inline
+   *
+   * `var(--s-m-i, var(--s-m))` */
+  "$s-m-i"?: string | number;
+  /** 
+   * scroll-margin-inline-end
+   *
+   * `var(--s-m-i-e, var(--s-m-i, var(--s-m)))` */
+  "$s-m-i-e"?: string | number;
+  /** 
+   * scroll-margin-inline-start
+   *
+   * `var(--s-m-i-s, var(--s-m-i, var(--s-m)))` */
+  "$s-m-i-s"?: string | number;
+  /** 
+   * scroll-margin-block
+   *
+   * `var(--s-m-bl, var(--s-m))` */
+  "$s-m-bl"?: string | number;
+  /** 
+   * scroll-margin-block-end
+   *
+   * `var(--s-m-bl-e, var(--s-m-bl, var(--s-m)))` */
+  "$s-m-bl-e"?: string | number;
+  /** 
+   * scroll-margin-block-start
+   *
+   * `var(--s-m-bl-s, var(--s-m-bl, var(--s-m)))` */
+  "$s-m-bl-s"?: string | number;
+  /** 
+   * scroll-padding
+   *
+   * `var(--s-p)` */
+  "$s-p"?: string | number;
+  /** 
+   * scroll-padding-left
+   *
+   * `var(--s-p-l, var(--s-p))` */
+  "$s-p-l"?: string | number;
+  /** 
+   * scroll-padding-top
+   *
+   * `var(--s-p-t, var(--s-p))` */
+  "$s-p-t"?: string | number;
+  /** 
+   * scroll-padding-right
+   *
+   * `var(--s-p-r, var(--s-p))` */
+  "$s-p-r"?: string | number;
+  /** 
+   * scroll-padding-bottom
+   *
+   * `var(--s-p-b, var(--s-p))` */
+  "$s-p-b"?: string | number;
+  /** 
+   * scroll-padding-inline
+   *
+   * `var(--s-p-i, var(--s-p))` */
+  "$s-p-i"?: string | number;
+  /** 
+   * scroll-padding-inline-end
+   *
+   * `var(--s-p-i-e, var(--s-p-i, var(--s-p)))` */
+  "$s-p-i-e"?: string | number;
+  /** 
+   * scroll-padding-inline-start
+   *
+   * `var(--s-p-i-s, var(--s-p-i, var(--s-p)))` */
+  "$s-p-i-s"?: string | number;
+  /** 
+   * scroll-padding-block
+   *
+   * `var(--s-p-bl, var(--s-p))` */
+  "$s-p-bl"?: string | number;
+  /** 
+   * scroll-padding-block-end
+   *
+   * `var(--s-p-bl-e, var(--s-p-bl, var(--s-p)))` */
+  "$s-p-bl-e"?: string | number;
+  /** 
+   * scroll-padding-block-start
+   *
+   * `var(--s-p-bl-s, var(--s-p-bl, var(--s-p)))` */
+  "$s-p-bl-s"?: string | number;
+  /** 
+   * scroll-behavior
+   *
+   * `var(--s-b)` */
+  "$s-b"?: string | number;
+  /** 
+   * scroll-snap-align
+   *
+   * `var(--s-s-a)` */
+  "$s-s-a"?: string | number;
+  /** 
+   * scroll-snap-stop
+   *
+   * `var(--s-s-s)` */
+  "$s-s-s"?: string | number;
+  /** 
+   * scroll-snap-type
+   *
+   * `var(--s-s-t)` */
+  "$s-s-t"?: string | number;
+  /** 
+   * place-items
+   *
+   * `var(--pl-i)` */
+  "$pl-i"?: string | number;
+  /** 
+   * place-self
+   *
+   * `var(--pl-s)` */
+  "$pl-s"?: string | number;
   /** 
    * caption-side
    *
    * `var(--cap-s)` */
   "$cap-s"?: string | number;
   /** 
-   * widows
+   * scrollbar-color
    *
-   * `var(--wid)` */
-  "$wid"?: string | number;
+   * `var(--sc-c)` */
+  "$sc-c"?: string | number;
   /** 
-   * orphans
+   * scrollbar-width
    *
-   * `var(--orp)` */
-  "$orp"?: string | number;
+   * `var(--sc-w)` */
+  "$sc-w"?: string | number;
+  /** 
+   * scrollbar-gutter
+   *
+   * `var(--sc-g)` */
+  "$sc-g"?: string | number;
   /** 
    * hyphens
    *
    * `var(--hy)` */
   "$hy"?: string | number;
   /** 
-   * scrollbar-color
+   * orphans
    *
-   * `var(--scr-c)` */
-  "$scr-c"?: string | number;
+   * `var(--orp)` */
+  "$orp"?: string | number;
   /** 
-   * scrollbar-width
+   * widows
    *
-   * `var(--scr-w)` */
-  "$scr-w"?: string | number;
-  /** 
-   * scrollbar-gutter
-   *
-   * `var(--scr-g)` */
-  "$scr-g"?: string | number;
+   * `var(--wid)` */
+  "$wid"?: string | number;
   /** 
    * quotes
    *
@@ -2057,25 +1862,20 @@ export type CourtCssProps = {
    * `var(--br-i)` */
   "$br-i"?: string | number;
   /** 
+   * columns
+   *
+   * `var(--col)` */
+  "$col"?: string | number;
+  /** 
+   * isolation
+   *
+   * `var(--is)` */
+  "$is"?: string | number;
+  /** 
    * inset
    *
    * `var(--in)` */
   "$in"?: string | number;
-  /** 
-   * inset-block
-   *
-   * `var(--in-b, var(--in))` */
-  "$in-b"?: string | number;
-  /** 
-   * inset-block-end
-   *
-   * `var(--in-b-e, var(--in-b, var(--in)))` */
-  "$in-b-e"?: string | number;
-  /** 
-   * inset-block-start
-   *
-   * `var(--in-b-s, var(--in-b, var(--in)))` */
-  "$in-b-s"?: string | number;
   /** 
    * inset-inline
    *
@@ -2092,50 +1892,35 @@ export type CourtCssProps = {
    * `var(--in-i-s, var(--in-i, var(--in)))` */
   "$in-i-s"?: string | number;
   /** 
-   * isolation
+   * inset-block
    *
-   * `var(--is)` */
-  "$is"?: string | number;
+   * `var(--in-b, var(--in))` */
+  "$in-b"?: string | number;
+  /** 
+   * inset-block-end
+   *
+   * `var(--in-b-e, var(--in-b, var(--in)))` */
+  "$in-b-e"?: string | number;
+  /** 
+   * inset-block-start
+   *
+   * `var(--in-b-s, var(--in-b, var(--in)))` */
+  "$in-b-s"?: string | number;
   /** 
    * all
    *
    * `var(--al)` */
   "$al"?: string | number;
   /** 
-   * contain
+   * aspect-ratio
    *
-   * `var(--con)` */
-  "$con"?: string | number;
+   * `var(--as-r)` */
+  "$as-r"?: string | number;
   /** 
-   * contain-intrinsic-width
+   * writing-mode
    *
-   * `var(--con-i-w, var(--con))` */
-  "$con-i-w"?: string | number;
-  /** 
-   * contain-intrinsic-height
-   *
-   * `var(--con-i-h, var(--con))` */
-  "$con-i-h"?: string | number;
-  /** 
-   * contain-intrinsic-block-size
-   *
-   * `var(--con-i-b-s, var(--con))` */
-  "$con-i-b-s"?: string | number;
-  /** 
-   * contain-intrinsic-inline-size
-   *
-   * `var(--con-i-i-s, var(--con))` */
-  "$con-i-i-s"?: string | number;
-  /** 
-   * contain-intrinsic-size
-   *
-   * `var(--con-i-s, var(--con))` */
-  "$con-i-s"?: string | number;
-  /** 
-   * columns
-   *
-   * `var(--colu)` */
-  "$colu"?: string | number;
+   * `var(--wr-m)` */
+  "$wr-m"?: string | number;
   /** 
    * empty-cells
    *
@@ -2162,80 +1947,10 @@ export type CourtCssProps = {
    * `var(--ru-o)` */
   "$ru-o"?: string | number;
   /** 
-   * nav-left
-   *
-   * `var(--n-l)` */
-  "$n-l"?: string | number;
-  /** 
-   * nav-right
-   *
-   * `var(--n-r)` */
-  "$n-r"?: string | number;
-  /** 
-   * nav-down
-   *
-   * `var(--n-d)` */
-  "$n-d"?: string | number;
-  /** 
-   * nav-up
-   *
-   * `var(--n-u)` */
-  "$n-u"?: string | number;
-  /** 
-   * hyphenate-character
-   *
-   * `var(--hyp-c)` */
-  "$hyp-c"?: string | number;
-  /** 
-   * hyphenate-limit-chars
-   *
-   * `var(--hyp-l-c)` */
-  "$hyp-l-c"?: string | number;
-  /** 
-   * hyphenate-limit-last
-   *
-   * `var(--hyp-l-l)` */
-  "$hyp-l-l"?: string | number;
-  /** 
-   * hyphenate-limit-lines
-   *
-   * `var(--hyp-l-li)` */
-  "$hyp-l-li"?: string | number;
-  /** 
-   * hyphenate-limit-zone
-   *
-   * `var(--hyp-l-z)` */
-  "$hyp-l-z"?: string | number;
-  /** 
-   * bookmark-label
-   *
-   * `var(--boo-l)` */
-  "$boo-l"?: string | number;
-  /** 
-   * bookmark-level
-   *
-   * `var(--boo-le)` */
-  "$boo-le"?: string | number;
-  /** 
-   * bookmark-state
-   *
-   * `var(--boo-s)` */
-  "$boo-s"?: string | number;
-  /** 
    * dominant-baseline
    *
    * `var(--do-b)` */
   "$do-b"?: string | number;
-  /** 
-   * aspect-ratio
-   *
-   * `var(--as-r)` */
-  "$as-r"?: string | number;
-  /** 
-   * writing-mode
-   *
-   * `var(--wr-m)` */
-  "$wr-m"?: string | number;
   /** 
    * alignment-baseline
    *
@@ -2262,6 +1977,16 @@ export type CourtCssProps = {
    * `var(--az)` */
   "$az"?: string | number;
   /** 
+   * string-set
+   *
+   * `var(--st-s)` */
+  "$st-s"?: string | number;
+  /** 
+   * elevation
+   *
+   * `var(--el)` */
+  "$el"?: string | number;
+  /** 
    * shape-margin
    *
    * `var(--sh-m)` */
@@ -2282,60 +2007,15 @@ export type CourtCssProps = {
    * `var(--sh-o)` */
   "$sh-o"?: string | number;
   /** 
-   * string-set
+   * inline-size
    *
-   * `var(--st-s)` */
-  "$st-s"?: string | number;
+   * `var(--inl-s)` */
+  "$inl-s"?: string | number;
   /** 
-   * elevation
+   * inline-sizing
    *
-   * `var(--el)` */
-  "$el"?: string | number;
-  /** 
-   * marker
-   *
-   * `var(--mar)` */
-  "$mar"?: string | number;
-  /** 
-   * marker-end
-   *
-   * `var(--mar-e, var(--mar))` */
-  "$mar-e"?: string | number;
-  /** 
-   * marker-knockout-left
-   *
-   * `var(--mar-k-l, var(--mar))` */
-  "$mar-k-l"?: string | number;
-  /** 
-   * marker-knockout-right
-   *
-   * `var(--mar-k-r, var(--mar))` */
-  "$mar-k-r"?: string | number;
-  /** 
-   * marker-mid
-   *
-   * `var(--mar-m, var(--mar))` */
-  "$mar-m"?: string | number;
-  /** 
-   * marker-pattern
-   *
-   * `var(--mar-p, var(--mar))` */
-  "$mar-p"?: string | number;
-  /** 
-   * marker-segment
-   *
-   * `var(--mar-s, var(--mar))` */
-  "$mar-s"?: string | number;
-  /** 
-   * marker-side
-   *
-   * `var(--mar-si, var(--mar))` */
-  "$mar-si"?: string | number;
-  /** 
-   * marker-start
-   *
-   * `var(--mar-st, var(--mar))` */
-  "$mar-st"?: string | number;
+   * `var(--inl-si)` */
+  "$inl-si"?: string | number;
   /** 
    * block-ellipsis
    *
@@ -2347,31 +2027,6 @@ export type CourtCssProps = {
    * `var(--bl-s)` */
   "$bl-s"?: string | number;
   /** 
-   * block-step
-   *
-   * `var(--bl-st)` */
-  "$bl-st"?: string | number;
-  /** 
-   * block-step-align
-   *
-   * `var(--bl-st-a, var(--bl-st))` */
-  "$bl-st-a"?: string | number;
-  /** 
-   * block-step-insert
-   *
-   * `var(--bl-st-i, var(--bl-st))` */
-  "$bl-st-i"?: string | number;
-  /** 
-   * block-step-round
-   *
-   * `var(--bl-st-r, var(--bl-st))` */
-  "$bl-st-r"?: string | number;
-  /** 
-   * block-step-size
-   *
-   * `var(--bl-st-s, var(--bl-st))` */
-  "$bl-st-s"?: string | number;
-  /** 
    * flood-color
    *
    * `var(--floo-c)` */
@@ -2381,16 +2036,6 @@ export type CourtCssProps = {
    *
    * `var(--floo-o)` */
   "$floo-o"?: string | number;
-  /** 
-   * inline-size
-   *
-   * `var(--inl-s)` */
-  "$inl-s"?: string | number;
-  /** 
-   * inline-sizing
-   *
-   * `var(--inl-si)` */
-  "$inl-si"?: string | number;
   /** 
    * lighting-color
    *
@@ -2432,15 +2077,20 @@ export type CourtCssProps = {
    * `var(--pr-c-a)` */
   "$pr-c-a"?: string | number;
   /** 
+   * translate
+   *
+   * `var(--tran)` */
+  "$tran"?: string | number;
+  /** 
    * scale
    *
    * `var(--sca)` */
   "$sca"?: string | number;
   /** 
-   * translate
+   * accent-color
    *
-   * `var(--tran)` */
-  "$tran"?: string | number;
+   * `var(--ac-c)` */
+  "$ac-c"?: string | number;
   /** 
    * initial-letter
    *
@@ -2457,11 +2107,6 @@ export type CourtCssProps = {
    * `var(--ini-l-w, var(--ini-l))` */
   "$ini-l-w"?: string | number;
   /** 
-   * accent-color
-   *
-   * `var(--ac-c)` */
-  "$ac-c"?: string | number;
-  /** 
    * chains
    *
    * `var(--ch)` */
@@ -2469,23 +2114,8 @@ export type CourtCssProps = {
   /** 
    * continue
    *
-   * `var(--cont)` */
-  "$cont"?: string | number;
-  /** 
-   * cue
-   *
-   * `var(--cue)` */
-  "$cue"?: string | number;
-  /** 
-   * cue-after
-   *
-   * `var(--cue-a, var(--cue))` */
-  "$cue-a"?: string | number;
-  /** 
-   * cue-before
-   *
-   * `var(--cue-b, var(--cue))` */
-  "$cue-b"?: string | number;
+   * `var(--con)` */
+  "$con"?: string | number;
   /** 
    * flow
    *
@@ -2532,31 +2162,6 @@ export type CourtCssProps = {
    * `var(--lea-t)` */
   "$lea-t"?: string | number;
   /** 
-   * pause
-   *
-   * `var(--pau)` */
-  "$pau"?: string | number;
-  /** 
-   * pause-after
-   *
-   * `var(--pau-a, var(--pau))` */
-  "$pau-a"?: string | number;
-  /** 
-   * pause-before
-   *
-   * `var(--pau-b, var(--pau))` */
-  "$pau-b"?: string | number;
-  /** 
-   * pitch
-   *
-   * `var(--pi)` */
-  "$pi"?: string | number;
-  /** 
-   * pitch-range
-   *
-   * `var(--pi-r, var(--pi))` */
-  "$pi-r"?: string | number;
-  /** 
    * play-during
    *
    * `var(--pla-d)` */
@@ -2571,21 +2176,6 @@ export type CourtCssProps = {
    *
    * `var(--reg-f)` */
   "$reg-f"?: string | number;
-  /** 
-   * rest
-   *
-   * `var(--res)` */
-  "$res"?: string | number;
-  /** 
-   * rest-after
-   *
-   * `var(--res-a, var(--res))` */
-  "$res-a"?: string | number;
-  /** 
-   * rest-before
-   *
-   * `var(--res-b, var(--res))` */
-  "$res-b"?: string | number;
   /** 
    * richness
    *
@@ -2602,75 +2192,15 @@ export type CourtCssProps = {
    * `var(--run)` */
   "$run"?: string | number;
   /** 
-   * spatial-navigation-contain
-   *
-   * `var(--spa-n-c)` */
-  "$spa-n-c"?: string | number;
-  /** 
-   * spatial-navigation-action
-   *
-   * `var(--spa-n-a)` */
-  "$spa-n-a"?: string | number;
-  /** 
-   * spatial-navigation-function
-   *
-   * `var(--spa-n-f)` */
-  "$spa-n-f"?: string | number;
-  /** 
    * speech-rate
    *
-   * `var(--spe-r)` */
-  "$spe-r"?: string | number;
-  /** 
-   * stress
-   *
-   * `var(--str)` */
-  "$str"?: string | number;
-  /** 
-   * voice-balance
-   *
-   * `var(--vo-b)` */
-  "$vo-b"?: string | number;
-  /** 
-   * voice-duration
-   *
-   * `var(--vo-d)` */
-  "$vo-d"?: string | number;
-  /** 
-   * voice-family
-   *
-   * `var(--vo-f)` */
-  "$vo-f"?: string | number;
-  /** 
-   * voice-pitch
-   *
-   * `var(--vo-p)` */
-  "$vo-p"?: string | number;
-  /** 
-   * voice-range
-   *
-   * `var(--vo-r)` */
-  "$vo-r"?: string | number;
-  /** 
-   * voice-rate
-   *
-   * `var(--vo-ra)` */
-  "$vo-ra"?: string | number;
-  /** 
-   * voice-stress
-   *
-   * `var(--vo-s)` */
-  "$vo-s"?: string | number;
-  /** 
-   * voice-volume
-   *
-   * `var(--vo-v)` */
-  "$vo-v"?: string | number;
+   * `var(--sp-r)` */
+  "$sp-r"?: string | number;
   /** 
    * volume
    *
-   * `var(--vol)` */
-  "$vol"?: string | number;
+   * `var(--vo)` */
+  "$vo"?: string | number;
   /** 
    * wrap-after
    *

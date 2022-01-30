@@ -53,7 +53,7 @@ type AddModifiers<T> = T & {
   [s in keyof T & string as WithModifierSuffixes<s>]?: T[s];
 };
 
-type CourtComponentProps<C extends React.ElementType> =
+export type CourtComponentProps<C extends React.ElementType> =
   PolymorphicComponentProps<C, AddModifiers<CourtCssProps>>;
 
 const classNameRegex2 = /^\$(?<classname>[a-z-]+(_(?<modifier>\w+))?)$/g;
