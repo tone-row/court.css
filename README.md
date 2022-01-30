@@ -1,8 +1,8 @@
 <div align="center">
   
-# court.css 🏰
+# court.css
 
-A <u>JSX-based</u>, <u>CSS utility framework</u> with a predictable API, good typing, and a small footprint.
+Tailwind-like CSS-in-JS with a predictable API, no compilation step, good typing, and a small footprint.
   
 ![npm](https://img.shields.io/npm/v/court.css)
 ![npm bundle size](https://img.shields.io/bundlephobia/min/court.css)
@@ -59,6 +59,10 @@ OMG you're right! What was I thinking!?
 There are 9 zillion approaches to styling. This is another one. Depending on your needs, it's better AND worse than others. It's similar to tailwind but doesn't need to be compiled. It requires more runtime memory than tailwind because it converts props to classes & css variables, but less memory than CSS-in-JS options like styled-components, because it doesn't need to write styles to the `<head>`. It's generally smaller than other styling solutions because of how heavily it leverages css custom properties.
 
 Most importantly, I thought this was a funny idea so I built it. Try it out. Use it if it works for you.
+
+#### Why court.css?
+
+For the French word _court_ meaning short or brief.
 
 ## Big Example
 
