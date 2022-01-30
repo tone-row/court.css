@@ -5,6 +5,7 @@
 A <u>JSX-based</u>, <u>CSS utility framework</u> with a predictable API, good typing, and a small footprint.
   
 ![npm](https://img.shields.io/npm/v/court.css)
+![npm bundle size](https://img.shields.io/bundlephobia/min/court.css)
   
 </div>
 
@@ -12,42 +13,47 @@ A <u>JSX-based</u>, <u>CSS utility framework</u> with a predictable API, good ty
 
 ```bash
 npm i court.css
-
-# or
-
-yarn add court.css
 ```
 
-## Usage
+## Basic Usage
 
 ```tsx
-import "court.css/stylesheet"; // import the stylesheet
+import "court.css/stylesheet"; // import stylesheet
 import { CourtReact as Box } from "court.css"; // import polymorphic component
 
-export default function App() {
+function Title() {
   return (
-    <Box as="h1" $f-f="Comic Sans MS" $co="blue" className="App">
+    <Box as="h1" $f-f="Comic Sans MS" $co="blue">
       Hello Court.css
     </Box>
   );
 }
 ```
 
+## Gist
+
+- #### 1 stylesheet & 1 component API
+  Add the stylesheet, import the polymorphic component and you're off to the races
+- #### 1 prop per css property
+  No helpers to learn, just CSS with the property names shorterned
+- #### prop names simplified from usage (with autocomplete in TS)
+  The name for the css property _border_ is `$b`. _border-top_ is `$b-t` and _border-right_ `$b-r`. _border-radius_ is `$b-ra` – we add one letter from the word _radius_ because the `r` was already used for _border-right_. Another example is background, it's `$ba` because `$b` is used for border.
+- #### psuedo-selectors use underscore 
+  `$ou_focus` = _outline_ when focused. `$bo-s_hover` = _box-shadow_ when hovered.
+  
+## This is crazy, I could just use _____
+
+OMG you're right! What was I thinking!?
+
+![teddy bear committing suicide](https://media0.giphy.com/media/vkwAeqMEUSaoU/giphy.gif?cid=ecf05e47ebd1a1jwry1bm2h6b354kegtp9poux67jg77vbfo&rid=giphy.gif&ct=g)
+
 ## Motivation
 
-There are 9 ZILLION approaches to styling in modern frontend tooling. This is another one. Depending on your needs, it's better **and** worse than others. It's similar to tailwind but doesn't need to be compiled. It requires more runtime memory than tailwind because it converts component props to classes css custom properties, but less memory than CSS-in-JS options like styled-components, because it doesn't need to write styles to the `<head>`. It's generally smaller than other styling solutions because of how heavily it leverages css custom properties.
+There are 9 zillion approaches to styling. This is another one. Depending on your needs, it's better AND worse than others. It's similar to tailwind but doesn't need to be compiled. It requires more runtime memory than tailwind because it converts props to classes & css variables, but less memory than CSS-in-JS options like styled-components, because it doesn't need to write styles to the `<head>`. It's generally smaller than other styling solutions because of how heavily it leverages css custom properties.
 
-Ultimately – I felt this was an interesting idea that represents an interesting middle ground in frontend styling techniques. Try it out! Use it if it works for you.
+Most importantly, I thought this was a funny idea so I built it. Try it out. Use it if it works for you.
 
-## Basic Concepts
-
-1. **court.css** uses <u>one stylesheet</u> and <u>one component</u>.
-1. Each one of the component's props</u> applies to <u>one css property</u>.
-1. All component props expect strings unless they've been _intercepted_.
-1. Component prop names follow a simple rule
-1. Psuedo-selectors (like hover, active, and focus) follow a simple rule
-
-## Example
+## Big Example
 
 [Open in CodeSandbox](https://codesandbox.io/s/court-css-example-uudxu?file=/src/App.tsx)
 
@@ -120,7 +126,7 @@ export default function App() {
 }
 ```
 
-## Intercept Props
+## Intercept
 
 court.css doesn't make any assumptions about the props your pass. Instead, if you want to implement an abstraction over specific properties, you can intercept them. Just make sure you do this before you use the component (, it may be a good idea to do all your `intercept`'s in one file, and re-export the component after). Here's an example that uses t-shirt sizing for font sizes.
 
@@ -156,7 +162,7 @@ function App() {
 }
 ```
 
-### Roadmap
+## Roadmap
 
 - make sure Court component props are exported and easy to compose
 - remove unlikely classes (e.g., `content`)
