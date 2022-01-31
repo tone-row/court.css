@@ -53,6 +53,10 @@ export function intercept<K extends keyof CourtComponentProps>(
   interceptor[key] = fn;
 }
 
+const safety: Record<string, string[]> = {
+  "ba-cl": ["WebkitBackgroundClip", "backgroundClip"],
+};
+
 export function CourtComponent<C extends React.ElementType = "div">({
   as,
   ...props
@@ -71,18 +75,25 @@ export function CourtComponent<C extends React.ElementType = "div">({
           };
           let { classname } = groups; // modifier not used
 
-          // always add class
-          c = c.concat([classname]);
-
           if (props[key] != null) {
             let baseKey: keyof CourtComponentProps = key.split("_")[0];
             let intercept = interceptor[baseKey];
             let value = props[key];
             if (intercept) value = intercept(value) as any;
 
-            // only add css property if string
+            // only add css property if not null or undefined
             if (value != null) {
-              s["--" + classname] = value;
+              // if class in safety, apply it directly to style
+              if (safety[classname]) {
+                console.log(safety[classname]);
+                for (let property of safety[classname]) {
+                  console.log(property);
+                  s[property] = value;
+                }
+              } else {
+                c = c.concat([classname]);
+                s["--" + classname] = value;
+              }
             }
           }
         } catch {
@@ -102,7 +113,7 @@ export function CourtComponent<C extends React.ElementType = "div">({
     <X
       {..._props}
       className={[props.className, ..._classes].join(" ")}
-      style={{ ..._style, ...props.style }}
+      style={{ ...props.style, ..._style }}
     />
   );
 }
