@@ -2,17 +2,17 @@ import { TAliasTree } from "./types";
 
 type ClassItem = {
   className: string;
-  property: string;
+  properties: string[];
   fallback: string;
 };
 
 export function makeClasses(propertyList: string[], aliasTree: TAliasTree) {
   let classes: ClassItem[] = [];
 
-  function addClass(className: string, property: string, fallback: string) {
+  function addClass(className: string, properties: string[], fallback: string) {
     classes.push({
       className,
-      property,
+      properties,
       fallback,
     });
   }
@@ -45,7 +45,16 @@ export function makeClasses(propertyList: string[], aliasTree: TAliasTree) {
         fb = ["--" + prefixBy + tree[key].by, ...fallback].filter(Boolean);
         let classNameAndCSSVar = prefixBy + tree[key].by;
         if (classNameAndCSSVar == null) throw new Error("Something went wrong");
-        addClass(prefixBy + tree[key].by, prefix + key, makeFallbackString(fb));
+        let properties = [prefix + key];
+        if (properties[0] === "background-clip") {
+          properties.push("-webkit-background-clip");
+        }
+        addClass(
+          prefixBy + tree[key].by,
+          properties,
+          `var(--${classNameAndCSSVar})`
+        );
+        // addClass(prefixBy + tree[key].by, properties, makeFallbackString(fb));
       }
       // check if children
       if (tree[key].children) {

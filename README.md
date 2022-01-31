@@ -3,10 +3,10 @@
 # court.css
 
 Tailwind-like CSS-in-JS with a predictable API, no compilation step, good typing, and a small footprint.
-  
+
 ![npm](https://img.shields.io/npm/v/court.css)
 ![npm bundle size](https://img.shields.io/bundlephobia/min/court.css)
-  
+
 </div>
 
 ## Getting Started
@@ -45,10 +45,10 @@ function Gist() {
   No helpers to learn, just CSS with the property names shorterned
 - #### prop names simplified from usage
   The name for the css property _border_ is `$b`. _border-top_ is `$b-t` and _border-right_ `$b-r`. _border-radius_ is `$b-ra` – we add one letter from the word _radius_ because the `r` was already used for _border-right_. Another example is background, it's `$ba` because `$b` is used for border.
-- #### psuedo-selectors use underscore 
+- #### psuedo-selectors use underscore
   `$ou_focus` = _outline_ when focused. `$bo-s_hover` = _box-shadow_ when hovered.
-  
-## This is crazy, I could just use _____
+
+## This is crazy, I could just use **\_**
 
 OMG you're right! What was I thinking!?
 
@@ -174,8 +174,5 @@ function App() {
 ## Roadmap
 
 - Make sure Court component props are exported and easy to compose
-- Move the entire class generation process and data it's derived from into this repository
-  - Remove unlikely classes (e.g., `content`)
-- Add autoprefixer to final css
 - Add polymorphic component for friends: vue, svelte, preact, lit
 - Allow users to generate CSS themselves (or add it at runtime) and alter class generation and modifiers

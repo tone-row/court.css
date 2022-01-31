@@ -1,6 +1,6 @@
 /* DO NOT EDIT. Generate with yarn generate:types */
 
-export type CourtCssProps = {
+export type CourtComponentProps = {
   /** 
    * margin
    *
@@ -9,62 +9,62 @@ export type CourtCssProps = {
   /** 
    * margin-left
    *
-   * `var(--m-l, var(--m))` */
+   * `var(--m-l)` */
   "$m-l"?: string | number;
   /** 
    * margin-top
    *
-   * `var(--m-t, var(--m))` */
+   * `var(--m-t)` */
   "$m-t"?: string | number;
   /** 
    * margin-right
    *
-   * `var(--m-r, var(--m))` */
+   * `var(--m-r)` */
   "$m-r"?: string | number;
   /** 
    * margin-bottom
    *
-   * `var(--m-b, var(--m))` */
+   * `var(--m-b)` */
   "$m-b"?: string | number;
   /** 
    * margin-break
    *
-   * `var(--m-br, var(--m))` */
+   * `var(--m-br)` */
   "$m-br"?: string | number;
   /** 
    * margin-inline
    *
-   * `var(--m-i, var(--m))` */
+   * `var(--m-i)` */
   "$m-i"?: string | number;
   /** 
    * margin-inline-end
    *
-   * `var(--m-i-e, var(--m-i, var(--m)))` */
+   * `var(--m-i-e)` */
   "$m-i-e"?: string | number;
   /** 
    * margin-inline-start
    *
-   * `var(--m-i-s, var(--m-i, var(--m)))` */
+   * `var(--m-i-s)` */
   "$m-i-s"?: string | number;
   /** 
    * margin-block
    *
-   * `var(--m-bl, var(--m))` */
+   * `var(--m-bl)` */
   "$m-bl"?: string | number;
   /** 
    * margin-block-end
    *
-   * `var(--m-bl-e, var(--m-bl, var(--m)))` */
+   * `var(--m-bl-e)` */
   "$m-bl-e"?: string | number;
   /** 
    * margin-block-start
    *
-   * `var(--m-bl-s, var(--m-bl, var(--m)))` */
+   * `var(--m-bl-s)` */
   "$m-bl-s"?: string | number;
   /** 
    * margin-trim
    *
-   * `var(--m-tr, var(--m))` */
+   * `var(--m-tr)` */
   "$m-tr"?: string | number;
   /** 
    * border
@@ -74,307 +74,307 @@ export type CourtCssProps = {
   /** 
    * border-color
    *
-   * `var(--b-c, var(--b))` */
+   * `var(--b-c)` */
   "$b-c"?: string | number;
   /** 
    * border-width
    *
-   * `var(--b-w, var(--b))` */
+   * `var(--b-w)` */
   "$b-w"?: string | number;
   /** 
    * border-left
    *
-   * `var(--b-l, var(--b))` */
+   * `var(--b-l)` */
   "$b-l"?: string | number;
   /** 
    * border-left-color
    *
-   * `var(--b-l-c, var(--b-l, var(--b)))` */
+   * `var(--b-l-c)` */
   "$b-l-c"?: string | number;
   /** 
    * border-left-width
    *
-   * `var(--b-l-w, var(--b-l, var(--b)))` */
+   * `var(--b-l-w)` */
   "$b-l-w"?: string | number;
   /** 
    * border-left-style
    *
-   * `var(--b-l-s, var(--b-l, var(--b)))` */
+   * `var(--b-l-s)` */
   "$b-l-s"?: string | number;
   /** 
    * border-top
    *
-   * `var(--b-t, var(--b))` */
+   * `var(--b-t)` */
   "$b-t"?: string | number;
   /** 
    * border-top-color
    *
-   * `var(--b-t-c, var(--b-t, var(--b)))` */
+   * `var(--b-t-c)` */
   "$b-t-c"?: string | number;
   /** 
    * border-top-width
    *
-   * `var(--b-t-w, var(--b-t, var(--b)))` */
+   * `var(--b-t-w)` */
   "$b-t-w"?: string | number;
   /** 
    * border-top-left-radius
    *
-   * `var(--b-t-l-r, var(--b-t, var(--b)))` */
+   * `var(--b-t-l-r)` */
   "$b-t-l-r"?: string | number;
   /** 
    * border-top-right-radius
    *
-   * `var(--b-t-r-r, var(--b-t, var(--b)))` */
+   * `var(--b-t-r-r)` */
   "$b-t-r-r"?: string | number;
   /** 
    * border-top-style
    *
-   * `var(--b-t-s, var(--b-t, var(--b)))` */
+   * `var(--b-t-s)` */
   "$b-t-s"?: string | number;
   /** 
    * border-right
    *
-   * `var(--b-r, var(--b))` */
+   * `var(--b-r)` */
   "$b-r"?: string | number;
   /** 
    * border-right-color
    *
-   * `var(--b-r-c, var(--b-r, var(--b)))` */
+   * `var(--b-r-c)` */
   "$b-r-c"?: string | number;
   /** 
    * border-right-width
    *
-   * `var(--b-r-w, var(--b-r, var(--b)))` */
+   * `var(--b-r-w)` */
   "$b-r-w"?: string | number;
   /** 
    * border-right-style
    *
-   * `var(--b-r-s, var(--b-r, var(--b)))` */
+   * `var(--b-r-s)` */
   "$b-r-s"?: string | number;
   /** 
    * border-bottom
    *
-   * `var(--b-b, var(--b))` */
+   * `var(--b-b)` */
   "$b-b"?: string | number;
   /** 
    * border-bottom-color
    *
-   * `var(--b-b-c, var(--b-b, var(--b)))` */
+   * `var(--b-b-c)` */
   "$b-b-c"?: string | number;
   /** 
    * border-bottom-width
    *
-   * `var(--b-b-w, var(--b-b, var(--b)))` */
+   * `var(--b-b-w)` */
   "$b-b-w"?: string | number;
   /** 
    * border-bottom-left-radius
    *
-   * `var(--b-b-l-r, var(--b-b, var(--b)))` */
+   * `var(--b-b-l-r)` */
   "$b-b-l-r"?: string | number;
   /** 
    * border-bottom-right-radius
    *
-   * `var(--b-b-r-r, var(--b-b, var(--b)))` */
+   * `var(--b-b-r-r)` */
   "$b-b-r-r"?: string | number;
   /** 
    * border-bottom-style
    *
-   * `var(--b-b-s, var(--b-b, var(--b)))` */
+   * `var(--b-b-s)` */
   "$b-b-s"?: string | number;
   /** 
    * border-image
    *
-   * `var(--b-i, var(--b))` */
+   * `var(--b-i)` */
   "$b-i"?: string | number;
   /** 
    * border-image-width
    *
-   * `var(--b-i-w, var(--b-i, var(--b)))` */
+   * `var(--b-i-w)` */
   "$b-i-w"?: string | number;
   /** 
    * border-image-outset
    *
-   * `var(--b-i-o, var(--b-i, var(--b)))` */
+   * `var(--b-i-o)` */
   "$b-i-o"?: string | number;
   /** 
    * border-image-repeat
    *
-   * `var(--b-i-r, var(--b-i, var(--b)))` */
+   * `var(--b-i-r)` */
   "$b-i-r"?: string | number;
   /** 
    * border-image-slice
    *
-   * `var(--b-i-s, var(--b-i, var(--b)))` */
+   * `var(--b-i-s)` */
   "$b-i-s"?: string | number;
   /** 
    * border-image-source
    *
-   * `var(--b-i-so, var(--b-i, var(--b)))` */
+   * `var(--b-i-so)` */
   "$b-i-so"?: string | number;
   /** 
    * border-inline
    *
-   * `var(--b-in, var(--b))` */
+   * `var(--b-in)` */
   "$b-in"?: string | number;
   /** 
    * border-inline-color
    *
-   * `var(--b-in-c, var(--b-in, var(--b)))` */
+   * `var(--b-in-c)` */
   "$b-in-c"?: string | number;
   /** 
    * border-inline-width
    *
-   * `var(--b-in-w, var(--b-in, var(--b)))` */
+   * `var(--b-in-w)` */
   "$b-in-w"?: string | number;
   /** 
    * border-inline-end
    *
-   * `var(--b-in-e, var(--b-in, var(--b)))` */
+   * `var(--b-in-e)` */
   "$b-in-e"?: string | number;
   /** 
    * border-inline-end-color
    *
-   * `var(--b-in-e-c, var(--b-in-e, var(--b-in, var(--b))))` */
+   * `var(--b-in-e-c)` */
   "$b-in-e-c"?: string | number;
   /** 
    * border-inline-end-width
    *
-   * `var(--b-in-e-w, var(--b-in-e, var(--b-in, var(--b))))` */
+   * `var(--b-in-e-w)` */
   "$b-in-e-w"?: string | number;
   /** 
    * border-inline-end-style
    *
-   * `var(--b-in-e-s, var(--b-in-e, var(--b-in, var(--b))))` */
+   * `var(--b-in-e-s)` */
   "$b-in-e-s"?: string | number;
   /** 
    * border-inline-start
    *
-   * `var(--b-in-s, var(--b-in, var(--b)))` */
+   * `var(--b-in-s)` */
   "$b-in-s"?: string | number;
   /** 
    * border-inline-start-color
    *
-   * `var(--b-in-s-c, var(--b-in-s, var(--b-in, var(--b))))` */
+   * `var(--b-in-s-c)` */
   "$b-in-s-c"?: string | number;
   /** 
    * border-inline-start-width
    *
-   * `var(--b-in-s-w, var(--b-in-s, var(--b-in, var(--b))))` */
+   * `var(--b-in-s-w)` */
   "$b-in-s-w"?: string | number;
   /** 
    * border-inline-start-style
    *
-   * `var(--b-in-s-s, var(--b-in-s, var(--b-in, var(--b))))` */
+   * `var(--b-in-s-s)` */
   "$b-in-s-s"?: string | number;
   /** 
    * border-inline-style
    *
-   * `var(--b-in-st, var(--b-in, var(--b)))` */
+   * `var(--b-in-st)` */
   "$b-in-st"?: string | number;
   /** 
    * border-block
    *
-   * `var(--b-bl, var(--b))` */
+   * `var(--b-bl)` */
   "$b-bl"?: string | number;
   /** 
    * border-block-color
    *
-   * `var(--b-bl-c, var(--b-bl, var(--b)))` */
+   * `var(--b-bl-c)` */
   "$b-bl-c"?: string | number;
   /** 
    * border-block-width
    *
-   * `var(--b-bl-w, var(--b-bl, var(--b)))` */
+   * `var(--b-bl-w)` */
   "$b-bl-w"?: string | number;
   /** 
    * border-block-end
    *
-   * `var(--b-bl-e, var(--b-bl, var(--b)))` */
+   * `var(--b-bl-e)` */
   "$b-bl-e"?: string | number;
   /** 
    * border-block-end-color
    *
-   * `var(--b-bl-e-c, var(--b-bl-e, var(--b-bl, var(--b))))` */
+   * `var(--b-bl-e-c)` */
   "$b-bl-e-c"?: string | number;
   /** 
    * border-block-end-width
    *
-   * `var(--b-bl-e-w, var(--b-bl-e, var(--b-bl, var(--b))))` */
+   * `var(--b-bl-e-w)` */
   "$b-bl-e-w"?: string | number;
   /** 
    * border-block-end-style
    *
-   * `var(--b-bl-e-s, var(--b-bl-e, var(--b-bl, var(--b))))` */
+   * `var(--b-bl-e-s)` */
   "$b-bl-e-s"?: string | number;
   /** 
    * border-block-start
    *
-   * `var(--b-bl-s, var(--b-bl, var(--b)))` */
+   * `var(--b-bl-s)` */
   "$b-bl-s"?: string | number;
   /** 
    * border-block-start-color
    *
-   * `var(--b-bl-s-c, var(--b-bl-s, var(--b-bl, var(--b))))` */
+   * `var(--b-bl-s-c)` */
   "$b-bl-s-c"?: string | number;
   /** 
    * border-block-start-width
    *
-   * `var(--b-bl-s-w, var(--b-bl-s, var(--b-bl, var(--b))))` */
+   * `var(--b-bl-s-w)` */
   "$b-bl-s-w"?: string | number;
   /** 
    * border-block-start-style
    *
-   * `var(--b-bl-s-s, var(--b-bl-s, var(--b-bl, var(--b))))` */
+   * `var(--b-bl-s-s)` */
   "$b-bl-s-s"?: string | number;
   /** 
    * border-block-style
    *
-   * `var(--b-bl-st, var(--b-bl, var(--b)))` */
+   * `var(--b-bl-st)` */
   "$b-bl-st"?: string | number;
   /** 
    * border-boundary
    *
-   * `var(--b-bo, var(--b))` */
+   * `var(--b-bo)` */
   "$b-bo"?: string | number;
   /** 
    * border-collapse
    *
-   * `var(--b-co, var(--b))` */
+   * `var(--b-co)` */
   "$b-co"?: string | number;
   /** 
    * border-end-end-radius
    *
-   * `var(--b-e-e-r, var(--b))` */
+   * `var(--b-e-e-r)` */
   "$b-e-e-r"?: string | number;
   /** 
    * border-end-start-radius
    *
-   * `var(--b-e-s-r, var(--b))` */
+   * `var(--b-e-s-r)` */
   "$b-e-s-r"?: string | number;
   /** 
    * border-radius
    *
-   * `var(--b-ra, var(--b))` */
+   * `var(--b-ra)` */
   "$b-ra"?: string | number;
   /** 
    * border-spacing
    *
-   * `var(--b-s, var(--b))` */
+   * `var(--b-s)` */
   "$b-s"?: string | number;
   /** 
    * border-start-end-radius
    *
-   * `var(--b-st-e-r, var(--b))` */
+   * `var(--b-st-e-r)` */
   "$b-st-e-r"?: string | number;
   /** 
    * border-start-start-radius
    *
-   * `var(--b-st-s-r, var(--b))` */
+   * `var(--b-st-s-r)` */
   "$b-st-s-r"?: string | number;
   /** 
    * border-style
    *
-   * `var(--b-sty, var(--b))` */
+   * `var(--b-sty)` */
   "$b-sty"?: string | number;
   /** 
    * background
@@ -384,47 +384,47 @@ export type CourtCssProps = {
   /** 
    * background-color
    *
-   * `var(--ba-c, var(--ba))` */
+   * `var(--ba-c)` */
   "$ba-c"?: string | number;
   /** 
    * background-position
    *
-   * `var(--ba-p, var(--ba))` */
+   * `var(--ba-p)` */
   "$ba-p"?: string | number;
   /** 
    * background-clip
    *
-   * `var(--ba-cl, var(--ba))` */
+   * `var(--ba-cl)` */
   "$ba-cl"?: string | number;
   /** 
    * background-image
    *
-   * `var(--ba-i, var(--ba))` */
+   * `var(--ba-i)` */
   "$ba-i"?: string | number;
   /** 
    * background-attachment
    *
-   * `var(--ba-a, var(--ba))` */
+   * `var(--ba-a)` */
   "$ba-a"?: string | number;
   /** 
    * background-blend-mode
    *
-   * `var(--ba-b-m, var(--ba))` */
+   * `var(--ba-b-m)` */
   "$ba-b-m"?: string | number;
   /** 
    * background-origin
    *
-   * `var(--ba-o, var(--ba))` */
+   * `var(--ba-o)` */
   "$ba-o"?: string | number;
   /** 
    * background-repeat
    *
-   * `var(--ba-r, var(--ba))` */
+   * `var(--ba-r)` */
   "$ba-r"?: string | number;
   /** 
    * background-size
    *
-   * `var(--ba-s, var(--ba))` */
+   * `var(--ba-s)` */
   "$ba-s"?: string | number;
   /** 
    * font
@@ -434,102 +434,102 @@ export type CourtCssProps = {
   /** 
    * font-family
    *
-   * `var(--f-f, var(--f))` */
+   * `var(--f-f)` */
   "$f-f"?: string | number;
   /** 
    * font-feature-settings
    *
-   * `var(--f-fe-s, var(--f))` */
+   * `var(--f-fe-s)` */
   "$f-fe-s"?: string | number;
   /** 
    * font-kerning
    *
-   * `var(--f-k, var(--f))` */
+   * `var(--f-k)` */
   "$f-k"?: string | number;
   /** 
    * font-language-override
    *
-   * `var(--f-l-o, var(--f))` */
+   * `var(--f-l-o)` */
   "$f-l-o"?: string | number;
   /** 
    * font-optical-sizing
    *
-   * `var(--f-o-s, var(--f))` */
+   * `var(--f-o-s)` */
   "$f-o-s"?: string | number;
   /** 
    * font-palette
    *
-   * `var(--f-p, var(--f))` */
+   * `var(--f-p)` */
   "$f-p"?: string | number;
   /** 
    * font-size
    *
-   * `var(--f-s, var(--f))` */
+   * `var(--f-s)` */
   "$f-s"?: string | number;
   /** 
    * font-size-adjust
    *
-   * `var(--f-s-a, var(--f-s, var(--f)))` */
+   * `var(--f-s-a)` */
   "$f-s-a"?: string | number;
   /** 
    * font-stretch
    *
-   * `var(--f-st, var(--f))` */
+   * `var(--f-st)` */
   "$f-st"?: string | number;
   /** 
    * font-style
    *
-   * `var(--f-sty, var(--f))` */
+   * `var(--f-sty)` */
   "$f-sty"?: string | number;
   /** 
    * font-variant
    *
-   * `var(--f-v, var(--f))` */
+   * `var(--f-v)` */
   "$f-v"?: string | number;
   /** 
    * font-variant-position
    *
-   * `var(--f-v-p, var(--f-v, var(--f)))` */
+   * `var(--f-v-p)` */
   "$f-v-p"?: string | number;
   /** 
    * font-variant-alternates
    *
-   * `var(--f-v-a, var(--f-v, var(--f)))` */
+   * `var(--f-v-a)` */
   "$f-v-a"?: string | number;
   /** 
    * font-variant-caps
    *
-   * `var(--f-v-c, var(--f-v, var(--f)))` */
+   * `var(--f-v-c)` */
   "$f-v-c"?: string | number;
   /** 
    * font-variant-east-asian
    *
-   * `var(--f-v-e-a, var(--f-v, var(--f)))` */
+   * `var(--f-v-e-a)` */
   "$f-v-e-a"?: string | number;
   /** 
    * font-variant-emoji
    *
-   * `var(--f-v-em, var(--f-v, var(--f)))` */
+   * `var(--f-v-em)` */
   "$f-v-em"?: string | number;
   /** 
    * font-variant-ligatures
    *
-   * `var(--f-v-l, var(--f-v, var(--f)))` */
+   * `var(--f-v-l)` */
   "$f-v-l"?: string | number;
   /** 
    * font-variant-numeric
    *
-   * `var(--f-v-n, var(--f-v, var(--f)))` */
+   * `var(--f-v-n)` */
   "$f-v-n"?: string | number;
   /** 
    * font-variation-settings
    *
-   * `var(--f-va-s, var(--f))` */
+   * `var(--f-va-s)` */
   "$f-va-s"?: string | number;
   /** 
    * font-weight
    *
-   * `var(--f-w, var(--f))` */
+   * `var(--f-w)` */
   "$f-w"?: string | number;
   /** 
    * padding
@@ -539,52 +539,52 @@ export type CourtCssProps = {
   /** 
    * padding-left
    *
-   * `var(--p-l, var(--p))` */
+   * `var(--p-l)` */
   "$p-l"?: string | number;
   /** 
    * padding-top
    *
-   * `var(--p-t, var(--p))` */
+   * `var(--p-t)` */
   "$p-t"?: string | number;
   /** 
    * padding-right
    *
-   * `var(--p-r, var(--p))` */
+   * `var(--p-r)` */
   "$p-r"?: string | number;
   /** 
    * padding-bottom
    *
-   * `var(--p-b, var(--p))` */
+   * `var(--p-b)` */
   "$p-b"?: string | number;
   /** 
    * padding-inline
    *
-   * `var(--p-i, var(--p))` */
+   * `var(--p-i)` */
   "$p-i"?: string | number;
   /** 
    * padding-inline-end
    *
-   * `var(--p-i-e, var(--p-i, var(--p)))` */
+   * `var(--p-i-e)` */
   "$p-i-e"?: string | number;
   /** 
    * padding-inline-start
    *
-   * `var(--p-i-s, var(--p-i, var(--p)))` */
+   * `var(--p-i-s)` */
   "$p-i-s"?: string | number;
   /** 
    * padding-block
    *
-   * `var(--p-bl, var(--p))` */
+   * `var(--p-bl)` */
   "$p-bl"?: string | number;
   /** 
    * padding-block-end
    *
-   * `var(--p-bl-e, var(--p-bl, var(--p)))` */
+   * `var(--p-bl-e)` */
   "$p-bl-e"?: string | number;
   /** 
    * padding-block-start
    *
-   * `var(--p-bl-s, var(--p-bl, var(--p)))` */
+   * `var(--p-bl-s)` */
   "$p-bl-s"?: string | number;
   /** 
    * color
@@ -594,17 +594,17 @@ export type CourtCssProps = {
   /** 
    * color-adjust
    *
-   * `var(--c-a, var(--c))` */
+   * `var(--c-a)` */
   "$c-a"?: string | number;
   /** 
    * color-interpolation-filters
    *
-   * `var(--c-i-f, var(--c))` */
+   * `var(--c-i-f)` */
   "$c-i-f"?: string | number;
   /** 
    * color-scheme
    *
-   * `var(--c-s, var(--c))` */
+   * `var(--c-s)` */
   "$c-s"?: string | number;
   /** 
    * display
@@ -639,12 +639,12 @@ export type CourtCssProps = {
   /** 
    * text-align-all
    *
-   * `var(--t-a-a, var(--t-a))` */
+   * `var(--t-a-a)` */
   "$t-a-a"?: string | number;
   /** 
    * text-align-last
    *
-   * `var(--t-a-l, var(--t-a))` */
+   * `var(--t-a-l)` */
   "$t-a-l"?: string | number;
   /** 
    * text-overflow
@@ -669,52 +669,52 @@ export type CourtCssProps = {
   /** 
    * text-decoration-color
    *
-   * `var(--t-d-c, var(--t-d))` */
+   * `var(--t-d-c)` */
   "$t-d-c"?: string | number;
   /** 
    * text-decoration-line
    *
-   * `var(--t-d-l, var(--t-d))` */
+   * `var(--t-d-l)` */
   "$t-d-l"?: string | number;
   /** 
    * text-decoration-skip
    *
-   * `var(--t-d-s, var(--t-d))` */
+   * `var(--t-d-s)` */
   "$t-d-s"?: string | number;
   /** 
    * text-decoration-skip-box
    *
-   * `var(--t-d-s-b, var(--t-d-s, var(--t-d)))` */
+   * `var(--t-d-s-b)` */
   "$t-d-s-b"?: string | number;
   /** 
    * text-decoration-skip-inset
    *
-   * `var(--t-d-s-i, var(--t-d-s, var(--t-d)))` */
+   * `var(--t-d-s-i)` */
   "$t-d-s-i"?: string | number;
   /** 
    * text-decoration-skip-ink
    *
-   * `var(--t-d-s-in, var(--t-d-s, var(--t-d)))` */
+   * `var(--t-d-s-in)` */
   "$t-d-s-in"?: string | number;
   /** 
    * text-decoration-skip-self
    *
-   * `var(--t-d-s-s, var(--t-d-s, var(--t-d)))` */
+   * `var(--t-d-s-s)` */
   "$t-d-s-s"?: string | number;
   /** 
    * text-decoration-skip-spaces
    *
-   * `var(--t-d-s-sp, var(--t-d-s, var(--t-d)))` */
+   * `var(--t-d-s-sp)` */
   "$t-d-s-sp"?: string | number;
   /** 
    * text-decoration-style
    *
-   * `var(--t-d-st, var(--t-d))` */
+   * `var(--t-d-st)` */
   "$t-d-st"?: string | number;
   /** 
    * text-decoration-thickness
    *
-   * `var(--t-d-t, var(--t-d))` */
+   * `var(--t-d-t)` */
   "$t-d-t"?: string | number;
   /** 
    * text-emphasis
@@ -724,22 +724,22 @@ export type CourtCssProps = {
   /** 
    * text-emphasis-color
    *
-   * `var(--t-e-c, var(--t-e))` */
+   * `var(--t-e-c)` */
   "$t-e-c"?: string | number;
   /** 
    * text-emphasis-position
    *
-   * `var(--t-e-p, var(--t-e))` */
+   * `var(--t-e-p)` */
   "$t-e-p"?: string | number;
   /** 
    * text-emphasis-skip
    *
-   * `var(--t-e-s, var(--t-e))` */
+   * `var(--t-e-s)` */
   "$t-e-s"?: string | number;
   /** 
    * text-emphasis-style
    *
-   * `var(--t-e-st, var(--t-e))` */
+   * `var(--t-e-st)` */
   "$t-e-st"?: string | number;
   /** 
    * text-group-align
@@ -799,17 +799,17 @@ export type CourtCssProps = {
   /** 
    * transform-box
    *
-   * `var(--tr-b, var(--tr))` */
+   * `var(--tr-b)` */
   "$tr-b"?: string | number;
   /** 
    * transform-origin
    *
-   * `var(--tr-o, var(--tr))` */
+   * `var(--tr-o)` */
   "$tr-o"?: string | number;
   /** 
    * transform-style
    *
-   * `var(--tr-s, var(--tr))` */
+   * `var(--tr-s)` */
   "$tr-s"?: string | number;
   /** 
    * left
@@ -829,7 +829,7 @@ export type CourtCssProps = {
   /** 
    * line-height-step
    *
-   * `var(--li-h-s, var(--li-h))` */
+   * `var(--li-h-s)` */
   "$li-h-s"?: string | number;
   /** 
    * line-grid
@@ -859,32 +859,32 @@ export type CourtCssProps = {
   /** 
    * flex-direction
    *
-   * `var(--fl-d, var(--fl))` */
+   * `var(--fl-d)` */
   "$fl-d"?: string | number;
   /** 
    * flex-basis
    *
-   * `var(--fl-b, var(--fl))` */
+   * `var(--fl-b)` */
   "$fl-b"?: string | number;
   /** 
    * flex-flow
    *
-   * `var(--fl-f, var(--fl))` */
+   * `var(--fl-f)` */
   "$fl-f"?: string | number;
   /** 
    * flex-grow
    *
-   * `var(--fl-g, var(--fl))` */
+   * `var(--fl-g)` */
   "$fl-g"?: string | number;
   /** 
    * flex-shrink
    *
-   * `var(--fl-s, var(--fl))` */
+   * `var(--fl-s)` */
   "$fl-s"?: string | number;
   /** 
    * flex-wrap
    *
-   * `var(--fl-w, var(--fl))` */
+   * `var(--fl-w)` */
   "$fl-w"?: string | number;
   /** 
    * opacity
@@ -904,72 +904,72 @@ export type CourtCssProps = {
   /** 
    * grid-column
    *
-   * `var(--g-c, var(--g))` */
+   * `var(--g-c)` */
   "$g-c"?: string | number;
   /** 
    * grid-column-end
    *
-   * `var(--g-c-e, var(--g-c, var(--g)))` */
+   * `var(--g-c-e)` */
   "$g-c-e"?: string | number;
   /** 
    * grid-column-start
    *
-   * `var(--g-c-s, var(--g-c, var(--g)))` */
+   * `var(--g-c-s)` */
   "$g-c-s"?: string | number;
   /** 
    * grid-row
    *
-   * `var(--g-r, var(--g))` */
+   * `var(--g-r)` */
   "$g-r"?: string | number;
   /** 
    * grid-row-end
    *
-   * `var(--g-r-e, var(--g-r, var(--g)))` */
+   * `var(--g-r-e)` */
   "$g-r-e"?: string | number;
   /** 
    * grid-row-start
    *
-   * `var(--g-r-s, var(--g-r, var(--g)))` */
+   * `var(--g-r-s)` */
   "$g-r-s"?: string | number;
   /** 
    * grid-area
    *
-   * `var(--g-a, var(--g))` */
+   * `var(--g-a)` */
   "$g-a"?: string | number;
   /** 
    * grid-auto-columns
    *
-   * `var(--g-au-c, var(--g))` */
+   * `var(--g-au-c)` */
   "$g-au-c"?: string | number;
   /** 
    * grid-auto-flow
    *
-   * `var(--g-au-f, var(--g))` */
+   * `var(--g-au-f)` */
   "$g-au-f"?: string | number;
   /** 
    * grid-auto-rows
    *
-   * `var(--g-au-r, var(--g))` */
+   * `var(--g-au-r)` */
   "$g-au-r"?: string | number;
   /** 
    * grid-template
    *
-   * `var(--g-t, var(--g))` */
+   * `var(--g-t)` */
   "$g-t"?: string | number;
   /** 
    * grid-template-columns
    *
-   * `var(--g-t-c, var(--g-t, var(--g)))` */
+   * `var(--g-t-c)` */
   "$g-t-c"?: string | number;
   /** 
    * grid-template-areas
    *
-   * `var(--g-t-a, var(--g-t, var(--g)))` */
+   * `var(--g-t-a)` */
   "$g-t-a"?: string | number;
   /** 
    * grid-template-rows
    *
-   * `var(--g-t-r, var(--g-t, var(--g)))` */
+   * `var(--g-t-r)` */
   "$g-t-r"?: string | number;
   /** 
    * max-width
@@ -1029,22 +1029,22 @@ export type CourtCssProps = {
   /** 
    * transition-delay
    *
-   * `var(--tra-d, var(--tra))` */
+   * `var(--tra-d)` */
   "$tra-d"?: string | number;
   /** 
    * transition-duration
    *
-   * `var(--tra-du, var(--tra))` */
+   * `var(--tra-du)` */
   "$tra-du"?: string | number;
   /** 
    * transition-property
    *
-   * `var(--tra-p, var(--tra))` */
+   * `var(--tra-p)` */
   "$tra-p"?: string | number;
   /** 
    * transition-timing-function
    *
-   * `var(--tra-t-f, var(--tra))` */
+   * `var(--tra-t-f)` */
   "$tra-t-f"?: string | number;
   /** 
    * align-items
@@ -1069,37 +1069,37 @@ export type CourtCssProps = {
   /** 
    * overflow-clip-margin
    *
-   * `var(--ov-c-m, var(--ov))` */
+   * `var(--ov-c-m)` */
   "$ov-c-m"?: string | number;
   /** 
    * overflow-inline
    *
-   * `var(--ov-i, var(--ov))` */
+   * `var(--ov-i)` */
   "$ov-i"?: string | number;
   /** 
    * overflow-block
    *
-   * `var(--ov-b, var(--ov))` */
+   * `var(--ov-b)` */
   "$ov-b"?: string | number;
   /** 
    * overflow-anchor
    *
-   * `var(--ov-a, var(--ov))` */
+   * `var(--ov-a)` */
   "$ov-a"?: string | number;
   /** 
    * overflow-wrap
    *
-   * `var(--ov-w, var(--ov))` */
+   * `var(--ov-w)` */
   "$ov-w"?: string | number;
   /** 
    * overflow-x
    *
-   * `var(--ov-x, var(--ov))` */
+   * `var(--ov-x)` */
   "$ov-x"?: string | number;
   /** 
    * overflow-y
    *
-   * `var(--ov-y, var(--ov))` */
+   * `var(--ov-y)` */
   "$ov-y"?: string | number;
   /** 
    * z-index
@@ -1114,42 +1114,42 @@ export type CourtCssProps = {
   /** 
    * animation-fill-mode
    *
-   * `var(--an-f-m, var(--an))` */
+   * `var(--an-f-m)` */
   "$an-f-m"?: string | number;
   /** 
    * animation-direction
    *
-   * `var(--an-d, var(--an))` */
+   * `var(--an-d)` */
   "$an-d"?: string | number;
   /** 
    * animation-delay
    *
-   * `var(--an-de, var(--an))` */
+   * `var(--an-de)` */
   "$an-de"?: string | number;
   /** 
    * animation-duration
    *
-   * `var(--an-du, var(--an))` */
+   * `var(--an-du)` */
   "$an-du"?: string | number;
   /** 
    * animation-iteration-count
    *
-   * `var(--an-i-c, var(--an))` */
+   * `var(--an-i-c)` */
   "$an-i-c"?: string | number;
   /** 
    * animation-name
    *
-   * `var(--an-n, var(--an))` */
+   * `var(--an-n)` */
   "$an-n"?: string | number;
   /** 
    * animation-play-state
    *
-   * `var(--an-p-s, var(--an))` */
+   * `var(--an-p-s)` */
   "$an-p-s"?: string | number;
   /** 
    * animation-timing-function
    *
-   * `var(--an-t-f, var(--an))` */
+   * `var(--an-t-f)` */
   "$an-t-f"?: string | number;
   /** 
    * cursor
@@ -1209,22 +1209,22 @@ export type CourtCssProps = {
   /** 
    * outline-color
    *
-   * `var(--ou-c, var(--ou))` */
+   * `var(--ou-c)` */
   "$ou-c"?: string | number;
   /** 
    * outline-width
    *
-   * `var(--ou-w, var(--ou))` */
+   * `var(--ou-w)` */
   "$ou-w"?: string | number;
   /** 
    * outline-offset
    *
-   * `var(--ou-o, var(--ou))` */
+   * `var(--ou-o)` */
   "$ou-o"?: string | number;
   /** 
    * outline-style
    *
-   * `var(--ou-s, var(--ou))` */
+   * `var(--ou-s)` */
   "$ou-s"?: string | number;
   /** 
    * list-style
@@ -1234,17 +1234,17 @@ export type CourtCssProps = {
   /** 
    * list-style-position
    *
-   * `var(--lis-s-p, var(--lis-s))` */
+   * `var(--lis-s-p)` */
   "$lis-s-p"?: string | number;
   /** 
    * list-style-image
    *
-   * `var(--lis-s-i, var(--lis-s))` */
+   * `var(--lis-s-i)` */
   "$lis-s-i"?: string | number;
   /** 
    * list-style-type
    *
-   * `var(--lis-s-t, var(--lis-s))` */
+   * `var(--lis-s-t)` */
   "$lis-s-t"?: string | number;
   /** 
    * white-space
@@ -1269,47 +1269,47 @@ export type CourtCssProps = {
   /** 
    * fill-color
    *
-   * `var(--fi-c, var(--fi))` */
+   * `var(--fi-c)` */
   "$fi-c"?: string | number;
   /** 
    * fill-position
    *
-   * `var(--fi-p, var(--fi))` */
+   * `var(--fi-p)` */
   "$fi-p"?: string | number;
   /** 
    * fill-opacity
    *
-   * `var(--fi-o, var(--fi))` */
+   * `var(--fi-o)` */
   "$fi-o"?: string | number;
   /** 
    * fill-image
    *
-   * `var(--fi-i, var(--fi))` */
+   * `var(--fi-i)` */
   "$fi-i"?: string | number;
   /** 
    * fill-break
    *
-   * `var(--fi-b, var(--fi))` */
+   * `var(--fi-b)` */
   "$fi-b"?: string | number;
   /** 
    * fill-origin
    *
-   * `var(--fi-or, var(--fi))` */
+   * `var(--fi-or)` */
   "$fi-or"?: string | number;
   /** 
    * fill-repeat
    *
-   * `var(--fi-r, var(--fi))` */
+   * `var(--fi-r)` */
   "$fi-r"?: string | number;
   /** 
    * fill-rule
    *
-   * `var(--fi-ru, var(--fi))` */
+   * `var(--fi-ru)` */
   "$fi-ru"?: string | number;
   /** 
    * fill-size
    *
-   * `var(--fi-s, var(--fi))` */
+   * `var(--fi-s)` */
   "$fi-s"?: string | number;
   /** 
    * word-break
@@ -1379,17 +1379,17 @@ export type CourtCssProps = {
   /** 
    * column-rule-color
    *
-   * `var(--co-r-c, var(--co-r))` */
+   * `var(--co-r-c)` */
   "$co-r-c"?: string | number;
   /** 
    * column-rule-width
    *
-   * `var(--co-r-w, var(--co-r))` */
+   * `var(--co-r-w)` */
   "$co-r-w"?: string | number;
   /** 
    * column-rule-style
    *
-   * `var(--co-r-s, var(--co-r))` */
+   * `var(--co-r-s)` */
   "$co-r-s"?: string | number;
   /** 
    * column-span
@@ -1424,12 +1424,12 @@ export type CourtCssProps = {
   /** 
    * clip-path
    *
-   * `var(--cli-p, var(--cli))` */
+   * `var(--cli-p)` */
   "$cli-p"?: string | number;
   /** 
    * clip-rule
    *
-   * `var(--cli-r, var(--cli))` */
+   * `var(--cli-r)` */
   "$cli-r"?: string | number;
   /** 
    * row-gap
@@ -1444,82 +1444,82 @@ export type CourtCssProps = {
   /** 
    * mask-border
    *
-   * `var(--mas-b, var(--mas))` */
+   * `var(--mas-b)` */
   "$mas-b"?: string | number;
   /** 
    * mask-border-width
    *
-   * `var(--mas-b-w, var(--mas-b, var(--mas)))` */
+   * `var(--mas-b-w)` */
   "$mas-b-w"?: string | number;
   /** 
    * mask-border-mode
    *
-   * `var(--mas-b-m, var(--mas-b, var(--mas)))` */
+   * `var(--mas-b-m)` */
   "$mas-b-m"?: string | number;
   /** 
    * mask-border-outset
    *
-   * `var(--mas-b-o, var(--mas-b, var(--mas)))` */
+   * `var(--mas-b-o)` */
   "$mas-b-o"?: string | number;
   /** 
    * mask-border-repeat
    *
-   * `var(--mas-b-r, var(--mas-b, var(--mas)))` */
+   * `var(--mas-b-r)` */
   "$mas-b-r"?: string | number;
   /** 
    * mask-border-slice
    *
-   * `var(--mas-b-s, var(--mas-b, var(--mas)))` */
+   * `var(--mas-b-s)` */
   "$mas-b-s"?: string | number;
   /** 
    * mask-border-source
    *
-   * `var(--mas-b-so, var(--mas-b, var(--mas)))` */
+   * `var(--mas-b-so)` */
   "$mas-b-so"?: string | number;
   /** 
    * mask-position
    *
-   * `var(--mas-p, var(--mas))` */
+   * `var(--mas-p)` */
   "$mas-p"?: string | number;
   /** 
    * mask-clip
    *
-   * `var(--mas-c, var(--mas))` */
+   * `var(--mas-c)` */
   "$mas-c"?: string | number;
   /** 
    * mask-image
    *
-   * `var(--mas-i, var(--mas))` */
+   * `var(--mas-i)` */
   "$mas-i"?: string | number;
   /** 
    * mask-composite
    *
-   * `var(--mas-co, var(--mas))` */
+   * `var(--mas-co)` */
   "$mas-co"?: string | number;
   /** 
    * mask-mode
    *
-   * `var(--mas-m, var(--mas))` */
+   * `var(--mas-m)` */
   "$mas-m"?: string | number;
   /** 
    * mask-origin
    *
-   * `var(--mas-o, var(--mas))` */
+   * `var(--mas-o)` */
   "$mas-o"?: string | number;
   /** 
    * mask-repeat
    *
-   * `var(--mas-r, var(--mas))` */
+   * `var(--mas-r)` */
   "$mas-r"?: string | number;
   /** 
    * mask-size
    *
-   * `var(--mas-s, var(--mas))` */
+   * `var(--mas-s)` */
   "$mas-s"?: string | number;
   /** 
    * mask-type
    *
-   * `var(--mas-t, var(--mas))` */
+   * `var(--mas-t)` */
   "$mas-t"?: string | number;
   /** 
    * appearance
@@ -1544,12 +1544,12 @@ export type CourtCssProps = {
   /** 
    * caret-color
    *
-   * `var(--ca-c, var(--ca))` */
+   * `var(--ca-c)` */
   "$ca-c"?: string | number;
   /** 
    * caret-shape
    *
-   * `var(--ca-s, var(--ca))` */
+   * `var(--ca-s)` */
   "$ca-s"?: string | number;
   /** 
    * will-change
@@ -1569,22 +1569,22 @@ export type CourtCssProps = {
   /** 
    * overscroll-behavior-inline
    *
-   * `var(--ove-b-i, var(--ove-b))` */
+   * `var(--ove-b-i)` */
   "$ove-b-i"?: string | number;
   /** 
    * overscroll-behavior-block
    *
-   * `var(--ove-b-b, var(--ove-b))` */
+   * `var(--ove-b-b)` */
   "$ove-b-b"?: string | number;
   /** 
    * overscroll-behavior-x
    *
-   * `var(--ove-b-x, var(--ove-b))` */
+   * `var(--ove-b-x)` */
   "$ove-b-x"?: string | number;
   /** 
    * overscroll-behavior-y
    *
-   * `var(--ove-b-y, var(--ove-b))` */
+   * `var(--ove-b-y)` */
   "$ove-b-y"?: string | number;
   /** 
    * tab-size
@@ -1624,17 +1624,17 @@ export type CourtCssProps = {
   /** 
    * page-break-after
    *
-   * `var(--pa-b-a, var(--pa))` */
+   * `var(--pa-b-a)` */
   "$pa-b-a"?: string | number;
   /** 
    * page-break-before
    *
-   * `var(--pa-b-b, var(--pa))` */
+   * `var(--pa-b-b)` */
   "$pa-b-b"?: string | number;
   /** 
    * page-break-inside
    *
-   * `var(--pa-b-i, var(--pa))` */
+   * `var(--pa-b-i)` */
   "$pa-b-i"?: string | number;
   /** 
    * perspective
@@ -1644,7 +1644,7 @@ export type CourtCssProps = {
   /** 
    * perspective-origin
    *
-   * `var(--pe-o, var(--pe))` */
+   * `var(--pe-o)` */
   "$pe-o"?: string | number;
   /** 
    * scroll-margin
@@ -1654,52 +1654,52 @@ export type CourtCssProps = {
   /** 
    * scroll-margin-left
    *
-   * `var(--s-m-l, var(--s-m))` */
+   * `var(--s-m-l)` */
   "$s-m-l"?: string | number;
   /** 
    * scroll-margin-top
    *
-   * `var(--s-m-t, var(--s-m))` */
+   * `var(--s-m-t)` */
   "$s-m-t"?: string | number;
   /** 
    * scroll-margin-right
    *
-   * `var(--s-m-r, var(--s-m))` */
+   * `var(--s-m-r)` */
   "$s-m-r"?: string | number;
   /** 
    * scroll-margin-bottom
    *
-   * `var(--s-m-b, var(--s-m))` */
+   * `var(--s-m-b)` */
   "$s-m-b"?: string | number;
   /** 
    * scroll-margin-inline
    *
-   * `var(--s-m-i, var(--s-m))` */
+   * `var(--s-m-i)` */
   "$s-m-i"?: string | number;
   /** 
    * scroll-margin-inline-end
    *
-   * `var(--s-m-i-e, var(--s-m-i, var(--s-m)))` */
+   * `var(--s-m-i-e)` */
   "$s-m-i-e"?: string | number;
   /** 
    * scroll-margin-inline-start
    *
-   * `var(--s-m-i-s, var(--s-m-i, var(--s-m)))` */
+   * `var(--s-m-i-s)` */
   "$s-m-i-s"?: string | number;
   /** 
    * scroll-margin-block
    *
-   * `var(--s-m-bl, var(--s-m))` */
+   * `var(--s-m-bl)` */
   "$s-m-bl"?: string | number;
   /** 
    * scroll-margin-block-end
    *
-   * `var(--s-m-bl-e, var(--s-m-bl, var(--s-m)))` */
+   * `var(--s-m-bl-e)` */
   "$s-m-bl-e"?: string | number;
   /** 
    * scroll-margin-block-start
    *
-   * `var(--s-m-bl-s, var(--s-m-bl, var(--s-m)))` */
+   * `var(--s-m-bl-s)` */
   "$s-m-bl-s"?: string | number;
   /** 
    * scroll-padding
@@ -1709,52 +1709,52 @@ export type CourtCssProps = {
   /** 
    * scroll-padding-left
    *
-   * `var(--s-p-l, var(--s-p))` */
+   * `var(--s-p-l)` */
   "$s-p-l"?: string | number;
   /** 
    * scroll-padding-top
    *
-   * `var(--s-p-t, var(--s-p))` */
+   * `var(--s-p-t)` */
   "$s-p-t"?: string | number;
   /** 
    * scroll-padding-right
    *
-   * `var(--s-p-r, var(--s-p))` */
+   * `var(--s-p-r)` */
   "$s-p-r"?: string | number;
   /** 
    * scroll-padding-bottom
    *
-   * `var(--s-p-b, var(--s-p))` */
+   * `var(--s-p-b)` */
   "$s-p-b"?: string | number;
   /** 
    * scroll-padding-inline
    *
-   * `var(--s-p-i, var(--s-p))` */
+   * `var(--s-p-i)` */
   "$s-p-i"?: string | number;
   /** 
    * scroll-padding-inline-end
    *
-   * `var(--s-p-i-e, var(--s-p-i, var(--s-p)))` */
+   * `var(--s-p-i-e)` */
   "$s-p-i-e"?: string | number;
   /** 
    * scroll-padding-inline-start
    *
-   * `var(--s-p-i-s, var(--s-p-i, var(--s-p)))` */
+   * `var(--s-p-i-s)` */
   "$s-p-i-s"?: string | number;
   /** 
    * scroll-padding-block
    *
-   * `var(--s-p-bl, var(--s-p))` */
+   * `var(--s-p-bl)` */
   "$s-p-bl"?: string | number;
   /** 
    * scroll-padding-block-end
    *
-   * `var(--s-p-bl-e, var(--s-p-bl, var(--s-p)))` */
+   * `var(--s-p-bl-e)` */
   "$s-p-bl-e"?: string | number;
   /** 
    * scroll-padding-block-start
    *
-   * `var(--s-p-bl-s, var(--s-p-bl, var(--s-p)))` */
+   * `var(--s-p-bl-s)` */
   "$s-p-bl-s"?: string | number;
   /** 
    * scroll-behavior
@@ -1879,32 +1879,32 @@ export type CourtCssProps = {
   /** 
    * inset-inline
    *
-   * `var(--in-i, var(--in))` */
+   * `var(--in-i)` */
   "$in-i"?: string | number;
   /** 
    * inset-inline-end
    *
-   * `var(--in-i-e, var(--in-i, var(--in)))` */
+   * `var(--in-i-e)` */
   "$in-i-e"?: string | number;
   /** 
    * inset-inline-start
    *
-   * `var(--in-i-s, var(--in-i, var(--in)))` */
+   * `var(--in-i-s)` */
   "$in-i-s"?: string | number;
   /** 
    * inset-block
    *
-   * `var(--in-b, var(--in))` */
+   * `var(--in-b)` */
   "$in-b"?: string | number;
   /** 
    * inset-block-end
    *
-   * `var(--in-b-e, var(--in-b, var(--in)))` */
+   * `var(--in-b-e)` */
   "$in-b-e"?: string | number;
   /** 
    * inset-block-start
    *
-   * `var(--in-b-s, var(--in-b, var(--in)))` */
+   * `var(--in-b-s)` */
   "$in-b-s"?: string | number;
   /** 
    * all
@@ -2049,27 +2049,27 @@ export type CourtCssProps = {
   /** 
    * offset-position
    *
-   * `var(--of-p, var(--of))` */
+   * `var(--of-p)` */
   "$of-p"?: string | number;
   /** 
    * offset-anchor
    *
-   * `var(--of-a, var(--of))` */
+   * `var(--of-a)` */
   "$of-a"?: string | number;
   /** 
    * offset-distance
    *
-   * `var(--of-d, var(--of))` */
+   * `var(--of-d)` */
   "$of-d"?: string | number;
   /** 
    * offset-path
    *
-   * `var(--of-pa, var(--of))` */
+   * `var(--of-pa)` */
   "$of-pa"?: string | number;
   /** 
    * offset-rotate
    *
-   * `var(--of-r, var(--of))` */
+   * `var(--of-r)` */
   "$of-r"?: string | number;
   /** 
    * print-color-adjust
@@ -2099,12 +2099,12 @@ export type CourtCssProps = {
   /** 
    * initial-letter-align
    *
-   * `var(--ini-l-a, var(--ini-l))` */
+   * `var(--ini-l-a)` */
   "$ini-l-a"?: string | number;
   /** 
    * initial-letter-wrap
    *
-   * `var(--ini-l-w, var(--ini-l))` */
+   * `var(--ini-l-w)` */
   "$ini-l-w"?: string | number;
   /** 
    * chains
@@ -2124,12 +2124,12 @@ export type CourtCssProps = {
   /** 
    * flow-from
    *
-   * `var(--flow-f, var(--flow))` */
+   * `var(--flow-f)` */
   "$flow-f"?: string | number;
   /** 
    * flow-into
    *
-   * `var(--flow-i, var(--flow))` */
+   * `var(--flow-i)` */
   "$flow-i"?: string | number;
   /** 
    * footnote-display

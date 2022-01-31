@@ -1,6 +1,5 @@
-import { CourtReact } from "./CourtReact";
+import { CourtComponent } from "./CourtComponent";
 
 export { CourtConfig } from "./types";
-export { intercept, CourtComponentProps } from "./CourtReact";
-export { CourtReact };
-export default CourtReact;
+export { intercept, CourtProps, CourtComponent } from "./CourtComponent";
+export default CourtComponent;

@@ -1,13 +1,11 @@
 import * as fs from "fs";
-import { minify } from "csso";
 import { makeCssString } from "../makeCssString";
 import { makeClasses } from "../makeClasses";
 import { makeAliasTree } from "../makeAliasTree";
 import propertyList from "../data/all-properties.json";
 import { resolve } from "path";
 import { CourtConfig } from "../types";
-import postcss from "postcss";
-import autoprefixer from "autoprefixer";
+import parcelCss from "@parcel/css";
 
 // get CLI arguments
 const args = process.argv.slice(2);
@@ -32,7 +30,12 @@ if (!fs.existsSync("./dist")) {
   fs.mkdirSync("./dist");
 }
 
-let prefixedCss = postcss([autoprefixer]).process(css).css;
+let { code } = parcelCss.transform({
+  filename: "court.css",
+  code: Buffer.from(css),
+  minify: true,
+  sourceMap: true,
+  targets: {},
+});
 
-// write css to dist folder
-fs.writeFileSync("./dist/court.css", minify(prefixedCss).css);
+fs.writeFileSync("./dist/court.css", code);

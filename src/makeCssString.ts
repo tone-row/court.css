@@ -1,27 +1,29 @@
 import { modifiers } from "./modifiers";
 
 export function makeCssString(
-  classes: { className: string; property: string; fallback: string }[]
+  classes: { className: string; properties: string[]; fallback: string }[]
 ) {
   const rawClassStyles = classes
-    .map(({ className, property, fallback }) => {
-      return `.${className} {\n\t${property}: var(${["--" + className, fallback]
-        .filter(Boolean)
-        .join(", ")});\n}`;
+    .map(({ className, properties, fallback }) => {
+      return `.${className} {\n\t${properties
+        .map((property) => `${property}: ${fallback};\n`)
+        .join("\n\t")}}\n`;
     })
     .join("\n");
 
   const modifiedClassStyles = classes
-    .map(({ className, property, fallback }) => {
+    .map(({ className, properties, fallback }) => {
       return modifiers
         .map(({ modifier, modify }) => {
           return modify(`.${className}_${modifier}`).replace(
             "%",
             `{
-              ${property}: var(${["--" + className + "_" + modifier, fallback]
-              .filter(Boolean)
-              .join(", ")});
-
+              ${properties
+                .map(
+                  (property) =>
+                    `${property}: var(${"--" + className + "_" + modifier});`
+                )
+                .join("\n\t")}
       }`
           );
         })
