@@ -5,7 +5,6 @@
 Tailwind-like CSS-in-JS with a predictable API, no compilation step, good typing, and a small footprint.
 
 ![npm](https://img.shields.io/npm/v/court.css)
-![npm bundle size](https://img.shields.io/bundlephobia/min/court.css)
 
 </div>
 
@@ -16,17 +15,16 @@ npm i court.css
 ```
 
 ## Basic Usage
-
 ```tsx
 import "court.css/stylesheet"; // import stylesheet
-import { CourtReact as Box } from "court.css"; // import polymorphic component
+import Box from "court.css"; // import component
 
-function Gist() {
+export default function App() {
   return (
     <Box
       as="h1"
       $f-f="Comic Sans MS"
-      $co="blue"
+      $c="blue"
       $t-s="3px 3px lime"
       $b="dashed red"
       $p="5px"
@@ -35,17 +33,19 @@ function Gist() {
     </Box>
   );
 }
+
+// Codesandbox Link 👉 https://codesandbox.io/s/court-css-example-640dk?file=/src/App.js:0-332
 ```
 
 ![Gist](https://i.ibb.co/dMbyLV2/Screen-Shot-2022-01-30-at-12-53-23-PM.png)
 
-- #### 1 stylesheet & 1 component
+- ### 1 Stylesheet + 1 Component
   Add the stylesheet, import the polymorphic component and you're off to the races
-- #### 1 prop per css property
+- ### 1 CSS Property = 1 Box prop
   No helpers to learn, just CSS with the property names shorterned
-- #### prop names simplified from usage
+- ### Programmatic Prop Names
   The name for the css property _border_ is `$b`. _border-top_ is `$b-t` and _border-right_ `$b-r`. _border-radius_ is `$b-ra` – we add one letter from the word _radius_ because the `r` was already used for _border-right_. Another example is background, it's `$ba` because `$b` is used for border.
-- #### psuedo-selectors use underscore
+- ### Psuedo-states use underscore
   `$ou_focus` = _outline_ when focused. `$bo-s_hover` = _box-shadow_ when hovered.
 
 ## This is crazy, I could just use **\_**
@@ -64,86 +64,29 @@ Most importantly, I thought this was a funny idea so I built it. Try it out. Use
 
 For the French word _court_ meaning short or brief.
 
-## Big Example
+## API
 
-[Open in CodeSandbox](https://codesandbox.io/s/court-css-example-uudxu?file=/src/App.tsx)
+### CourtComponent (default)
 
-```tsx
-import { CourtReact as Box } from "court.css";
-import "court.css/stylesheet";
-import { ReactNode } from "react";
-
-const Button = ({ children }: { children: ReactNode }) => {
-  return (
-    <Box
-      as="button"
-      $f-s="30px"
-      $p="5px"
-      $p-i="20px"
-      $b-ra="10px"
-      $bo-s="2px 2px 3px rgba(0,0,0,0.5)"
-      $ap="none"
-      $b="0"
-      $f-f="cursive"
-      $ba="orange"
-      $ba_hover="darkorange"
-      $cu="pointer"
-      $tra="all .2s ease"
-    >
-      {children}
-    </Box>
-  );
-};
-
-const Nav = ({ children }: { children: ReactNode }) => {
-  return (
-    <Box
-      as="nav"
-      $ga="10px"
-      $ba="linear-gradient(to bottom, whitesmoke, lightgrey)"
-      $b="solid 2px #ccc"
-      $p="10px"
-      $b-ra="10px"
-      $d="inline-flex"
-    >
-      {children}
-    </Box>
-  );
-};
-
-export default function App() {
-  return (
-    <div className="App">
-      <Box
-        as="h1"
-        $f-f="sans-serif"
-        $f-w="700"
-        $t-t="uppercase"
-        $f-s="45px"
-        $tr="scaleY(130%)"
-        $b-b="wavy 4px red"
-      >
-        Hello court.css!
-      </Box>
-      <Nav>
-        <Button>Button A</Button>
-        <Button>Button B</Button>
-        <Button>Button Sea</Button>
-      </Nav>
-    </div>
-  );
-}
 ```
+import C from 'court.css'
+```
+Full list of CSS props here [src/CourtComponentProps.generated.ts](src/CourtComponentProps.generated.ts)
 
-## Intercept
+It's polymorphic (can be any html element), with the `as` prop.
+```
+<C as="marquee">I'm a marquee</C>
+```
+### intercept
 
-court.css doesn't make any assumptions about the props your pass. Instead, if you want to implement an abstraction over specific properties, you can intercept them. Just make sure you do this before you use the component (, it may be a good idea to do all your `intercept`'s in one file, and re-export the component after). Here's an example that uses t-shirt sizing for font sizes.
+Use intercept to intercept prop values and replace them with anything. Use this to implement t-shirt sizing, module types scales, color palettes... anything.
 
 ```tsx
 import "court.css/stylesheet";
-import { CourtReact as Box, intercept } from "court.css";
+import Box, { intercept } from "court.css";
 
-// intercept font sizes
+/* 👇 intercept font size and implement t-shirt sizing */
+
 intercept("$f-s", (size) => {
   switch (size) {
     case "sm":
@@ -169,10 +112,35 @@ function App() {
     </>
   );
 }
+
+// Sandbox Link 👉 https://codesandbox.io/s/court-css-intercept-example-olwpg?file=/src/App.js
+```
+
+## Working in Typescript
+```
+import "court.css/stylesheet";
+import Box, { CourtProps } from "court.css";
+
+function Button(props: CourtProps<"button">) {
+  return <Box as="button" $f-f="cursive" $f-s="2rem" {...props} />;
+}
+
+export default function App() {
+  return (
+    <div className="App">
+      <Button>Hello</Button>
+      <Button onClick={() => alert("Ciao")}>Goodbye</Button>
+    </div>
+  );
+}
+// Sandbox Link 👉 https://codesandbox.io/s/court-css-typescript-3fr4t?file=/src/App.tsx
 ```
 
 ## Roadmap
 
-- Make sure Court component props are exported and easy to compose
 - Add polymorphic component for friends: vue, svelte, preact, lit
 - Allow users to generate CSS themselves (or add it at runtime) and alter class generation and modifiers
+
+## Contributing
+
+If you find bugs please open an issue. If you there is some functionality you would like to add please open an issue to discuss before making a pull request.
