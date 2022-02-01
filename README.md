@@ -48,7 +48,7 @@ export default function App() {
 - ### Pseudo-states use underscore
   `$ou_focus` = _outline_ when focused. `$bo-s_hover` = _box-shadow_ when hovered.
 
-## This is crazy, I could just use **\_**
+## This is crazy, I could just use ______
 
 OMG you're right! What was I thinking!?
 
