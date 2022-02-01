@@ -2,9 +2,9 @@
   
 # court.css
 
-Tailwind-like CSS-in-JS with a predictable API, no compilation step, good typing, and a small footprint.
+Tailwind-like CSS-in-JS with a predictable API, no compilation step, good typing, and a small footprint.  Made by [**Tone Row**](https://twitter.com/tone_row_)
+  
 
-![npm](https://img.shields.io/npm/v/court.css)
 
 </div>
 
