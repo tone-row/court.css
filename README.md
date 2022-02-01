@@ -117,7 +117,7 @@ function App() {
 ```
 
 ## Working in Typescript
-```
+```tsx
 import "court.css/stylesheet";
 import Box, { CourtProps } from "court.css";
 
