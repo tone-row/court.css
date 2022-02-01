@@ -45,7 +45,7 @@ export default function App() {
   No helpers to learn, just CSS with the property names shorterned
 - ### Programmatic Prop Names
   The name for the css property _border_ is `$b`. _border-top_ is `$b-t` and _border-right_ `$b-r`. _border-radius_ is `$b-ra` – we add one letter from the word _radius_ because the `r` was already used for _border-right_. Another example is background, it's `$ba` because `$b` is used for border.
-- ### Psuedo-states use underscore
+- ### Pseudo-states use underscore
   `$ou_focus` = _outline_ when focused. `$bo-s_hover` = _box-shadow_ when hovered.
 
 ## This is crazy, I could just use **\_**
